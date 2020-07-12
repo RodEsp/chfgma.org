@@ -1,16 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+
+import "./Header.css"
+import { ReactComponent as MagnifyingGlass } from "../../assets/magnifying-glass.svg"
 
 function Header() {
   return (
-    <header>
-      <nav>
-          <Link to="/">Clinton Hill Fort Greene Mutual Aid</Link>
-          {/* <Link to="/about">About</Link> */}
-          {/* <Link to="/get-help">Get Help</Link> */}
-          {/* <Link to="/give-help">Give Help</Link> */}
-          {/* <Link to="/donate">Donate</Link> */}
-          {/* <Link to="/search">Donate</Link> */}
+    <header className="header">
+      <nav className="nav">
+        <ul className="nav-container">
+          <li className="home"><NavLink to="/" exact={true}>Clinton Hill Fort Greene Mutual Aid</NavLink></li>
+          <li className="link"><NavLink to="/" exact={true} activeClassName='is-active'>About</NavLink></li>
+          <li className="link"><NavLink to="/get-help"  activeClassName='is-active'>Get Help</NavLink></li>
+          <li className="link"><NavLink to="/give-help"  activeClassName='is-active'>Give Help</NavLink></li>
+          <li className="link"><NavLink to="/donate"  activeClassName='is-active'>Donate</NavLink></li>
+          <li className="link"><NavLink to="/search" className="link"><MagnifyingGlass style={{margin: "7px 0 0 0"}}/></NavLink></li>
+        </ul>
       </nav>
     </header>
   )
