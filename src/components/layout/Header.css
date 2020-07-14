@@ -1,13 +1,14 @@
 .header {
     font-style: normal;
+    background-color: transparent;
 }
 
 .nav {
     width: 100%;
-    position: fixed;
     top: 0;
+    position: fixed;
     left: 0;
-    background-color: #F1FDF7;
+    z-index: 9999;
 }
 
 .nav-container {
