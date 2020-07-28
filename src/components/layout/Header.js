@@ -1,24 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink, BrowserRouter as Route, Switch, withRouter } from 'react-router-dom';
 
-import { ReactComponent as MagnifyingGlass } from "../../assets/magnifying-glass.svg"
-
-
 import "./Header.css"
 
 function Header({style, history}) {
-  // const [colorScheme, setColorScheme] = useState({backgroundColor: "rgb(241, 253, 247)"})
-
-  // // Similar to componentDidMount and componentDidUpdate:
-  // useEffect(() => {
-  //   console.log(history)
-  //   debugger
-  //   if (history.location !== "") {
-  //     if (history.location === "/about") {
-  //       setColorScheme("rgb(241, 253, 247)")
-  //     }
-  //   }
-  // })
   return (
     <header className="header">
       <nav className="nav" style={{...style}}>
