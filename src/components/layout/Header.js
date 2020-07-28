@@ -4,9 +4,19 @@ import { NavLink, BrowserRouter as Route, Switch, withRouter } from 'react-route
 import "./Header.css"
 
 function Header({style, history}) {
+  const [colorScheme, setColorScheme] = useState({backgroundColor: "rgb(241, 253, 247)"})
+
+    // Similar to componentDidMount and componentDidUpdate:
+    useEffect(() => {
+      console.log(history)
+      if (history.location === "/about") {
+        debugger
+        setColorScheme("rgb(241, 253, 247)")
+      }
+    })
   return (
-    <header className="header">
-      <nav className="nav" style={{...style}}>
+    <header className="header" style={colorScheme}>
+      <nav className="nav" >
         <ul className="nav-container">
           <li className="home"><NavLink to="/" exact={true}>Clinton Hill Fort Greene Mutual Aid</NavLink></li>
           <li className="link"><NavLink to="/" exact={true} activeClassName='is-active'>About</NavLink></li>

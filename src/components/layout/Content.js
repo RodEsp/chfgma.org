@@ -2,10 +2,11 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import About from '../pages/About.js'
+import './Content.css'
 
 function Content() {
     return(
-      <div className="container">
+      <div className="content">
         <Switch>
           <Route exact path="/" component={About} />
           <Route exact path="/about" component={About}/>

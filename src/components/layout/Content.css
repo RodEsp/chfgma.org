@@ -1,0 +1,55 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/***************************** 
+Rows
+*****************************/
+.row {
+    flex: 1;
+}
+.row:nth-child(odd) {
+    background-color: #F1FDF7;
+}
+.row:not(:first-child):not(:last-child) {
+    clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+}
+.row:first-child {
+    clip-path: polygon(0 0, 100% 0%, 100% 97%, 0% 100%);
+}
+.row:last-child {
+    clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
+}
+.row-container {
+    /* max-width: 940px; */
+    margin: auto;
+    padding: 50px 10%;
+    
+    text-align: left;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: space-between;
+    
+}
+.row-container > .section {
+    flex: 1;
+    width: 100%;
+}
+
+/* Polygons */
+.polygon {
+    clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+}
+.polygon-top {
+    clip-path: polygon(0 0, 100% 0%, 100% 97%, 0% 100%);
+}
+.polygon-bottom {
+    clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+

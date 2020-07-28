@@ -3,19 +3,6 @@
     background-color: transparent;
 }
 
-
-
-.nav {
-    /* width: 100%;
-    top: 0;
-    position: fixed;
-    left: 0;
-    z-index: 9999; */
-    /* background-color: #282c34; */
-    /* min-height: 100vh; */
-
-}
-
 .nav-container {
     display: flex;
     align-items: flex-end;
@@ -24,17 +11,6 @@
     align-items: center;    
     color: white;
 }
-
-/* 
-=== Dynamic Font Size ===
-Min Viewport: 300px
-Max Viewport: 1600px
-Min FontSize: 15px
-Max FontSize: 26px
-font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-*/
-
-
 
 .nav-container > li {
     list-style: none;
