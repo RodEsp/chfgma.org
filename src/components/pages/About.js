@@ -1,18 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-
 import { ReactComponent as MapNeighborhood } from "../../assets/map-neighborhood.svg"
 import { ReactComponent as Chevron } from "../../assets/icons/chevron.svg"
-
 import './About.css'
 
 function About() {
     return (
-        <div>
-            <div  className="row" id="the-neighborhood" style={{ ...rowStyle, background: "#F1FDF7", clipPath: "polygon(0 0, 100% 0%, 100% 97%, 0% 100%)" }}>
-                <div className="section" style={sectionStyle}>
-                    <div className="sectionLeft" style={sectionSideStyle}>Picture Here</div>
-                    <div className="sectionRight" style={sectionSideStyle}>
+        <div className="about">
+            <div  className="row" id="the-neighborhood">
+                <div className="section">
+                    <div className="sectionSide">Picture Here</div>
+                    <div className="sectionSide">
                         <p style={sectionTitle}>We are neighbors in Clinton Hill and Fort Greene coming together to care for one another through the COVID-19 pandemic and beyond.</p>
                         <div className="buttonsContainer" style={buttonsContainer}>
                             <Link style={buttonStyle} to="/get-help">I need help {buttonChevron}</Link>
@@ -22,9 +20,9 @@ function About() {
                     </div>
                 </div>
             </div>
-            <div className="row" id="where-we-act" style={{ ...rowStyle, backgroundColor: "white" }}>
-                <div className="section" style={{ ...sectionStyle, backgroundColor: "white" }}>
-                    <div className="sectionLeft" style={{...sectionSideStyle}}>
+            <div className="row" id="where-we-act" style={{backgroundColor: "white" }}>
+                <div className="section" style={{backgroundColor: "white" }}>
+                    <div className="sectionSide">
                         <p style={{
                             fontFamily: "Montserrat",
                             fontStyle: "normal",
@@ -35,18 +33,18 @@ function About() {
                         }}>Where we act</p>
                         <p>We live and act in the neighborhoods of Clinton Hill and Fort Greene in Brooklyn. If you’re outside this area, you can find a group closer to you through <b><u>Mutual Aid NYC</u></b>.</p>
                     </div>
-                    <div className="sectionRight" style={sectionSideStyle}>
-                        <MapNeighborhood style={{width: "100%"}} />
+                    <div className="sectionSide">
+                        <MapNeighborhood style={{width: "100%", minWidth: "380px"}}/>
                     </div>
                 </div>
             </div>
-            <div className="row" id="our-principles" style={{ ...rowStyle, background: "#F1FDF7", }}>
-                <div className="section" style={{ ...sectionStyle}}>
+            <div className="row" id="our-principles" style={{background: "#F1FDF7"}}>
+                <div className="section">
                     <p style={principleStyles.title}>Our principles</p>
-                    {principles.map(({title, description}) => (
-                        <div className="principle-container" style={principleStyles.container}>
-                            <div class="principle-name" style={principleStyles.name}>{title}</div>
-                            <div class="principle-description" style={principleStyles.description}>{description}</div>
+                    {principles.map(({title, description}, i) => (
+                        <div className="principle-container" key={"principles-key-"+i} style={principleStyles.container}>
+                            <div className="principle-name" style={principleStyles.name}>{title}</div>
+                            <div className="principle-description" style={principleStyles.description}>{description}</div>
                         </div>
                     ))}
                 </div>
@@ -91,27 +89,7 @@ const principleStyles = {
     },
 }
 
-// Row
-const rowStyle = {
-    // -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
-    clipPath: "polygon(0 4%, 100% 0%, 100% 97%, 0% 100%)",
-    width: "100%",
-}
 // Section
-const sectionStyle = {
-    margin: "auto",
-    display: "flex",
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyItems: "space-between",
-    padding: "0 200px",
-    textAlign: "left",
-}
-const sectionSideStyle = {
-    flex: ".5",
-    padding: "50px",
-}
-
 const sectionTitle = {
     fontFamily: "Montserrat",
     fontStyle: "normal",

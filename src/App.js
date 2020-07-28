@@ -1,22 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
-
-import Header from './components/layout/Header.js'
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Content from './components/layout/Content.js'
-
-
 import './App.css';
+import Header from './components/layout/Header.js';
 
 const App = () => {
-
-
   return (
+    <div id="app-container">
     <Router>
-      <div className="App">
-        {/* <Header /> */}
-        <Content />
-      </div>
+      <Header/>
+      <Content />
     </Router>
+    </div>
   );
 }
 
