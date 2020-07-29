@@ -1,4 +1,9 @@
-/* General */
+/******************************** 
+General
+********************************/
+
+/* Title */
+
 .title {
     font-weight: bold;
     font-size: 34px;
@@ -7,34 +12,46 @@
     margin-bottom: 20px;
 }
 
-/* Stay up to date component */
-.stayUpToDate-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.stayUpToDate-buttonWrapper {
-    height: 220px;
-    width: 300px;
-    background-color: white;
-    flex: 1;
-}
-
-.stayUpToDate-content {
-    width: 100%;
-    display: flex;
-}
-
 /* Buttons */
+
 .buttonsContainer {
     display: flex;
 }
 
+/********************************  
+Component: Stay up to date component 
+********************************/
 
+.stayUpToDate-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 300px;
+}
 
+.stayUpToDate-buttonWrapper {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    flex: .32;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
 
-/* Since Component */
+    /* height: 100%; */
+
+    padding: 5%;
+}
+
+/********************************
+Component: Since Component 
+********************************/
+
 .since-content {
     flex: 1 1;
 }
@@ -79,6 +96,7 @@
 }
 
 /* Images */
+
 .people-holding-trash-image-wrapper {
     display: flex;
     align-items: flex-end;
@@ -86,9 +104,8 @@
     position: relative;
 }
 
-.people-holding-trash-svg{
+.people-holding-trash-svg {
     position: absolute;
     bottom: -20%;
     z-index: -9999;
 }
-

@@ -13,9 +13,6 @@ import './About.css'
 function About() {
     return (
         <React.Fragment>
-            {/* Stay up to date */}
-            <StayUpToDate />
-
             {/* The Neighborhood */}
             <TheNeighborhood />
             {/* Where We Act */}
@@ -24,30 +21,47 @@ function About() {
             <OurPrinciples />
             {/* Since March 2020 */}
             <Since />
+            {/* Stay up to date */}
+            <StayUpToDate />
 
         </React.Fragment>
     )
 }
 
-
+// Stay Up To Date
+const stayUpToDateIcons = [
+    {
+        component: <IconMailboxSVG />,
+        text: "Subscribe to our weekly newsletter",
+    },
+    {
+        component: <IconMessagesSVG />,
+        text: "Join the conversation on Slack",
+    },
+    {
+        component: <IconImageSVG />,
+        text: "Follow us on Instagram for updates",
+    },
+]
 function StayUpToDate() {
-    const icons = [
-        <IconImageSVG />,
-        <IconMailboxSVG />,
-        <IconMessagesSVG />,
-    ]
     return (
         <div className="row stay-up-to-date-row">
             <div className="row-container">
-                <p className="title">Stay up to date</p>
+                <div className="title">Stay up to date</div>
                 <div className="stayUpToDate-content">
-                    {icons.map((component, i) => (<div className="stayUpToDate-buttonWrapper" key={"stayUpToDate-buttonWrapper_" + i}>{component}</div>))}
+                    {stayUpToDateIcons.map(({ component, text }, i) => (
+                        <div className="responsive-tile stayUpToDate-buttonWrapper" key={"stayUpToDate-buttonWrapper_" + i}>
+                            <div className="stayUpToDate-icon-image">{component}</div>
+                            <div className="stayUpToDate-icon-text">{text}</div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
     )
 }
 
+// Since
 function Since() {
     return (
         <div className="row since-row">
@@ -91,7 +105,7 @@ function Since() {
                     </div>
                 </div>
                 <div className="people-holding-trash-image-wrapper" >
-                    {/* <PeopleHoldingTrashSVG className="people-holding-trash-svg"/> */}
+                    <PeopleHoldingTrashSVG className="people-holding-trash-svg"/>
                 </div>
             </div>
         </div>
