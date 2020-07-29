@@ -8,7 +8,7 @@ function Header({style, history}) {
 
     // Similar to componentDidMount and componentDidUpdate:
     useEffect(() => {
-      console.log(history)
+      console.debug(history)
       if (history.location === "/about") {
         debugger
         setColorScheme("rgb(241, 253, 247)")
