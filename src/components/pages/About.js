@@ -1,18 +1,23 @@
-import React, {ReactComponent} from 'react'
+import React from 'react'
 import { ButtonLink } from "../layout/buttons/ButtonLink.js"
-
+import './About.css'
 // Images
-import { ReactComponent as MapNeighborhoodSVG } from "../../assets/map-neighborhood.svg"
-import { ReactComponent as InstagramUpdatesSVG } from "../../assets/instagram-updates.svg"
-
-// TODO: Get better image of people holding trash
-import { ReactComponent as PeopleHoldingTrashSVG } from "../../assets/people-holding-trash.svg"
+// import peoplePassingBoxes from "../../assets/people-passing-boxes.svg"
+import peoplePassingBoxesPNG from "../../assets/people-passing-boxes.png"
+// import mapNeighborhoodSVG from "../../assets/map-neighborhood.svg"
+import mapNeighborhoodPNG from "../../assets/map-neighborhood.png"
+import instagramUpdatesSVG from "../../assets/instagram-updates.svg"
+// import instagramUpdatesPNG from "../../assets/instagram-updates.png"
+import peopleHoldingTrashSVG from "../../assets/people-holding-trash.svg"
+// import peopleHoldingTrashPNG from "../../assets/people-holding-trash.png"
+// Icons
 import { ReactComponent as IconImageSVG } from "../../assets/icons/icon-image.svg"
 import { ReactComponent as IconMailboxSVG } from "../../assets/icons/icon-mailbox.svg"
 import { ReactComponent as IconMessagesSVG } from "../../assets/icons/icon-messages.svg"
 
 
-import './About.css'
+// TODO: ENV VAR
+// const API_HOST = "http://localhost:3000"
 
 function About() {
     return (
@@ -28,7 +33,7 @@ function About() {
             {/* Stay up to date */}
             <StayUpToDate />
             {/* Instagram Updates */}
-            <InstagramUpdates/>
+            <InstagramUpdates />
         </React.Fragment>
     )
 }
@@ -36,7 +41,49 @@ function About() {
 /********************************  
 Components
 - TODO: Alt tags on images
-********************************/  
+********************************/
+
+
+// Component: The Neighborhood
+function TheNeighborhood() {
+    return (
+        <div className="row" id="the-neighborhood">
+            <div className="row-container flex-row" >
+                <div className="section">
+                    <img src={peoplePassingBoxesPNG} alt="people passing boxes" />
+                    {/* <PeoplePassingBoxes alt="people passing boxes"/> */}
+                </div>
+                <div className="section">
+                    <div className="section-title">We are neighbors in Clinton Hill and Fort Greene coming together to care for one another through the COVID-19 pandemic and beyond.</div>
+                    <div className="flex-row-wrap">
+                        <ButtonLink linkTo="/get-help" text="I need help" />
+                        <ButtonLink linkTo="/give-help" text="I can help" />
+                    </div>
+                    <p className="subtitle">Want to help financially? You can <b><u>donate</u></b> to our Mutual Aid Fund—100% of funds raised go towards purchasing essentials for people in the community.</p>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+// Component: Where We Act
+function WhereWeAct() {
+    return (
+        <div className="row" id="where-we-act">
+            <div className="row-container flex-row">
+                <div className="section">
+                    <div className="title">Where we act</div>
+                    <p>We live and act in the neighborhoods of Clinton Hill and Fort Greene in Brooklyn. If you’re outside this area, you can find a group closer to you through <b><u>Mutual Aid NYC</u></b>.</p>
+                </div>
+                <div className="section">
+                    {/* <img src="/static/media/map-neighborhood.318016cf.svg" style={{ width: "100%", minWidth: "380px" }}/> */}
+                    <img src={mapNeighborhoodPNG} style={{ width: "100%", minWidth: "380px" }} />
+                    {/* <MapNeighborhoodSVG style={{ width: "100%", minWidth: "380px" }} /> */}
+                </div>
+            </div>
+        </div>
+    )
+}
 
 /********************************  
 Component: InstagramUpdate
@@ -48,9 +95,10 @@ function InstagramUpdates() {
         <div className="row">
             <div className="row-container">
                 <div className="title">Instagram updates</div>
-                <div className="subtitle" style={{maxWidth: "720px", marginBottom: "60px"}}>Share photos of you taking action and tag us so that we can share with the community! (Of course, only take and share photos of others with their consent.)</div>
+                <div className="subtitle" style={{ maxWidth: "720px", marginBottom: "60px" }}>Share photos of you taking action and tag us so that we can share with the community! (Of course, only take and share photos of others with their consent.)</div>
                 {/* TODO: Instagram tiles? */}
-                <InstagramUpdatesSVG alt="instagram updates" style={{width: "100%"}} />
+                <img src={instagramUpdatesSVG} alt="instagram updates" style={{ width: "100%" }} />
+                {/* <InstagramUpdatesSVG alt="instagram updates" style={{width: "100%"}} /> */}
             </div>
         </div>
     )
@@ -139,7 +187,8 @@ function Since() {
                     </div>
                 </div>
                 <div className="people-holding-trash-image-wrapper" >
-                    <PeopleHoldingTrashSVG className="people-holding-trash-svg" alt="people holding trash"/>
+                    <img src={peopleHoldingTrashSVG} className="people-holding-trash-svg" alt="people holding trash" />
+                    {/* <PeopleHoldingTrashSVG className="people-holding-trash-svg" alt="people holding trash" /> */}
                 </div>
             </div>
         </div>
@@ -163,43 +212,6 @@ function OurPrinciples() {
         </div>
     )
 }
-
-// Component: The Neighborhood
-function TheNeighborhood() {
-    return (
-        <div className="row" id="the-neighborhood">
-            <div className="row-container flex-row">
-                <div className="section">Picture Here</div>
-                <div className="section">
-                    <div className="section-title">We are neighbors in Clinton Hill and Fort Greene coming together to care for one another through the COVID-19 pandemic and beyond.</div>
-                    <div className="flex-row-wrap">
-                        <ButtonLink linkTo="/get-help" text="I need help" />
-                        <ButtonLink linkTo="/give-help" text="I can help" />
-                    </div>
-                    <p className="subtitle">Want to help financially? You can <b><u>donate</u></b> to our Mutual Aid Fund—100% of funds raised go towards purchasing essentials for people in the community.</p>
-                </div>
-            </div>
-        </div>
-    )
-}
-
-// Component: Where We Act
-function WhereWeAct() {
-    return (
-        <div className="row" id="where-we-act">
-            <div className="row-container flex-row">
-                <div className="section">
-                    <div className="title">Where we act</div>
-                    <p>We live and act in the neighborhoods of Clinton Hill and Fort Greene in Brooklyn. If you’re outside this area, you can find a group closer to you through <b><u>Mutual Aid NYC</u></b>.</p>
-                </div>
-                <div className="section">
-                    <MapNeighborhoodSVG style={{ width: "100%", minWidth: "380px" }} />
-                </div>
-            </div>
-        </div>
-    )
-}
-
 
 export default About;
 
