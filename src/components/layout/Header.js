@@ -23,7 +23,7 @@ function Header({style, history}) {
           <li className="link"><NavLink to="/get-help"  activeClassName='is-active'>Get Help</NavLink></li>
           {/* <li className="link"><NavLink to="/give-help"  activeClassName='is-active'>Give Help</NavLink></li> */}
           {/* <li className="link"><NavLink to="/donate"  activeClassName='is-active'>Donate</NavLink></li> */}
-          {/* <li className="link"><NavLink to="/" className="link"><MagnifyingGlass style={{margin: "7px 0 0 0"}}/></NavLink></li> */}
+          {/* <li className="link"><NavLink to="/" className="link"><MagnifyingGlassSVG style={{margin: "7px 0 0 0"}}/></NavLink></li> */}
         </ul>
       </nav>
     </header>

@@ -1,3 +1,65 @@
 .btns-container {
     display: flex;
 }
+
+.since-content {
+    flex: 1 1;
+}
+
+.since-title {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+}
+
+.since-subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.since-items-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.since-item {
+    flex: 1 0 45%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.since-item-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+    text-transform: capitalize;
+}
+
+.since-item-description {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* Images */
+.people-holding-trash-image-wrapper {
+    display: flex;
+    align-items: flex-end;
+    flex: .33;
+    position: relative;
+}
+
+.people-holding-trash-svg{
+    position: absolute;
+    bottom: -20%;
+    z-index: -9999;
+}
