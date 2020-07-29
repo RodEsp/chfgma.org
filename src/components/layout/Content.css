@@ -14,14 +14,15 @@ Rows
     background-color: #F1FDF7;
 }
 .row:not(:first-child):not(:last-child) {
-    clip-path: polygon(0 10px, 100% 0%, 100% calc(100% - 10px), 0% 100%);
+    clip-path: polygon(0 calc(0% + 10px), 100% 0%, 100% calc(100% - 10px), 0% 100%);
+    margin: -10px 0;
 }
 .row:first-child {
     clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 10px), 0% 100%);
     /* clip-path: polygon(0 0, 100% 0%, 100% 97%, 0% 100%); */
 }
 .row:last-child {
-    clip-path: polygon(0 10px, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 calc(0% + 10px), 100% 0%, 100% 100%, 0% 100%);
 }
 .row-container {
     text-align: left;

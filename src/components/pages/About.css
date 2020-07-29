@@ -18,9 +18,11 @@ General
     display: flex;
 }
 
-/********************************  
-Component: Stay up to date component 
+/******************************** 
+Components
 ********************************/
+
+/* Component: Stay up to date component */
 
 .stayUpToDate-content {
     width: 100%;
@@ -31,7 +33,7 @@ Component: Stay up to date component
     min-width: 300px;
 }
 
-.stayUpToDate-buttonWrapper {
+.stayUpToDate-tile {
     background-color: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
@@ -41,16 +43,10 @@ Component: Stay up to date component
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-
-    /* height: 100%; */
-
     padding: 5%;
 }
 
-/********************************
-Component: Since Component 
-********************************/
+/* Component: Since Component  */
 
 .since-content {
     flex: 1 1;
@@ -95,7 +91,9 @@ Component: Since Component
     line-height: 28px;
 }
 
-/* Images */
+/********************************
+Images 
+********************************/
 
 .people-holding-trash-image-wrapper {
     display: flex;

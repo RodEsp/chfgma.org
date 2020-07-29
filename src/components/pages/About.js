@@ -28,7 +28,12 @@ function About() {
     )
 }
 
-// Stay Up To Date
+/********************************  
+Component: Stay Up To Date
+TODO: 
+- stayUpToDate-tile should be a button
+********************************/
+
 const stayUpToDateIcons = [
     {
         component: <IconMailboxSVG />,
@@ -50,7 +55,7 @@ function StayUpToDate() {
                 <div className="title">Stay up to date</div>
                 <div className="stayUpToDate-content">
                     {stayUpToDateIcons.map(({ component, text }, i) => (
-                        <div className="responsive-tile stayUpToDate-buttonWrapper" key={"stayUpToDate-buttonWrapper_" + i}>
+                        <div className="responsive-tile stayUpToDate-tile" key={"stayUpToDate-tile-" + i}>
                             <div className="stayUpToDate-icon-image">{component}</div>
                             <div className="stayUpToDate-icon-text">{text}</div>
                         </div>
