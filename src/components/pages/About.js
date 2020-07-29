@@ -1,12 +1,16 @@
-import React from 'react'
+import React, {ReactComponent} from 'react'
 import { ButtonLink } from "../layout/buttons/ButtonLink.js"
 
+// Images
 import { ReactComponent as MapNeighborhoodSVG } from "../../assets/map-neighborhood.svg"
+import { ReactComponent as InstagramUpdatesSVG } from "../../assets/instagram-updates.svg"
+
 // TODO: Get better image of people holding trash
 import { ReactComponent as PeopleHoldingTrashSVG } from "../../assets/people-holding-trash.svg"
 import { ReactComponent as IconImageSVG } from "../../assets/icons/icon-image.svg"
 import { ReactComponent as IconMailboxSVG } from "../../assets/icons/icon-mailbox.svg"
 import { ReactComponent as IconMessagesSVG } from "../../assets/icons/icon-messages.svg"
+
 
 import './About.css'
 
@@ -23,10 +27,35 @@ function About() {
             <Since />
             {/* Stay up to date */}
             <StayUpToDate />
-
+            {/* Instagram Updates */}
+            <InstagramUpdates/>
         </React.Fragment>
     )
 }
+
+/********************************  
+Components
+- TODO: Alt tags on images
+********************************/  
+
+/********************************  
+Component: InstagramUpdate
+TODO: 
+- Instagram tiles
+********************************/
+function InstagramUpdates() {
+    return (
+        <div className="row">
+            <div className="row-container">
+                <div className="title">Instagram updates</div>
+                <div className="subtitle" style={{maxWidth: "720px", marginBottom: "60px"}}>Share photos of you taking action and tag us so that we can share with the community! (Of course, only take and share photos of others with their consent.)</div>
+                {/* TODO: Instagram tiles? */}
+                <InstagramUpdatesSVG alt="instagram updates" style={{width: "100%"}} />
+            </div>
+        </div>
+    )
+}
+
 
 /********************************  
 Component: Stay Up To Date
@@ -51,7 +80,7 @@ const stayUpToDateIcons = [
 function StayUpToDate() {
     return (
         <div className="row stay-up-to-date-row">
-            <div className="row-container">
+            <div className="row-container flex-row">
                 <div className="title">Stay up to date</div>
                 <div className="stayUpToDate-content">
                     {stayUpToDateIcons.map(({ component, text }, i) => (
@@ -70,7 +99,7 @@ function StayUpToDate() {
 function Since() {
     return (
         <div className="row since-row">
-            <div className="row-container">
+            <div className="row-container flex-row">
                 <div className="since-content" >
                     <div className="title">Since March 2020</div>
                     <p className="since-subtitle">In just a few short months, we’ve done a lot together—and this is just the start. These numbers were last updated on July 8, 2020.</p>
@@ -110,22 +139,24 @@ function Since() {
                     </div>
                 </div>
                 <div className="people-holding-trash-image-wrapper" >
-                    <PeopleHoldingTrashSVG className="people-holding-trash-svg"/>
+                    <PeopleHoldingTrashSVG className="people-holding-trash-svg" alt="people holding trash"/>
                 </div>
             </div>
         </div>
     )
 }
 
+// Component: Our Principles
+const principles = [{ title: "Principle ipsum lorem ipsum dolor sit amet", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }, { title: "Principle ipsum lorem ipsum dolor sit amet", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }, { title: "Principle ipsum lorem ipsum dolor sit amet", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }, { title: "Principle ipsum lorem ipsum dolor sit amet", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }, { title: "Principle ipsum lorem ipsum dolor sit amet", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }]
 function OurPrinciples() {
     return (
         <div className="row" id="our-principles">
-            <div className="row-container" >
+            <div className="row-container flex-row" >
                 <p className="title">Our principles</p>
                 {principles.map(({ title, description }, i) => (
-                    <div className="principle-container" key={"our-principles-" + i} style={principleStyles.container}>
-                        <div className="principle-name" style={principleStyles.name}>{title}</div>
-                        <div className="principle-description" style={principleStyles.description}>{description}</div>
+                    <div className="ourPrinciples-container" key={"our-principles-" + i}>
+                        <div className="ourPrinciples-name">{title}</div>
+                        <div className="ourPrinciples-description">{description}</div>
                     </div>
                 ))}
             </div>
@@ -133,80 +164,32 @@ function OurPrinciples() {
     )
 }
 
-// Principles
-const principles = [{ title: "Principle ipsum lorem ipsum dolor sit amet", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }, { title: "Principle ipsum lorem ipsum dolor sit amet", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }, { title: "Principle ipsum lorem ipsum dolor sit amet", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }, { title: "Principle ipsum lorem ipsum dolor sit amet", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }, { title: "Principle ipsum lorem ipsum dolor sit amet", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }]
-const principleStyles = {
-    container: {
-        padding: "20px 0",
-        fontFamily: "Montserrat",
-        fontStyle: "normal",
-        color: "#212121",
-        borderTop: "2px solid #8F8F8F",
-        // width: "100%",
-        display: "flex",
-        flexDirection: "row",
-        flexWrap: "wrap",
-        justifyContent: "space-between",
-    },
-    name: {
-        fontWeight: "bold",
-        fontSize: "18px",
-        lineHeight: "28px",
-        textTransform: "capitalize",
-        flex: ".30",
-    },
-    description: {
-        fontWeight: "500",
-        fontSize: "18px",
-        lineHeight: "28px",
-        flex: ".60",
-    },
-}
-
-// Section
-const sectionTitle = {
-    fontFamily: "Montserrat",
-    fontStyle: "normal",
-    fontWeight: "500",
-    fontSize: "24px",
-    lineHeight: "38px",
-    color: "#212121",
-}
-
-const sectionSubtitle = {
-    fontFamily: "Montserrat",
-    fontStyle: "normal",
-    fontWeight: "500",
-    fontSize: "14px",
-    lineHeight: "24px",
-    color: "#212121",
-}
-
-
+// Component: The Neighborhood
 function TheNeighborhood() {
     return (
         <div className="row" id="the-neighborhood">
-            <div className="row-container">
+            <div className="row-container flex-row">
                 <div className="section">Picture Here</div>
                 <div className="section">
-                    <p style={sectionTitle}>We are neighbors in Clinton Hill and Fort Greene coming together to care for one another through the COVID-19 pandemic and beyond.</p>
-                    <div className="buttonsContainer">
+                    <div className="section-title">We are neighbors in Clinton Hill and Fort Greene coming together to care for one another through the COVID-19 pandemic and beyond.</div>
+                    <div className="flex-row-wrap">
                         <ButtonLink linkTo="/get-help" text="I need help" />
                         <ButtonLink linkTo="/give-help" text="I can help" />
                     </div>
-                    <p style={sectionSubtitle}>Want to help financially? You can <b><u>donate</u></b> to our Mutual Aid Fund—100% of funds raised go towards purchasing essentials for people in the community.</p>
+                    <p className="subtitle">Want to help financially? You can <b><u>donate</u></b> to our Mutual Aid Fund—100% of funds raised go towards purchasing essentials for people in the community.</p>
                 </div>
             </div>
         </div>
     )
 }
 
+// Component: Where We Act
 function WhereWeAct() {
     return (
         <div className="row" id="where-we-act">
-            <div className="row-container">
+            <div className="row-container flex-row">
                 <div className="section">
-                    <p className="title">Where we act</p>
+                    <div className="title">Where we act</div>
                     <p>We live and act in the neighborhoods of Clinton Hill and Fort Greene in Brooklyn. If you’re outside this area, you can find a group closer to you through <b><u>Mutual Aid NYC</u></b>.</p>
                 </div>
                 <div className="section">
@@ -216,6 +199,7 @@ function WhereWeAct() {
         </div>
     )
 }
+
 
 export default About;
 

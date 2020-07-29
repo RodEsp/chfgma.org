@@ -1,24 +1,4 @@
 /******************************** 
-General
-********************************/
-
-/* Title */
-
-.title {
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 41px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-/* Buttons */
-
-.buttonsContainer {
-    display: flex;
-}
-
-/******************************** 
 Components
 ********************************/
 
@@ -70,7 +50,7 @@ Components
     flex: 1 0 45%;
     display: flex;
     flex-direction: column;
-    margin: 40px 20px 40px 0;
+    margin: 20px 20px 20px 0;
 }
 
 .since-item-title {
@@ -91,6 +71,35 @@ Components
     line-height: 28px;
 }
 
+/* Component: Our Principles  */
+
+.ourPrinciples-container {
+    padding: 20px 0;
+    font-family: Montserrat;
+    font-style: normal;
+    color: #212121;
+    border-top: 2px solid #8F8F8F;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ourPrinciples-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    flex: .30;
+}
+
+.ourPrinciples-description {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    flex: .60;
+}
+
 /********************************
 Images 
 ********************************/
@@ -104,6 +113,6 @@ Images
 
 .people-holding-trash-svg {
     position: absolute;
-    bottom: -20%;
+    bottom: -105px;
     z-index: -9999;
 }

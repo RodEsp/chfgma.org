@@ -7,47 +7,100 @@
 /***************************** 
 Rows
 *****************************/
+
 .row {
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
+
 .row:nth-child(odd) {
     background-color: #F1FDF7;
 }
+
 .row:not(:first-child):not(:last-child) {
     clip-path: polygon(0 calc(0% + 10px), 100% 0%, 100% calc(100% - 10px), 0% 100%);
     margin: -10px 0;
 }
+
 .row:first-child {
     clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 10px), 0% 100%);
     /* clip-path: polygon(0 0, 100% 0%, 100% 97%, 0% 100%); */
 }
+
 .row:last-child {
     clip-path: polygon(0 calc(0% + 10px), 100% 0%, 100% 100%, 0% 100%);
 }
+
 .row-container {
+    max-width: 940px;
     text-align: left;
-    margin: 100px 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.row-container>.section {
+    flex: 1 0 50%;
+}
+
+/***************************** 
+Flex
+*****************************/
+
+.flex-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-items: space-between;
     align-items: space-between;
-    
 }
-.row-container > .section {
-    flex: 1 0 50%;
+
+.flex-row-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/***************************** 
+General
+*****************************/
+
+.title {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #212121;
+}
+
+.section-title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    color: #212121;
 }
 
 /* Polygons */
+
 .polygon {
     clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
 }
+
 .polygon-top {
     clip-path: polygon(0 0, 100% 0%, 100% 97%, 0% 100%);
 }
+
 .polygon-bottom {
     clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
 }
-
-
-
