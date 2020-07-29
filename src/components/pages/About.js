@@ -58,40 +58,40 @@ function Since() {
             <div className="row-container">
                 <div style={sinceStyles.content}>
                     <div style={sinceStyles.title}>Since March 2020</div>
-                    <div style={sinceStyles.subtitle}>In just a few short months, we’ve done a lot together—and this is just the start. These numbers were last updated on July 8, 2020.</div>
+                    <p style={sinceStyles.subtitle}>In just a few short months, we’ve done a lot together—and this is just the start. These numbers were last updated on July 8, 2020.</p>
                     <div style={sinceStyles.items}>
-                        <div style={sinceStyles.item}>
+                        <p style={sinceStyles.item}>
                             <div style={sinceStyles.itemTitle}>$44,997</div>
                             <div style={sinceStyles.itemDescription}>total contributed to our Mutual Aid Fund and Direct Action Funds</div>
-                        </div>
-                        <div style={sinceStyles.item}>
+                        </p>
+                        <p style={sinceStyles.item}>
                             <div style={sinceStyles.itemTitle}>10,000</div>
                             <div style={sinceStyles.itemDescription}>grocery packages delivered through our weekly collaboration with food pantries</div>
-                        </div>
-                        <div style={sinceStyles.item}>
+                        </p>
+                        <p style={sinceStyles.item}>
                             <div style={sinceStyles.itemTitle}>658</div>
                             <div style={sinceStyles.itemDescription}>requests fulfilled for groceries and essential supplies</div>
-                        </div>
-                        <div style={sinceStyles.item}>
+                        </p>
+                        <p style={sinceStyles.item}>
                             <div style={sinceStyles.itemTitle}>135+</div>
                             <div style={sinceStyles.itemDescription}>people attended training sessions</div>
-                        </div>
-                        <div style={sinceStyles.item}>
+                        </p>
+                        <p style={sinceStyles.item}>
                             <div style={sinceStyles.itemTitle}>533</div>
                             <div style={sinceStyles.itemDescription}>callbacks to requests on our hotline</div>
-                        </div>
-                        <div style={sinceStyles.item}>
+                        </p>
+                        <p style={sinceStyles.item}>
                             <div style={sinceStyles.itemTitle}>988</div>
                             <div style={sinceStyles.itemDescription}>people have joined our Slack community</div>
-                        </div>
-                        <div style={sinceStyles.item}>
+                        </p>
+                        <p style={sinceStyles.item}>
                             <div style={sinceStyles.itemTitle}>948</div>
                             <div style={sinceStyles.itemDescription}>wellness check calls made</div>
-                        </div>
-                        <div style={sinceStyles.item}>
+                        </p>
+                        <p style={sinceStyles.item}>
                             <div style={sinceStyles.itemTitle}>760</div>
                             <div style={sinceStyles.itemDescription}>people have followed our Instagram account</div>
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>

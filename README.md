@@ -37,6 +37,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+### `npm run deploy`
+
+Temporary Hosting: [Here](http://mutual-aid-website.s3-website-us-east-1.amazonaws.com/)
+
 ## File Structure
 
 ### [Inspired by Charles Stover Article](https://medium.com/@Charles_Stover/optimal-file-structure-for-react-applications-f3e35ad0a145)

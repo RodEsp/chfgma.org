@@ -33,11 +33,11 @@ Rows
     flex-direction: row;
     flex-wrap: wrap;
     justify-items: space-between;
+    align-items: space-between;
     
 }
 .row-container > .section {
-    flex: 1;
-    width: 100%;
+    flex: 1 0 50%;
 }
 
 /* Polygons */
