@@ -54,7 +54,6 @@ Components
 }
 
 .since-item-title {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 34px;
@@ -64,7 +63,6 @@ Components
 }
 
 .since-item-description {
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -75,7 +73,6 @@ Components
 
 .ourPrinciples-container {
     padding: 20px 0;
-    font-family: Montserrat;
     font-style: normal;
     color: #212121;
     border-top: 2px solid #8F8F8F;
@@ -115,4 +112,14 @@ Images
     position: absolute;
     bottom: -105px;
     z-index: -9999;
+}
+
+/******************************** 
+Inputs
+********************************/
+.btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }

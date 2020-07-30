@@ -20,7 +20,6 @@
 .home {
     flex: 1;
     text-align: left;   
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
     font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1440 - 300)));
@@ -28,7 +27,6 @@
 }
 
 .link {
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (1440 - 300)));
