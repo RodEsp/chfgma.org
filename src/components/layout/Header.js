@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink, BrowserRouter as Route, Switch, withRouter } from 'react-router-dom';
+import { NavLink, withRouter } from 'react-router-dom';
 
 import "./Header.css"
 

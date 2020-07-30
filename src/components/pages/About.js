@@ -43,15 +43,19 @@ function TheNeighborhood() {
         <div className="row" id="the-neighborhood">
             <div className="row-container flex-row" >
                 <div className="section">
-                    <img className="section-image" src={peoplePassingBoxesIMG} alt="people passing boxes" />
+                    <div className="section-content">
+                        <img className="section-image" src={peoplePassingBoxesIMG} alt="people passing boxes" />
+                    </div>
                 </div>
                 <div className="section">
-                    <div className="section-title">We are neighbors in Clinton Hill and Fort Greene coming together to care for one another through the COVID-19 pandemic and beyond.</div>
-                    <div className="flex-row-wrap">
-                        <ButtonLink linkTo="/get-help" text="I need help" />
-                        <ButtonLink linkTo="/give-help" text="I can help" />
+                    <div className="section-content">
+                        <div className="section-title">We are neighbors in Clinton Hill and Fort Greene coming together to care for one another through the COVID-19 pandemic and beyond.</div>
+                        <div className="flex-row-wrap">
+                            <ButtonLink linkTo="/get-help" text="I need help" />
+                            <ButtonLink linkTo="/give-help" text="I can help" />
+                        </div>
+                        <p className="subtitle">Want to help financially? You can <b><u>donate</u></b> to our Mutual Aid Fund—100% of funds raised go towards purchasing essentials for people in the community.</p>
                     </div>
-                    <p className="subtitle">Want to help financially? You can <b><u>donate</u></b> to our Mutual Aid Fund—100% of funds raised go towards purchasing essentials for people in the community.</p>
                 </div>
             </div>
         </div>
@@ -64,11 +68,15 @@ function WhereWeAct() {
         <div className="row" id="where-we-act">
             <div className="row-container flex-row">
                 <div className="section">
-                    <div className="title">Where we act</div>
-                    <p>We live and act in the neighborhoods of Clinton Hill and Fort Greene in Brooklyn. If you’re outside this area, you can find a group closer to you through <b><u>Mutual Aid NYC</u></b>.</p>
+                    <div className="section-content">
+                        <div className="title">Where we act</div>
+                        <p>We live and act in the neighborhoods of Clinton Hill and Fort Greene in Brooklyn. If you’re outside this area, you can find a group closer to you through <b><u>Mutual Aid NYC</u></b>.</p>
+                    </div>
                 </div>
                 <div className="section">
-                    <img className="section-image" src={mapNeighborhoodIMG} style={{ width: "100%", minWidth: "380px" }} />
+                    <div className="section-content">
+                        <img className="section-image" src={mapNeighborhoodIMG} style={{ width: "100%", minWidth: "380px" }} />
+                    </div>
                 </div>
             </div>
         </div>
