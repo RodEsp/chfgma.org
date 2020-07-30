@@ -7,6 +7,13 @@
     - [ ] Header
       - [ ] Set background-color based on react-router route
       - [ ] For the links, the line under them should be rounded and further down *(see mockups)*
+      - [ ] Link Animations
+        - [ ] Hover
+          - [ ] Before
+          - [ ] After
+          - [ ] Transition
+        - [ ] Click
+          - [ ] Transition
     - [ ] Footer
   - [ ] Pages
     - [X] Home/About Page
@@ -19,6 +26,9 @@
     - [ ] Give Help
     - [ ] Donate
     - [ ] Search
+  - [ ] Accessibility
+    - [ ] Links
+    - [ ] Images
 - [ ] Deploy Website
 - [ ] Security
   - [ ] CORS
@@ -27,6 +37,7 @@
 ## Next Version
 
 - [ ] SEO
+  - [ ] Add Microdata to phone numbers: http://thenewcode.com/536/Adding-Phone-Numbers-To-Web-Pages-With-HTML5-and-Microdata
 - [ ] Style Guide
   - [ ] Use Responsive Font-Size Function
 

@@ -1,0 +1,64 @@
+.footer {
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+    border-top: 1px solid #DBDBDB;
+    line-height: 28px;
+    /* Default Font Size */
+    font-size: calc(12px + (14 - 12) * ((100vw - 300px) / (1440 - 300)));
+}
+
+.footer-content-wrapper {
+    margin: 40px 36px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-stay-connected {
+    flex: 1 0 50%;
+}
+.footer-contact-info {
+    flex: 1 1 50%;
+}
+
+.footer-title {
+    margin-bottom: 7px;
+}
+
+/* Stay Connected */
+.footer-stay-connected-mutual-aid {
+    font-weight: bold;
+    /* font-size: 18px; */
+    font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (1440 - 300)));
+    font-weight: 600;
+}
+
+/* Contact Info */
+.footer-contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-contact-info-section {
+    white-space: nowrap;
+    padding-right: 10px;
+}
+
+.footer-contact-info-title {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    /* font-size: 14px; */
+    font-size: calc(10px + (14 - 10) * ((100vw - 300px) / (1440 - 300)));
+    line-height: 28px;
+    color: #7A7A7A;
+}
+
+.footer-contact-info-social-media-icons-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+

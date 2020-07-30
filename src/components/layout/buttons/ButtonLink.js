@@ -25,6 +25,7 @@ const buttonLinkStyle = {
     lineHeight: "22px",
     color: "#FFFFFF",
     textAlign: "center",
+    whiteSpace: "nowrap",
 
     flex: ".5",
     margin: "10px",

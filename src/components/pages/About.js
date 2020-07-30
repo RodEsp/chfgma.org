@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import { ButtonLink } from "../layout/buttons/ButtonLink.js"
 // Styles
 import './About.css'
@@ -50,11 +51,11 @@ function TheNeighborhood() {
                 <div className="section">
                     <div className="section-content">
                         <div className="section-title">We are neighbors in Clinton Hill and Fort Greene coming together to care for one another through the COVID-19 pandemic and beyond.</div>
-                        <div className="flex-row-wrap">
+                        <div className="btn-wrapper">
                             <ButtonLink linkTo="/get-help" text="I need help" />
                             <ButtonLink linkTo="/give-help" text="I can help" />
                         </div>
-                        <p className="subtitle">Want to help financially? You can <b><u>donate</u></b> to our Mutual Aid Fund—100% of funds raised go towards purchasing essentials for people in the community.</p>
+                        <p className="subtitle">Want to help financially? You can <NavLink to="/donate" exact={true}><b><u>donate</u></b></NavLink> to our Mutual Aid Fund—100% of funds raised go towards purchasing essentials for people in the community.</p>
                     </div>
                 </div>
             </div>
@@ -75,7 +76,7 @@ function WhereWeAct() {
                 </div>
                 <div className="section">
                     <div className="section-content">
-                        <img className="section-image" src={mapNeighborhoodIMG} style={{ width: "100%", minWidth: "380px" }} />
+                        <img className="section-image" src={mapNeighborhoodIMG} />
                     </div>
                 </div>
             </div>

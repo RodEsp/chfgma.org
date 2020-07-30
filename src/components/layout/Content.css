@@ -45,6 +45,7 @@ Rows
     display: flex;
     justify-content: center;
     align-content: center;
+    align-items: center;
 }
 
 .section > .section-content {
@@ -71,11 +72,7 @@ Flex
     align-items: space-between;
 }
 
-.flex-row-wrap {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+
 
 /***************************** 
 General
@@ -90,7 +87,6 @@ General
 }
 
 .subtitle {
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -99,7 +95,6 @@ General
 }
 
 .section-title {
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
