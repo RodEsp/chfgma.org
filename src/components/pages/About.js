@@ -1,23 +1,16 @@
 import React from 'react'
 import { ButtonLink } from "../layout/buttons/ButtonLink.js"
+// Styles
 import './About.css'
 // Images
-// import peoplePassingBoxes from "../../assets/people-passing-boxes.svg"
-import peoplePassingBoxesPNG from "../../assets/people-passing-boxes.png"
-// import mapNeighborhoodSVG from "../../assets/map-neighborhood.svg"
-import mapNeighborhoodPNG from "../../assets/map-neighborhood.png"
-import instagramUpdatesSVG from "../../assets/instagram-updates.svg"
-// import instagramUpdatesPNG from "../../assets/instagram-updates.png"
-import peopleHoldingTrashSVG from "../../assets/people-holding-trash.svg"
-// import peopleHoldingTrashPNG from "../../assets/people-holding-trash.png"
+import peoplePassingBoxesIMG from "../../assets/people-passing-boxes.png"
+import mapNeighborhoodIMG from "../../assets/map-neighborhood.png"
+import instagramUpdatesIMG from "../../assets/instagram-updates.png"
+import peopleHoldingTrashIMG from "../../assets/people-holding-trash.png"
 // Icons
-import { ReactComponent as IconImageSVG } from "../../assets/icons/icon-image.svg"
-import { ReactComponent as IconMailboxSVG } from "../../assets/icons/icon-mailbox.svg"
-import { ReactComponent as IconMessagesSVG } from "../../assets/icons/icon-messages.svg"
-
-
-// TODO: ENV VAR
-// const API_HOST = "http://localhost:3000"
+import iconPicIMG from "../../assets/icons/icon-pic.png"
+import iconMailboxIMG from "../../assets/icons/icon-mailbox.png"
+import iconMessagesIMG from "../../assets/icons/icon-message.png"
 
 function About() {
     return (
@@ -50,8 +43,7 @@ function TheNeighborhood() {
         <div className="row" id="the-neighborhood">
             <div className="row-container flex-row" >
                 <div className="section">
-                    <img src={peoplePassingBoxesPNG} alt="people passing boxes" />
-                    {/* <PeoplePassingBoxes alt="people passing boxes"/> */}
+                    <img className="section-image" src={peoplePassingBoxesIMG} alt="people passing boxes" />
                 </div>
                 <div className="section">
                     <div className="section-title">We are neighbors in Clinton Hill and Fort Greene coming together to care for one another through the COVID-19 pandemic and beyond.</div>
@@ -76,9 +68,7 @@ function WhereWeAct() {
                     <p>We live and act in the neighborhoods of Clinton Hill and Fort Greene in Brooklyn. If you’re outside this area, you can find a group closer to you through <b><u>Mutual Aid NYC</u></b>.</p>
                 </div>
                 <div className="section">
-                    {/* <img src="/static/media/map-neighborhood.318016cf.svg" style={{ width: "100%", minWidth: "380px" }}/> */}
-                    <img src={mapNeighborhoodPNG} style={{ width: "100%", minWidth: "380px" }} />
-                    {/* <MapNeighborhoodSVG style={{ width: "100%", minWidth: "380px" }} /> */}
+                    <img className="section-image" src={mapNeighborhoodIMG} style={{ width: "100%", minWidth: "380px" }} />
                 </div>
             </div>
         </div>
@@ -97,8 +87,7 @@ function InstagramUpdates() {
                 <div className="title">Instagram updates</div>
                 <div className="subtitle" style={{ maxWidth: "720px", marginBottom: "60px" }}>Share photos of you taking action and tag us so that we can share with the community! (Of course, only take and share photos of others with their consent.)</div>
                 {/* TODO: Instagram tiles? */}
-                <img src={instagramUpdatesSVG} alt="instagram updates" style={{ width: "100%" }} />
-                {/* <InstagramUpdatesSVG alt="instagram updates" style={{width: "100%"}} /> */}
+                <img className="section-image" src={instagramUpdatesIMG} alt="instagram updates" />
             </div>
         </div>
     )
@@ -113,15 +102,18 @@ TODO:
 
 const stayUpToDateIcons = [
     {
-        component: <IconMailboxSVG />,
+        image: iconMailboxIMG,
+        alt: "mailbox icon",
         text: "Subscribe to our weekly newsletter",
     },
     {
-        component: <IconMessagesSVG />,
+        image: iconMessagesIMG,
+        alt: "message icon",
         text: "Join the conversation on Slack",
     },
     {
-        component: <IconImageSVG />,
+        image: iconPicIMG,
+        alt: "picture icon",
         text: "Follow us on Instagram for updates",
     },
 ]
@@ -131,9 +123,11 @@ function StayUpToDate() {
             <div className="row-container flex-row">
                 <div className="title">Stay up to date</div>
                 <div className="stayUpToDate-content">
-                    {stayUpToDateIcons.map(({ component, text }, i) => (
+                    {stayUpToDateIcons.map(({ image, text, alt }, i) => (
                         <div className="responsive-tile stayUpToDate-tile" key={"stayUpToDate-tile-" + i}>
-                            <div className="stayUpToDate-icon-image">{component}</div>
+                            <div className="stayUpToDate-icon-image">
+                                <img src={image} alt={alt} />
+                            </div>
                             <div className="stayUpToDate-icon-text">{text}</div>
                         </div>
                     ))}
@@ -187,8 +181,8 @@ function Since() {
                     </div>
                 </div>
                 <div className="people-holding-trash-image-wrapper" >
-                    <img src={peopleHoldingTrashSVG} className="people-holding-trash-svg" alt="people holding trash" />
-                    {/* <PeopleHoldingTrashSVG className="people-holding-trash-svg" alt="people holding trash" /> */}
+                    <img src={peopleHoldingTrashIMG} className="people-holding-trash-svg" alt="people holding trash" />
+                    {/* <peopleHoldingTrashIMG className="people-holding-trash-svg" alt="people holding trash" /> */}
                 </div>
             </div>
         </div>
