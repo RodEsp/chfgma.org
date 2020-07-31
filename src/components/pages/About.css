@@ -1,10 +1,33 @@
+/********************************
+Layout
+********************************/
+
+/* Row */
+
+.about .row:nth-child(odd) {
+    background-color: #F1FDF7;
+}
+
+.about .row:not(:first-child):not(:last-child) {
+    clip-path: polygon(0 calc(0% + 10px), 100% 0%, 100% calc(100% - 10px), 0% 100%);
+    margin: -10px 0;
+}
+
+.about .row:first-child {
+    clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 10px), 0% 100%);
+}
+
+.about .row:last-child {
+    clip-path: polygon(0 calc(0% + 10px), 100% 0%, 100% 100%, 0% 100%);
+}
+
 /******************************** 
 Components
 ********************************/
 
 /* Component: Stay up to date component */
 
-.stayUpToDate-content {
+.about .stayUpToDate-content {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -13,7 +36,7 @@ Components
     min-width: 300px;
 }
 
-.stayUpToDate-tile {
+.about .stayUpToDate-tile {
     background-color: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
@@ -28,17 +51,17 @@ Components
 
 /* Component: Since Component  */
 
-.since-content {
+.about .since-content {
     flex: 1 1;
 }
 
-.since-subtitle {
+.about .since-subtitle {
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
 }
 
-.since-items-wrapper {
+.about .since-items-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -46,14 +69,14 @@ Components
     flex: 1;
 }
 
-.since-item {
+.about .since-item {
     flex: 1 0 45%;
     display: flex;
     flex-direction: column;
     margin: 20px 20px 20px 0;
 }
 
-.since-item-title {
+.about .since-item-title {
     font-style: normal;
     font-weight: bold;
     font-size: 34px;
@@ -62,7 +85,7 @@ Components
     margin-bottom: 5px;
 }
 
-.since-item-description {
+.about .since-item-description {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -71,7 +94,7 @@ Components
 
 /* Component: Our Principles  */
 
-.ourPrinciples-container {
+.about .ourPrinciples-container {
     padding: 20px 0;
     font-style: normal;
     color: #212121;
@@ -82,7 +105,7 @@ Components
     justify-content: space-between;
 }
 
-.ourPrinciples-name {
+.about .ourPrinciples-name {
     font-weight: bold;
     font-size: 18px;
     line-height: 28px;
@@ -90,7 +113,7 @@ Components
     flex: .30;
 }
 
-.ourPrinciples-description {
+.about .ourPrinciples-description {
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
@@ -101,14 +124,14 @@ Components
 Images 
 ********************************/
 
-.people-holding-trash-image-wrapper {
+.about .people-holding-trash-image-wrapper {
     display: flex;
     align-items: flex-end;
     flex: .33;
     position: relative;
 }
 
-.people-holding-trash-svg {
+.about .people-holding-trash-svg {
     position: absolute;
     bottom: -105px;
     z-index: -9999;
@@ -117,9 +140,11 @@ Images
 /******************************** 
 Inputs
 ********************************/
-.btn-wrapper {
+
+.about .btn-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 20px 0;
 }

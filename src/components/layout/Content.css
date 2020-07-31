@@ -15,23 +15,6 @@ Rows
     padding: 0 calc(10px + (10 - 10) * ((100vw - 300px) / (1600 - 300)))
 }
 
-.row:nth-child(odd) {
-    background-color: #F1FDF7;
-}
-
-.row:not(:first-child):not(:last-child) {
-    clip-path: polygon(0 calc(0% + 10px), 100% 0%, 100% calc(100% - 10px), 0% 100%);
-    margin: -10px 0;
-}
-
-.row:first-child {
-    clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 10px), 0% 100%);
-}
-
-.row:last-child {
-    clip-path: polygon(0 calc(0% + 10px), 100% 0%, 100% 100%, 0% 100%);
-}
-
 .row-container {
     width: 100%;
     max-width: 940px;
@@ -100,6 +83,11 @@ General
     font-size: 24px;
     line-height: 38px;
     color: #212121;
+}
+
+.text-important {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 /* Polygons */

@@ -39,8 +39,14 @@ a {
 }
 
 .is-active {
-    color: #009E78;
-    border-bottom: 5px solid #009E78;
     border-bottom-left-radius: 10;
     border-top-left-radius: 10%;
+}
+.is-active.about-link {
+    color: #009E78;
+    border-bottom: 5px solid #009E78;
+}
+.is-active.get-help-link {
+    color: #432BFA;
+    border-bottom: 5px solid #432BFA;
 }

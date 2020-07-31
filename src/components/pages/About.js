@@ -13,9 +13,10 @@ import iconPicIMG from "../../assets/icons/icon-pic.png"
 import iconMailboxIMG from "../../assets/icons/icon-mailbox.png"
 import iconMessagesIMG from "../../assets/icons/icon-message.png"
 
-function About() {
+function About({style}) {
+    console.debug("About :::", style)
     return (
-        <React.Fragment>
+        <div className="about">
             {/* The Neighborhood */}
             <TheNeighborhood />
             {/* Where We Act */}
@@ -28,7 +29,7 @@ function About() {
             <StayUpToDate />
             {/* Instagram Updates */}
             <InstagramUpdates />
-        </React.Fragment>
+        </div>
     )
 }
 
@@ -52,8 +53,8 @@ function TheNeighborhood() {
                     <div className="section-content">
                         <div className="section-title">We are neighbors in Clinton Hill and Fort Greene coming together to care for one another through the COVID-19 pandemic and beyond.</div>
                         <div className="btn-wrapper">
-                            <ButtonLink linkTo="/get-help" text="I need help" />
-                            <ButtonLink linkTo="/give-help" text="I can help" />
+                            <ButtonLink linkTo="/get-help" text="I need help" styles={{backgroundColor: "#009E78"}}/>
+                            <ButtonLink linkTo="/give-help" text="I can help" styles={{backgroundColor: "#009E78"}}/>
                         </div>
                         <p className="subtitle">Want to help financially? You can <NavLink to="/donate" exact={true}><b><u>donate</u></b></NavLink> to our Mutual Aid Fund—100% of funds raised go towards purchasing essentials for people in the community.</p>
                     </div>
@@ -76,7 +77,7 @@ function WhereWeAct() {
                 </div>
                 <div className="section">
                     <div className="section-content">
-                        <img className="section-image" src={mapNeighborhoodIMG} />
+                        <img className="section-image" src={mapNeighborhoodIMG} alt="map of neighborhood" />
                     </div>
                 </div>
             </div>
