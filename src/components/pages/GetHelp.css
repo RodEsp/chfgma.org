@@ -1,0 +1,30 @@
+.get-help .jumbo-title {
+    background-color: rgb(247, 246, 255);
+}
+
+.get-help .text-group {
+    margin-bottom: 60px;
+}
+
+.get-help .text-group p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.get-help .header1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 41px;
+    margin-bottom: 60px;
+}
+
+.get-help .text-group .header2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+}
