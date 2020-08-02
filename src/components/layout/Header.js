@@ -24,8 +24,8 @@ function Header() {
           <li className="home"><NavLink to="/" exact={true}>Clinton Hill Fort Greene Mutual Aid</NavLink></li>
           <li className="link"><NavLink to="/" exact={true} className="about-link" activeClassName='is-active'>About</NavLink></li>
           <li className="link"><NavLink to="/get-help" className="get-help-link" activeClassName='is-active'>Get Help</NavLink></li>
-          {/* <li className="link"><NavLink to="/give-help"  activeClassName='is-active'>Give Help</NavLink></li> */}
-          {/* <li className="link"><NavLink to="/donate"  activeClassName='is-active'>Donate</NavLink></li> */}
+          <li className="link"><NavLink to="/give-help"  className="give-help-link" activeClassName='is-active'>Give Help</NavLink></li>
+          <li className="link"><NavLink to="/donate"  activeClassName='is-active'>Donate</NavLink></li>
           {/* <li className="link"><NavLink to="/" className="link"><MagnifyingGlassSVG style={{margin: "7px 0 0 0"}}/></NavLink></li> */}
         </ul>
       </nav>
@@ -53,6 +53,11 @@ function getColorScheme(pathname) {
     return {
       primary: "rgb(247, 246, 255)",
       secondary: "#432BFA",
+    }
+  } else if (pathname === "/give-help") {
+    return {
+      primary: "#FFF2FA",
+      secondary: "#D61087",
     }
   } else {
     console.error("Error while setting background color: invalid history location")

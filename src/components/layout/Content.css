@@ -12,7 +12,16 @@ Rows
     flex: 1;
     display: flex;
     justify-content: center;
-    padding: 0 calc(10px + (10 - 10) * ((100vw - 300px) / (1600 - 300)))
+    padding: 0 2em;
+}
+
+.row.jumbo-title {
+    padding: 3em 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
 }
 
 .row-container {
@@ -23,19 +32,28 @@ Rows
     justify-content: space-between;
 }
 
-.row-container > .section {
-    flex: 1 1 48%;
+.row-container>.section {
+    flex: 1 1 calc(450px - 1em);
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-items: center;
+    align-items: center;
+    max-width: calc(450px - 1em);
+}
+
+.row-container>.section.y-center {
     align-items: center;
 }
 
-.section > .section-content {
+.section>.section-content {
     min-width: 200px;
     width: 100%;
-    max-width: 380px;
     flex-direction: column;
+    margin: 0 auto;
+    max-width: 460px;
+}
+
+.section.align-items-flex-start {
+    align-items: flex-start;
 }
 
 .section-image {
@@ -55,10 +73,55 @@ Flex
     align-items: space-between;
 }
 
-
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
 
 /***************************** 
-General
+Text Group
+*****************************/
+
+.text-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-group.y-center {
+    justify-content: center;
+}
+
+/* font-size: 34px */
+
+.header1, .text-group h1, .text-group .header1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc(29px + (34 - 29) * ((100vw - 300px) / (1440 - 300)));
+    /* font-size: 34px; */
+    line-height: 41px;
+}
+
+/* font-size: 24px */
+
+.header2, .text-group h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc(21px + (24 - 21) * ((100vw - 300px) / (1440 - 300)));
+    line-height: 28px;
+    text-transform: capitalize;
+}
+
+/* font-size: 18px */
+
+.standard-text, .text-group p, .text-group ul {
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1440 - 300)));
+    line-height: 28px;
+}
+
+/***************************** 
+Pages
 *****************************/
 
 .title {
@@ -90,6 +153,20 @@ General
     text-decoration: underline;
 }
 
+/***************************** 
+Tiles 
+*****************************/
+
+.tiles-container {
+    display: flex;
+    flex-direction: space-between;
+}
+
+.tiles-container>.tile {
+    width: 100%;
+    text-align: center;
+}
+
 /* Polygons */
 
 .polygon {
@@ -102,4 +179,33 @@ General
 
 .polygon-bottom {
     clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+/***************************** 
+Split
+*****************************/
+
+.split-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: calc(10px + (100 - 10) * ((100vw - 768px) / (1600 - 300)));
+}
+
+@media screen and (max-width: 768px) {
+    .split-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.split-wrapper>.split-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.split-wrapper>.split-col>.split-col-img {
+    width: 100%;
+}
+
+.split-wrapper>.split-col.y-center {
+    justify-content: center;
 }

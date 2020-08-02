@@ -50,3 +50,7 @@ a {
     color: #432BFA;
     border-bottom: 5px solid #432BFA;
 }
+.is-active.give-help-link {
+    color: #D61087;
+    border-bottom: 5px solid #D61087;
+}

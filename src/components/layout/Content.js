@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import About from '../pages/About.js'
 import GetHelp from '../pages/GetHelp.js'
+import GiveHelp from '../pages/GiveHelp.js'
 import './Content.css'
 
 function Content() {
@@ -11,7 +12,7 @@ function Content() {
           <Route exact path="/"><About/></Route>
           <Route exact path="/about"><About/></Route>
           <Route exact path="/get-help" component={GetHelp}/>
-          <Route exact path="/give-help">Give Help Placeholder</Route>
+          <Route exact path="/give-help" component={GiveHelp}/>
           <Route exact path="/donate">Donate Placeholder</Route>
           <Route component={About}/>
         </Switch>
