@@ -90,6 +90,49 @@ Text Group
 .text-group.y-center {
     justify-content: center;
 }
+.text-group.padded {
+    padding: 40px 0 0 0;
+}
+
+/***************************** 
+Text Box
+*****************************/
+
+.text-box {
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding: 48px 40px 40px 40px;
+}
+
+.text-box.y-space-evenly {
+    justify-content: space-evenly;
+}
+
+.text-box.y-space-between {
+    justify-content: space-between;
+}
+
+.text-box .title {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.text-box .list {
+    padding-left: 1.5em;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+/* Bold */
+
+.bold {
+    font-weight: bold;
+}
+
 
 /* font-size: 34px */
 

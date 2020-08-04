@@ -91,7 +91,7 @@ function InstagramUpdates() {
         <div className="row">
             <div className="row-container">
                 <div className="title">Instagram updates</div>
-                <div className="subtitle" style={{ maxWidth: "720px", marginBottom: "60px" }}>Share photos of you taking action and tag us so that we can share with the community! (Of course, only take and share photos of others with their consent.)</div>
+                <div className="subtitle">Share photos of you taking action and tag us so that we can share with the community! (Of course, only take and share photos of others with their consent.)</div>
                 {/* TODO: Instagram tiles? */}
                 <img className="section-image" src={instagramUpdatesIMG} alt="instagram updates" />
             </div>

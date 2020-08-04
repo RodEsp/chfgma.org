@@ -3,7 +3,10 @@ import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import "./Header.css"
+import magnifyingGlassSVG from "../../assets/icons/icon-magnifying-glass.svg"
 
+// TODO: responsive header for mobile with hamburger
+ 
 function Header() {
   console.debug("Header")
   const location = useLocation();
@@ -25,8 +28,8 @@ function Header() {
           <li className="link"><NavLink to="/" exact={true} className="about-link" activeClassName='is-active'>About</NavLink></li>
           <li className="link"><NavLink to="/get-help" className="get-help-link" activeClassName='is-active'>Get Help</NavLink></li>
           <li className="link"><NavLink to="/give-help"  className="give-help-link" activeClassName='is-active'>Give Help</NavLink></li>
-          <li className="link"><NavLink to="/donate"  activeClassName='is-active'>Donate</NavLink></li>
-          {/* <li className="link"><NavLink to="/" className="link"><MagnifyingGlassSVG style={{margin: "7px 0 0 0"}}/></NavLink></li> */}
+          <li className="link"><NavLink to="/donate" className="donate-link" activeClassName='is-active'>Donate</NavLink></li>
+          <li className="link"><NavLink to="/" className="link"><img src={magnifyingGlassSVG} alt="search icon" style={{margin: "7px 0 0 0"}}/></NavLink></li>
         </ul>
       </nav>
     </header>
@@ -58,6 +61,11 @@ function getColorScheme(pathname) {
     return {
       primary: "#FFF2FA",
       secondary: "#D61087",
+    }
+  } else if (pathname === "/donate") {
+    return {
+      primary: "#FFF6F0",
+      secondary: "#F36A1D",
     }
   } else {
     console.error("Error while setting background color: invalid history location")

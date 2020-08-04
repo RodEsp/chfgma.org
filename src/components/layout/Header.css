@@ -54,3 +54,7 @@ a {
     color: #D61087;
     border-bottom: 5px solid #D61087;
 }
+.is-active.donate-link {
+    color: #F36A1D;
+    border-bottom: 5px solid #F36A1D;
+}

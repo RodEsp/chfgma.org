@@ -6,30 +6,6 @@
     background-color: rgb(247, 246, 255);
 }
 
-/* Content */
-
-.get-help .some-ways-we-can-help {
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
-    border-radius: 20px;
-    padding: 48px 40px 40px 40px;
-    justify-content: space-evenly;
-}
-
-.get-help .some-ways-we-can-help>.title {
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.05em;
-    font-weight: 600;
-    text-transform: capitalize;
-}
-
-.get-help .some-ways-we-can-help>.list {
-    padding-left: 1.5em;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 500;
-}
-
 .get-help .other-resources {
     width: 66%;
 }

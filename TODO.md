@@ -74,5 +74,6 @@
 - What should the content be for these sections?
   - Home/About Page
     - Our Principles
-      - Lorem Ipsum
-  - 
+      - Lorem Ipsum. My partner is works in the public equity space. She would love to facilitate a brain storming session to flush out Mutual Aid's principles.
+- Tech Questions
+  - How will these be update? Do we need a CMS?

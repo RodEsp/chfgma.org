@@ -28,7 +28,7 @@ function Request() {
                         <p className="standard-text">The best way to submit a request is to go through our aid request form. After you submit a request, we’ll respond as soon as possible. You can also call/text us at 862-277-0747 or email us at hello@chfgma.org.</p>
                         <ButtonLink linkTo="/get-help" text="Request aid" styles={{ backgroundColor: "#432BFA", width: "50%", flex: "0" }} />
                     </div>
-                    <div className="split-col some-ways-we-can-help">
+                    <div className="split-col text-box y-space-evenly">
                         <div className="title">SOME WAYS WE CAN HELP</div>
                         <ul className="list">
                             <li>Groceries</li>
@@ -48,7 +48,7 @@ function Request() {
 function OtherResources() {
     return (
         <div className="page-row row">
-            <div className="row-container" style={{ paddingLeft: "10%", paddingRight: "10%" }}>
+            <div className="row-container">
                 <div className="other-resources">
                     <div className="header1">Other resources</div>
 
