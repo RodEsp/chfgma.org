@@ -4,20 +4,20 @@ Layout
 
 /* Row */
 
-.about .row:nth-child(odd) {
+.polygon-page .row:nth-child(odd) {
     background-color: #F1FDF7;
 }
 
-.about .row:not(:first-child):not(:last-child) {
+.polygon-page .row:not(:first-child):not(:last-child) {
     clip-path: polygon(0 calc(0% + 10px), 100% 0%, 100% calc(100% - 10px), 0% 100%);
     margin: -10px 0;
 }
 
-.about .row:first-child {
+.polygon-page .row:first-child {
     clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 10px), 0% 100%);
 }
 
-.about .row:last-child {
+.polygon-page .row:last-child {
     clip-path: polygon(0 calc(0% + 10px), 100% 0%, 100% 100%, 0% 100%);
 }
 
@@ -27,13 +27,41 @@ Components
 
 /* Component: Stay up to date component */
 
+.cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card {
+    flex: 1;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+}
+.card:not(:first-of-type) {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        margin: 5px;
+    }
+}
+
+
 .about .stayUpToDate-content {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-width: 300px;
 }
 
 .about .stayUpToDate-tile {
@@ -74,15 +102,6 @@ Components
     display: flex;
     flex-direction: column;
     margin: 20px 20px 20px 0;
-}
-
-.about .since-item-title {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 41px;
-    text-transform: capitalize;
-    margin-bottom: 5px;
 }
 
 .about .since-item-description {
@@ -144,7 +163,7 @@ Inputs
 .about .btn-wrapper {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px 0;
+    flex-wrap: wrap;
 }

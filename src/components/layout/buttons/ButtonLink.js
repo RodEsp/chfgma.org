@@ -13,8 +13,10 @@ const buttonChevron = <Chevron style={{ marginLeft: "10px" }} />
 // Styles
 const buttonLinkStyle = {
     display: "inline-block",
-    flex: ".49 1 0%",
+    // flex: "auto 1 auto",
+    flex: "1",
 
+    margin: "2px",
     padding: "9px 25px",
     boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
     border: "none",
