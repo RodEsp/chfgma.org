@@ -1,7 +1,14 @@
 .give-help .helpful-resources {
     font-weight: bold;
-    margin-right: calc(0px + (240 - 0) * ((100vw - 300px) / (1600 - 300)));
+    width: 66%;
 }
+
+@media screen and (max-width: 768px) {
+    .give-help .helpful-resources {
+        width: 100%;
+    }
+}
+
 .give-help .helpful-resources > .header1 {
     margin-bottom: calc(10px + (60 - 10) * ((100vw - 300px) / (1600 - 300)));
 }
@@ -12,6 +19,8 @@
 .give-help .help.grid-row {
     row-gap: calc(20px + (120 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
+
+
 
 .page-row {
     padding: calc(20px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));

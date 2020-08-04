@@ -7,7 +7,7 @@ function GiveHelp() {
     return (
         <div className="give-help polygon-page">
             <div className="page-row row jumbo-title font-color-primary">Join our growing community</div>
-            {/* <Help /> */}
+            <Help />
             <HelpfulResources />
             <Stats />
         </div>
@@ -25,7 +25,6 @@ function HelpfulResources() {
                         <p>If you have access to a printer, print and share our flyers, or make one of your own. Flyering your building/street/block is key to connecting those in need to our resources.</p>
                         <p>Our flyer is available in English, Spanish, and Chinese. Download all three at once here.</p>
                     </div>
-                    <div classNAme="split-col-spacer"></div>
                     <div className="split-col">
                         <img className="split-col-img" src={flyerPreviewIMG} alt="flyer preview" />
                     </div>
