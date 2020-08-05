@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'Montserrat';
   src: local('Montserrat'), url(./fonts/Montserrat/Montserrat-Regular.ttf) format('truetype');
@@ -9,15 +8,21 @@
 }
 
 :root {
-  --background: rgba(85, 214, 170, .85);
+  /* Background Colors */
+  --background: rgba(255, 255, 255, 1);
   --background-about: rgba(241, 253, 247, 1);
-  --font-color-about: rgba(0, 158, 120, 1);
   --background-get-help: rgba(247, 246, 255, 1);
-  --font-color-get-help: rgba(67, 43, 250, 1);
   --background-give-help: rgba(255, 242, 250, 1);
-  --font-color-give-help: rgba(214, 16, 135, 1);
   --background-donate: rgba(255, 246, 240, 1);
+  /* Font Colors */
+  --font-color-about: rgba(0, 158, 120, 1);
+  --font-color-get-help: rgba(67, 43, 250, 1);
+  --font-color-give-help: rgba(214, 16, 135, 1);
   --font-color-donate: rgba(243, 106, 29, 1);
+  /* Font Sizes */
+  --font-size-responsive-h1: calc(29px + (34 - 29) * ((100vw - 300px) / (1440 - 300))); /* 34px */
+  --font-size-responsive-h2: calc(21px + (24 - 21) * ((100vw - 300px) / (1440 - 300))); /* 24px */
+  --font-size-responsive: calc(16px + (18 - 16) * ((100vw - 300px) / (1440 - 300))); /* 18px */
 }
 
 html, body {
@@ -33,10 +38,8 @@ body {
   background: #ffffff;
   font-family: 'Montserrat';
   font-weight: 500;
-
-
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; 
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .content {

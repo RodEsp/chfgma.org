@@ -1,5 +1,10 @@
-/* Mobile First */
-/* navigation styles start here */
+/***************
+ Mobile First 
+***************/
+
+/***************
+ Header
+***************/
 
 header {
     /* TODO: Dynamic background color */
@@ -26,6 +31,26 @@ header.donate {
     background: var(--background-donate);
 }
 
+header.about nav {
+    background: var(--background-about);
+}
+
+header.get-help nav {
+    background: var(--background-get-help);
+}
+
+header.give-help nav {
+    background: var(--background-give-help);
+}
+
+header.donate nav {
+    background: var(--background-donate);
+}
+
+/****************************
+ Nav 
+****************************/
+
 .nav-toggle {
     display: none;
 }
@@ -33,7 +58,6 @@ header.donate {
 .nav-toggle-label {
     position: absolute;
     top: 0;
-    /* top: 9%; */
     left: 0;
     margin-left: 1em;
     height: 100%;
@@ -43,20 +67,17 @@ header.donate {
 }
 
 /* TODO: Use this same logic to create that bottom line for the nav links */
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after 
-{
+
+.nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
     position: relative;
     display: block;
-    background: #ffffff;
+    background: black;
     height: 2px;
     width: 2em;
     border-radius: 2px;
 }
 
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
+.nav-toggle-label span::before, .nav-toggle-label span::after {
     content: '';
     position: absolute;
 }
@@ -68,7 +89,6 @@ header.donate {
 .nav-toggle-label span::after {
     top: 7px;
 }
-
 
 nav {
     position: absolute;
@@ -96,30 +116,48 @@ nav li {
 }
 
 nav a {
-    color: #ffffff;
     text-decoration: none;
-    font-size: 1.2rem; /* TODO: change later? */
-    text-transform: uppercase;
+    color: rgba(0, 0, 0, 1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--font-size-responsive);
+    line-height: 22px;
     /* Toggle Animation - Collapse */
     opacity: 0;
     transition: opacity 150ms ease-in-out;
 }
 
+
 nav a:hover {
     /* TODO: change hover later */
-    color: #000;
+    font-weight: bolder;
 }
 
 /* The ~ looks for any preceding sibling, it doesn't have to be immediately after. */
 
-.nav-toggle:checked ~ nav {
+.nav-toggle:checked~nav {
     /* Toggle Animation */
     transform: scale(1, 1);
 }
-.nav-toggle:checked ~nav a {
+
+.nav-toggle:checked~nav a {
     /* Animation - Expand */
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
+}
+
+/***************
+ Logo
+***************/
+
+.logo a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--font-size-responsive-h1);
+    line-height: 29px;
+    text-decoration: none;
+    text-transform: none;
+    color: black;
 }
 
 .logo.logo-long {
@@ -133,40 +171,26 @@ nav a:hover {
     .logo.logo-short {
         display: none;
     }
-
 }
 
-/* Desktop Styles */
-@media screen and (min-width: 800px) {
+/***************
+ Desktop 
+***************/
 
+@media screen and (min-width: 768px) {
     header {
         display: grid;
-        /* grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr; */
         grid-template-columns: minmax(10px, 40px) auto minmax(600px, 3fr) minmax(10px, 40px);
     }
-
     header nav {
         background: none;
     }
-    header.about nav {
-        background: var(--background-about);
-    }
-    header.get-help nav {
-        background: var(--background-get-help);
-    }
-    header.give-help nav {
-        background: var(--background-give-help);
-    }
-    header.donate nav {
-        background: var(--background-donate);
-    }
-    
+
     /* Logo */
-    .logo {
+    header .logo {
         grid-column: 2 / 3;
     }
-
-    .nav-toggle-label {
+    header .nav-toggle-label {
         display: none;
     }
 
@@ -191,7 +215,8 @@ nav a:hover {
         opacity: 1;
         position: relative;
     }
-
+    
+    /* nav animations */
     nav a::after {
         content: '';
         display: block;
@@ -199,90 +224,44 @@ nav a:hover {
         /* TODO: change color to match page font color */
         background: black;
         position: absolute;
-        bottom: -.75em;
+        bottom: -.5em;
         left: 0;
         right: 0;
         border-radius: 20px;
-
         /* Animation */
         transform: scale(0, 1);
         transition: transform ease-in-out 250ms;
     }
-
     nav a:hover::after {
-        transform: scale(1,1);
+        /* Animation */
+        transform: scale(1, 1);
     }
+    nav a.is-active::after {
+        /* Animation */
+        transform: scale(1, 1);
+    }
+    nav a.is-active.about-link {
+        color: var(--font-color-about);
+    }
+    nav a.is-active.get-help-link {
+        color: var(--font-color-get-help);
+    }
+    nav a.is-active.give-help-link {
+        color: var(--font-color-give-help);
+    }
+    nav a.is-active.donate-link {
+        color: var(--font-color-donate);
+    }
+    nav a.about-link::after {
+        background: var(--font-color-about);
+    }
+    nav a.get-help-link::after {
+        background: var(--font-color-get-help);
+    }
+    nav a.give-help-link::after {
+        background: var(--font-color-give-help);
+    }
+    nav a.donate-link::after {
+        background: var(--font-color-donate);
+    }   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .header {
-    font-style: normal;
-    background-color: transparent;
-}
-
-.nav-container {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row;
-    padding: 0 30px;
-    align-items: center;    
-    color: white;
-}
-
-.nav-container > li {
-    list-style: none;
-    padding: 10px;
-}
-
-.home {
-    flex: 1;
-    text-align: left;   
-    font-style: normal;
-    font-weight: bold;
-    font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1440 - 300)));
-    line-height: 29px;
-}
-
-.link {
-    font-style: normal;
-    font-weight: 600;
-    font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (1440 - 300)));
-    line-height: 22px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.is-active {
-    border-bottom-left-radius: 10;
-    border-top-left-radius: 10%;
-}
-.is-active.about-link {
-    color: #009E78;
-    border-bottom: 5px solid #009E78;
-}
-.is-active.get-help-link {
-    color: #432BFA;
-    border-bottom: 5px solid #432BFA;
-}
-.is-active.give-help-link {
-    color: #D61087;
-    border-bottom: 5px solid #D61087;
-}
-.is-active.donate-link {
-    color: #F36A1D;
-    border-bottom: 5px solid #F36A1D;
-} */

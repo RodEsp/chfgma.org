@@ -139,7 +139,7 @@ Text Box
 .header1, .text-group h1, .text-group .header1 {
     font-style: normal;
     font-weight: bold;
-    font-size: calc(29px + (34 - 29) * ((100vw - 300px) / (1440 - 300)));
+    font-size: var(--font-size-responsive-h1);
     /* font-size: 34px; */
     line-height: 41px;
 }
@@ -149,7 +149,7 @@ Text Box
 .header2, .text-group h2 {
     font-style: normal;
     font-weight: bold;
-    font-size: calc(21px + (24 - 21) * ((100vw - 300px) / (1440 - 300)));
+    font-size: var(--font-size-responsive-h2);
     line-height: 28px;
     text-transform: capitalize;
 }
@@ -159,7 +159,7 @@ Text Box
 .standard-text, .text-group p, .text-group ul {
     font-style: normal;
     font-weight: 500;
-    font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1440 - 300)));
+    font-size: var(--font-size-responsive);
     line-height: 28px;
 }
 
