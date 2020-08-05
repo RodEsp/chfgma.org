@@ -32,19 +32,19 @@ header.donate {
 }
 
 header.about nav {
-    background: var(--background-about);
+    background: var(--nav-background-about);
 }
 
 header.get-help nav {
-    background: var(--background-get-help);
+    background: var(--nav-background-get-help);
 }
 
 header.give-help nav {
-    background: var(--background-give-help);
+    background: var(--nav-background-give-help);
 }
 
 header.donate nav {
-    background: var(--background-donate);
+    background: var(--nav-background-donate);
 }
 
 /****************************

@@ -14,6 +14,12 @@
   --background-get-help: rgba(247, 246, 255, 1);
   --background-give-help: rgba(255, 242, 250, 1);
   --background-donate: rgba(255, 246, 240, 1);
+  /* Nav Background Color */
+  --nav-background: rgba(255, 255, 255, .9);
+  --nav-background-about: rgba(241, 253, 247, .9);
+  --nav-background-get-help: rgba(247, 246, 255, .9);
+  --nav-background-give-help: rgba(255, 242, 250, .9);
+  --nav-background-donate: rgba(255, 246, 240, .9);
   /* Font Colors */
   --font-color-about: rgba(0, 158, 120, 1);
   --font-color-get-help: rgba(67, 43, 250, 1);
@@ -40,11 +46,4 @@ body {
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.content {
-  /* height: 200vh; */
-  background-color: #ffffff;
-  /* display: grid; */
-  /* place-items: center; */
 }
