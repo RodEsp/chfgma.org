@@ -29,6 +29,7 @@
   --font-size-responsive-h1: calc(29px + (34 - 29) * ((100vw - 300px) / (1440 - 300))); /* 34px */
   --font-size-responsive-h2: calc(21px + (24 - 21) * ((100vw - 300px) / (1440 - 300))); /* 24px */
   --font-size-responsive: calc(16px + (18 - 16) * ((100vw - 300px) / (1440 - 300))); /* 18px */
+  --font-size-responsive-small: calc(14px + (14px - 14px) * ((100vw - 300px) / (1440 - 300))); /* 18px */
 }
 
 html, body {
@@ -44,6 +45,7 @@ body {
   background: #ffffff;
   font-family: 'Montserrat';
   font-weight: 500;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

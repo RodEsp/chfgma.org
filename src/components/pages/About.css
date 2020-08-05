@@ -1,26 +1,3 @@
-/********************************
-Layout
-********************************/
-
-/* Row */
-
-.polygon-page .row:nth-child(odd) {
-    background-color: #F1FDF7;
-}
-
-.polygon-page .row:not(:first-child):not(:last-child) {
-    clip-path: polygon(0 calc(0% + 10px), 100% 0%, 100% calc(100% - 10px), 0% 100%);
-    margin: -10px 0;
-}
-
-.polygon-page .row:first-child {
-    clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 10px), 0% 100%);
-}
-
-.polygon-page .row:last-child {
-    clip-path: polygon(0 calc(0% + 10px), 100% 0%, 100% 100%, 0% 100%);
-}
-
 /******************************** 
 Components
 ********************************/

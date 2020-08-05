@@ -150,6 +150,10 @@ nav a:hover {
  Logo
 ***************/
 
+.logo {
+    white-space: nowrap;
+}
+
 .logo a {
     font-style: normal;
     font-weight: bold;

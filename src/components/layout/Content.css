@@ -4,6 +4,57 @@
     flex: 1;
 }
 
+
+/************************
+ Font
+************************/
+
+/* font-size: 34px */
+.header1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--font-size-responsive-h1);
+    /* font-size: 34px; */
+    line-height: 41px;
+}
+
+/* font-size: 24px */
+.header2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--font-size-responsive-h2);
+    line-height: 28px;
+    text-transform: capitalize;
+}
+
+/* font-size: 18px */
+.standard-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-size-responsive);
+    line-height: 28px;
+}
+
+/* font-size: 18px */
+.small-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-size-responsive-small);
+    line-height: 28px;
+}
+
+/* Font Emphasis */
+
+.bold {
+    font-weight: bold;
+}
+
+.text-important {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
 /************************
 Buttons
 ************************/
@@ -35,7 +86,6 @@ a.button-link::after {
 }
 
 a.button-link:hover::after {
-    /* margin-left: 2%; */
     margin-left: 15px;
 }
 
@@ -59,33 +109,10 @@ Rows
     justify-content: space-between;
 }
 
-.row-container>.section {
-    flex: 1 1 calc(450px - 1em);
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    max-width: calc(450px - 1em);
-}
-
-.row-container>.section.y-center {
-    align-items: center;
-}
-
-.section>.section-content {
-    min-width: 200px;
-    width: 100%;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 460px;
-}
-
-.section.align-items-flex-start {
-    align-items: flex-start;
-}
-
-.section-image {
-    width: 100%;
-    min-width: 200px;
+@media screen and (min-width: 768px) {
+    .text-box {
+        padding: 48px 40px 40px 40px;
+    }
 }
 
 /***************************** 
@@ -128,7 +155,7 @@ Text Box
 .text-box {
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
-    padding: 48px 40px 40px 40px;
+    padding: 18px 10px 10px 10px;
 }
 
 .text-box.y-space-evenly {
@@ -154,74 +181,18 @@ Text Box
     font-weight: 500;
 }
 
-/* Bold */
+.text-box a {
+    word-wrap: break-word;
+}
 
-.bold {
-    font-weight: bold;
+@media screen and (min-width: 768px) {
+    .text-box {
+        padding: 48px 40px 40px 40px;
+    }
 }
 
 
-/* font-size: 34px */
 
-.header1, .text-group h1, .text-group .header1 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: var(--font-size-responsive-h1);
-    /* font-size: 34px; */
-    line-height: 41px;
-}
-
-/* font-size: 24px */
-
-.header2, .text-group h2 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: var(--font-size-responsive-h2);
-    line-height: 28px;
-    text-transform: capitalize;
-}
-
-/* font-size: 18px */
-
-.standard-text, .text-group p, .text-group ul {
-    font-style: normal;
-    font-weight: 500;
-    font-size: var(--font-size-responsive);
-    line-height: 28px;
-}
-
-/***************************** 
-Pages
-*****************************/
-
-.title {
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 41px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.subtitle {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    color: #212121;
-}
-
-.section-title {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 38px;
-    color: #212121;
-}
-
-.text-important {
-    font-weight: bold;
-    text-decoration: underline;
-}
 
 /***************************** 
 Tiles 
@@ -256,14 +227,14 @@ Split
 *****************************/
 
 .split-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: calc(10px + (100 - 10) * ((100vw - 768px) / (1600 - 300)));
+    grid-template-columns: repeat(1, 100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .split-wrapper {
-        grid-template-columns: repeat(1, 1fr);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: calc(10px + (100 - 10) * ((100vw - 768px) / (1600 - 300)));
     }
 }
 
@@ -292,4 +263,25 @@ Other
     line-height: 44px;
     text-align: center;
     width: 100%;
+}
+
+/*************************
+ Polygon Page
+*************************/
+
+.polygon-page .row:nth-child(odd) {
+    background-color: #F1FDF7;
+}
+
+.polygon-page .row:not(:first-child):not(:last-child) {
+    clip-path: polygon(0 calc(0% + 10px), 100% 0%, 100% calc(100% - 10px), 0% 100%);
+    margin: -10px 0;
+}
+
+.polygon-page .row:first-child {
+    clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 10px), 0% 100%);
+}
+
+.polygon-page .row:last-child {
+    clip-path: polygon(0 calc(0% + 10px), 100% 0%, 100% 100%, 0% 100%);
 }
