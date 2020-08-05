@@ -1,4 +1,232 @@
-.header {
+/* Mobile First */
+/* navigation styles start here */
+
+header {
+    /* TODO: Dynamic background color */
+    background: var(--background);
+    text-align: center;
+    position: sticky;
+    z-index: 9999;
+    width: 100%;
+}
+
+header.about {
+    background: var(--background-about);
+}
+
+header.get-help {
+    background: var(--background-get-help);
+}
+
+header.give-help {
+    background: var(--background-give-help);
+}
+
+header.donate {
+    background: var(--background-donate);
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    /* top: 9%; */
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* TODO: Use this same logic to create that bottom line for the nav links */
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after 
+{
+    position: relative;
+    display: block;
+    background: #ffffff;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    /* TOOD: make background color dynamic based on page */
+    background-color: var(--background);
+    /* Toggle Animation - collapse/expand */
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem; /* TODO: change later? */
+    text-transform: uppercase;
+    /* Toggle Animation - Collapse */
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+    /* TODO: change hover later */
+    color: #000;
+}
+
+/* The ~ looks for any preceding sibling, it doesn't have to be immediately after. */
+
+.nav-toggle:checked ~ nav {
+    /* Toggle Animation */
+    transform: scale(1, 1);
+}
+.nav-toggle:checked ~nav a {
+    /* Animation - Expand */
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+.logo.logo-long {
+    display: none;
+}
+
+@media screen and (min-width: 1260px) {
+    .logo.logo-long {
+        display: initial;
+    }
+    .logo.logo-short {
+        display: none;
+    }
+
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 800px) {
+
+    header {
+        display: grid;
+        /* grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr; */
+        grid-template-columns: minmax(10px, 40px) auto minmax(600px, 3fr) minmax(10px, 40px);
+    }
+
+    header nav {
+        background: none;
+    }
+    header.about nav {
+        background: var(--background-about);
+    }
+    header.get-help nav {
+        background: var(--background-get-help);
+    }
+    header.give-help nav {
+        background: var(--background-give-help);
+    }
+    header.donate nav {
+        background: var(--background-donate);
+    }
+    
+    /* Logo */
+    .logo {
+        grid-column: 2 / 3;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    /* nav */
+    nav {
+        /* The all takes off all the styles on the nav */
+        all: unset;
+        grid-column: 3/4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+
+    nav a::after {
+        content: '';
+        display: block;
+        height: 5px;
+        /* TODO: change color to match page font color */
+        background: black;
+        position: absolute;
+        bottom: -.75em;
+        left: 0;
+        right: 0;
+        border-radius: 20px;
+
+        /* Animation */
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+    }
+
+    nav a:hover::after {
+        transform: scale(1,1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .header {
     font-style: normal;
     background-color: transparent;
 }
@@ -57,4 +285,4 @@ a {
 .is-active.donate-link {
     color: #F36A1D;
     border-bottom: 5px solid #F36A1D;
-}
+} */
