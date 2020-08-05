@@ -1,17 +1,29 @@
+/****************************
+ Get Help
+****************************/
+
 .get-help .font-color-primary {
     color: #432BFA;
 }
 
 .get-help .jumbo-title {
-    background-color: rgb(247, 246, 255);
+    background-color: var(--background-get-help);
+    color: var(--font-color-get-help)
 }
 
 .get-help .other-resources {
-    width: 66%;
+    width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+.get-help .button-request-help {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
     .get-help .other-resources {
-        width: 100%;
+        width: 66%;
+    }
+    .get-help .button-request-help {
+        width: 50%;
     }
 }
