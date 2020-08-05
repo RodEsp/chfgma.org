@@ -8,8 +8,8 @@ function GiveHelp() {
         <div className="give-help polygon-page">
             <div className="page-row row jumbo-title font-color-primary">Join our growing community</div>
             <Help />
-            <HelpfulResources />
             <Stats />
+            <HelpfulResources />
         </div>
     )
 }
@@ -52,6 +52,7 @@ function HelpfulResources() {
                             <div>Wirecutter: Your Coronavirus Questions Answered</div>
                             <div>New York Times: Neighbors Not Practicing Social Distancing? Here’s What to Do</div>
                         </u>
+
                     </div>
                 </div>
 

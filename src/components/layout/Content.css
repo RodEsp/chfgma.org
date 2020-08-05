@@ -4,6 +4,13 @@
     flex: 1;
 }
 
+/************************
+ Rows
+************************/
+
+.page-row {
+    padding: calc(20px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
 
 /************************
  Font
@@ -54,10 +61,10 @@
     text-decoration: underline;
 }
 
-
 /************************
 Buttons
 ************************/
+
 a.button-link {
     display: inline-block;
     flex: 1;
@@ -88,7 +95,6 @@ a.button-link::after {
 a.button-link:hover::after {
     margin-left: 15px;
 }
-
 
 /***************************** 
 Rows
@@ -269,9 +275,7 @@ Other
  Polygon Page
 *************************/
 
-.polygon-page .row:nth-child(odd) {
-    background-color: #F1FDF7;
-}
+
 
 .polygon-page .row:not(:first-child):not(:last-child) {
     clip-path: polygon(0 calc(0% + 10px), 100% 0%, 100% calc(100% - 10px), 0% 100%);

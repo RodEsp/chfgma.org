@@ -1,12 +1,10 @@
+.give-help .jumbo-title {
+    background-color: var(--background-give-help);
+    color: var(--font-color-give-help);
+}
 .give-help .helpful-resources {
     font-weight: bold;
     width: 66%;
-}
-
-@media screen and (max-width: 768px) {
-    .give-help .helpful-resources {
-        width: 100%;
-    }
 }
 
 .give-help .helpful-resources > .header1 {
@@ -22,17 +20,13 @@
 
 
 
-.page-row {
-    padding: calc(20px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));
-}
-
 /* Colors */
 .give-help > .page-row:nth-of-type(odd) {
-    background-color: rgb(255, 242, 250);
+    background-color: var(--background-give-help);
 }
 
 .give-help .font-color-primary {
-    color: #D61087;
+    color: var(--font-color-give-help);
 }
 
 .stats-graphic {
@@ -101,7 +95,12 @@
     grid-column: 2/3;
 }
 
+/*****************************
+ Media Queries
+*****************************/
 
-
-
-
+@media screen and (max-width: 768px) {
+    .give-help .helpful-resources {
+        width: 100%;
+    }
+}

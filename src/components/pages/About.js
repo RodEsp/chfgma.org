@@ -11,8 +11,8 @@ import mapNeighborhoodIMG from "../../assets/map-neighborhood.png"
 import instagramUpdatesIMG from "../../assets/instagram-updates.png"
 import peopleHoldingTrashIMG from "../../assets/people-holding-trash.png"
 
-function About({ style }) {
-    console.debug("About :::", {style})
+function About() {
+    console.debug("About")
     return (
         <div className="about polygon-page">
 
