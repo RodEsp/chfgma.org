@@ -11,6 +11,12 @@ import mapNeighborhoodIMG from "../../assets/map-neighborhood.png"
 import instagramUpdatesIMG from "../../assets/instagram-updates.png"
 import peopleHoldingTrashIMG from "../../assets/people-holding-trash.png"
 
+/********************************  
+Component: Stay Up To Date
+TODO: 
+- stayUpToDate-tile should be a button
+********************************/
+
 function About() {
     console.debug("About")
     return (
@@ -134,18 +140,12 @@ function About() {
                     <div className="header1">Instagram updates</div>
                     <div className="small-text">Share photos of you taking action and tag us so that we can share with the community! (Of course, only take and share photos of others with their consent.)</div>
                     {/* TODO: Instagram tiles? */}
-                    <img src={instagramUpdatesIMG} alt="instagram updates" />
+                    <img className="instagram-updates-img" src={instagramUpdatesIMG} alt="instagram updates" />
                 </div>
             </div>
         </div>
     )
 }
-
-/********************************  
-Component: Stay Up To Date
-TODO: 
-- stayUpToDate-tile should be a button
-********************************/
 
 export default About;
 

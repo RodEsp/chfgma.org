@@ -6,36 +6,7 @@
 Components
 ********************************/
 
-/* Component: Stay up to date component */
-
-.cards-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.card {
-    flex: 1;
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 5%;
-}
-.card:not(:first-of-type) {
-    margin-left: 10px;
-}
-
-@media screen and (max-width: 768px) {
-    .card {
-        margin: 5px;
-    }
-}
-
+/* Stay up to date component */
 
 .about .stayUpToDate-content {
     width: 100%;
@@ -58,7 +29,7 @@ Components
     padding: 5%;
 }
 
-/* Component: Since Component  */
+/* Since Component  */
 
 .about .since-content {
     flex: 1 1;
@@ -137,6 +108,10 @@ Images
     z-index: -9999;
 }
 
+.about .instagram-updates-img {
+    width: 100%;
+}
+
 /******************************** 
 Inputs
 ********************************/
@@ -147,4 +122,30 @@ Inputs
     justify-content: space-between;
     margin: 20px 0;
     flex-wrap: wrap;
+}
+
+/********************************
+ Cards
+********************************/
+
+/* Mobile First */
+.cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards-wrapper .card {
+    flex: 1;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1%;
+    padding: 5%;
 }
