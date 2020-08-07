@@ -102,7 +102,7 @@ function HelpfulResources() {
 
                 <div className="helpful-resources">
                     <div className="header1">Helpful resources</div>
-                    <div className="grid-list grid-row-span-3-5 grid-row">
+                    <div className="grid-list">
 
                         <span className="grid-list-key">Face Masks</span>
                         <u className="grid-list-value">

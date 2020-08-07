@@ -4,12 +4,43 @@
     flex: 1;
 }
 
-/************************
+/*****************************************
  Rows
-************************/
+*****************************************/
+
+/*********************
+ Page Row
+*********************/
 
 .page-row {
     padding: calc(20px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+/*********************
+ Grid Row
+*********************/
+
+.grid-row {
+    display: grid;
+    grid-template-columns: auto minmax(1em, auto) minmax(auto, 188px) minmax(auto, 188px) minmax(auto, 188px) minmax(auto, 188px) minmax(auto, 188px) minmax(1em, auto) auto;
+}
+
+.grid-row>.grid-row-span-center {
+    grid-column: 3/8;
+}
+
+.grid-row>.grid-row-span-66 {
+    grid-column: 3/6;
+}
+
+.grid-row>.grid-row-span-left {
+    grid-column: 3/5;
+}
+
+.grid-row-split {
+    display: grid;
+    column-gap: minmax(auto, 100px);
+    grid-template-columns: minmax(auto, 1fr) minmax(1em, 1fr);
 }
 
 /************************
@@ -17,6 +48,7 @@
 ************************/
 
 /* font-size: 34px */
+
 .header1 {
     font-style: normal;
     font-weight: bold;
@@ -26,6 +58,7 @@
 }
 
 /* font-size: 24px */
+
 .header2 {
     font-style: normal;
     font-weight: bold;
@@ -42,6 +75,7 @@
 }
 
 /* font-size: 18px */
+
 .standard-text {
     font-style: normal;
     font-weight: 500;
@@ -50,6 +84,7 @@
 }
 
 /* font-size: 18px */
+
 .small-text {
     font-style: normal;
     font-weight: 500;
@@ -80,7 +115,6 @@ a.button-link {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     border: none;
     border-radius: 100px;
-
     color: #FFFFFF;
     font-family: Montserrat;
     font-style: normal;
@@ -155,6 +189,7 @@ Text Group
 .text-group.y-center {
     justify-content: center;
 }
+
 .text-group.padded {
     padding: 40px 0 0 0;
 }
@@ -201,9 +236,6 @@ Text Box
         padding: 48px 40px 40px 40px;
     }
 }
-
-
-
 
 /***************************** 
 Tiles 
@@ -279,8 +311,6 @@ Other
 /*************************
  Polygon Page
 *************************/
-
-
 
 .polygon-page .row:not(:first-child):not(:last-child) {
     clip-path: polygon(0 calc(0% + 10px), 100% 0%, 100% calc(100% - 10px), 0% 100%);
