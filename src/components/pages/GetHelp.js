@@ -56,10 +56,11 @@ function GetHelp() {
                     </div>
                 </section>
 
-                <section className="row">
+                {/* This is actually an iframe but we should replace it with a link. Link can be found on the old website */}
+                {/* <section className="row">
                     <img className="airtable-img" src={airTableScreenshot} alt="airtable screenshot" />
-                </section>
-                
+                </section> */}
+
             </section>
         </div>
     )
