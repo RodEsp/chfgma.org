@@ -46,13 +46,12 @@ function GetHelp() {
                                 <p><span className="text-important">NYC Well</span> is New York City's free and confidential 24/7 mental health support service.</p>
                                 <p><span className="text-important">Notify NYC</span> is New York City's official source for information about emergency alerts and important city services. You can get regular updates on the latest developments with coronavirus in New York City by texting COVID to 692-692.</p>
                             </div>
-
-                            <div className="text-group">
+                            {/* Comment this out until we have more info. */}
+                            {/* <div className="text-group">
                                 <div className="header2">Local Organizations</div>
                                 <p>The organizations and resources below serve a range of different needs throughout our community. Click on each one to expand it and see more information. This list is always evolving. If you think any of them can help you (or if you can help them!), they are all available for you to contact or pursue directly.</p>
-                                {/* TODO: Make hello@chfgma.org a link? */}
                                 <p>If you have information that will allow us to update or add to this list, please email us at hello@chfgma.org to let us know.</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </section>

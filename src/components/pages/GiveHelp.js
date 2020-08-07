@@ -9,7 +9,7 @@ function GiveHelp() {
             <section className="page-row row jumbo-title font-color-primary">Join our growing community</section>
             <Help />
             <Stats />
-            <HelpfulResources />
+            {/* <HelpfulResources /> */}
         </div>
     )
 }
@@ -89,7 +89,8 @@ function HelpfulResources() {
         <section className="page-row row helpful-resources-spread standard-text">
             <div className="row-container">
 
-                <div className="help-us-spread split-wrapper">
+                {/* Comment out until we have the correct links */}
+                {/* <div className="help-us-spread split-wrapper">
                     <div className="split-col text-group">
                         <div className="header1">Help us spread the word</div>
                         <p>If you have access to a printer, print and share our flyers, or make one of your own. Flyering your building/street/block is key to connecting those in need to our resources.</p>
@@ -98,9 +99,10 @@ function HelpfulResources() {
                     <div className="split-col">
                         <img className="split-col-img" src={flyerPreviewIMG} alt="flyer preview" />
                     </div>
-                </div>
+                </div> */}
 
-                <div className="helpful-resources">
+                {/* Comment out until we have more info */}
+                {/* <div className="helpful-resources">
                     <div className="header1">Helpful resources</div>
                     <div className="grid-list">
 
@@ -124,7 +126,7 @@ function HelpfulResources() {
                         </u>
 
                     </div>
-                </div>
+                </div> */}
 
             </div>
         </section>

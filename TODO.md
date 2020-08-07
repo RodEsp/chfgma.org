@@ -17,6 +17,20 @@
     - [ ] Col1 and Col2 should become Row1 and Row2
   - [ ] Header
     - [ ] Should read "CHFG Mutual Aid" on Mobile
+  - [ ] /get-help
+    - [ ] Local Organizations section, comment it out until we have more info.
+  - [ ] /give-help
+    - [ ] Colors are slightly different from the figma
+    - [ ] "Help Us Spread the Word" comment out links for now
+    - [ ] "Helpful Resources" Section
+      - [ ] Put in the links (they can be found on the website)
+      - [ ] Comment out section until we have new links. We might take the entire section away.
+  - [ ] /donate
+    - [ ] Fix, padding, text size, all sorts of stuff
+    - [ ] Links should be black with no underlines
+  - [ ] Jumbo Titles
+    - [ ] Adding right and left padding
+    - [ ] Put the fancy bottom borders on there
 - [ ] Build Website
   - [ ] Layout
     - [ ] Header
@@ -45,9 +59,12 @@
     - [ ] Links
     - [ ] Images
 - [ ] Deploy Website
+  - [ ] CICD Pipeline
 - [ ] Security
   - [ ] CORS
   - [ ] TLS
+  - [ ] Github Secrets
+  - [ ] Github Config
 
 
 ## Next Version
