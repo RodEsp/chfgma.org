@@ -92,10 +92,6 @@ nav a {
     transition: opacity 250ms ease-in-out 250ms;
 }
 
-
-
-
-
 nav a.is-active.about-link {
     color: var(--font-color-about);
 }

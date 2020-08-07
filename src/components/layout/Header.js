@@ -53,7 +53,7 @@ function Header() {
   return (
     <header className={`responsive-header ${headerClass}`} ref={ref}>
       <h1 className="logo logo-long"><NavLink to="/" exact={true}>Clinton Hill Fort Greene Mutual Aid</NavLink></h1>
-      <h1 className="logo logo-short"><NavLink to="/" exact={true}>Mutual Aid</NavLink></h1>
+      <h1 className="logo logo-short"><NavLink to="/" exact={true}>CHFG Mutual Aid</NavLink></h1>
       {/* <h1 className="logo logo-short"><NavLink to="/" exact={true}><img src={homeIMG} alt="home icon"/></NavLink></h1> */}
 
       <input type="checkbox" id="nav-toggle" className="nav-toggle" checked={navExpanded} onClick={() => setNav(!navExpanded)} />

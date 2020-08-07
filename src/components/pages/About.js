@@ -6,6 +6,7 @@ import { ourPrinciples, stayUpToDateCards, stats } from "./About.service.js";
 // Styles
 import './About.css'
 // Images
+// TODO: figure out why the color of this image is wrong. It should be brown instead of orange.
 import peoplePassingBoxesIMG from "../../assets/people-passing-boxes.png"
 import mapNeighborhoodIMG from "../../assets/map-neighborhood.png"
 import instagramUpdatesIMG from "../../assets/instagram-updates.png"

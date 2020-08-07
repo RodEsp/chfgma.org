@@ -2,6 +2,21 @@
 
 ## MVP
 
+- [ ] Feedback
+  - [ ] Fix line heights
+  - [ ] Fix paddings
+  - [ ] Add custom map link
+  - [ ] Our Principles
+    - [ ] In Mobile: Title should be on top, Description should be on bottom
+  - [ ] Fonts
+    - [ ] Medium should be the base font
+  - [ ] Stay up to date Tiles are links: found in the design document
+  - [ ] Instagram Updates
+    - [ ] Photo should actually be images from Instagram: Use Pwr
+  - [ ] Footer
+    - [ ] Col1 and Col2 should become Row1 and Row2
+  - [ ] Header
+    - [ ] Should read "CHFG Mutual Aid" on Mobile
 - [ ] Build Website
   - [ ] Layout
     - [ ] Header
@@ -34,10 +49,12 @@
   - [ ] CORS
   - [ ] TLS
 
+
 ## Next Version
 
 - [ ] SEO
   - [ ] Add Microdata to phone numbers: http://thenewcode.com/536/Adding-Phone-Numbers-To-Web-Pages-With-HTML5-and-Microdata
+- [ ] Google Analytics
 - [ ] Style Guide
   - [ ] Use Responsive Font-Size Function
 
@@ -57,11 +74,13 @@
 - [ ] CI/CD Pipeline
 - [ ] Tests
 
+
 ## Questions
 
 - What does the search icon do?
 - What are the links for these anchors?
-  - Home/About Page
+  - ALL THE UNDERLINED STUFF IS LINKS
+  <!-- - Home/About Page
     - Where we act
       - "Mutual Aid NYC"
     - Stay up to date
@@ -70,10 +89,47 @@
       - "Follow us on Instagram for updates"
   - Footer
     - "Subscribe to our weekly newsletter"
-    - "Join us on Slack"
+    - "Join us on Slack" -->
 - What should the content be for these sections?
   - Home/About Page
     - Our Principles
       - Lorem Ipsum. My partner is works in the public equity space. She would love to facilitate a brain storming session to flush out Mutual Aid's principles.
 - Tech Questions
   - How will these be update? Do we need a CMS?
+
+
+# Comments from Lawrence
+
+## About
+### Desktop
+
+Use original image quality (I know that this is a question you had for @Katy Ma on the figma)
+The mission statement is title case when it should be sentence case. Also, the kerning and spacing is off compared to the wireframes
+Can we move the pixels around on the Help CTAs so they match the wireframes as well?
+Looks like the fonts don’t match, is this a web font issue?
+Generally text kerning and spacing is a bit tight, closer we can match it to the wireframes, the better
+Mobile
+
+[GLOBAL] The header in all pages just says Mutual Aid, can we change this to Clinton Hill Fort Greene Mutual Aid?
+Can we introduce more spacing for the mission statement? As it is now, it’s very tightly sandwiched by the images
+The image in the ‘Since March 2020’ section is cut off
+With the Instagram updates panes here, could we do a carousel instead? Not sure if there is functionality to have panes in desktop and a carousel in mobile
+
+## Get Help
+Desktop
+
+[GLOBAL] Match typeface, kerning, and spacing with wireframe
+Headline doesn’t match dimensions from wireframes; also, can we make the type bold
+‘Submit a request’ dimensions should match wireframes as well, feels a little squashed at the moment
+Same with  ‘Other Resources’ section
+Mobile
+Can we have ‘Request Aid’ CTA after the ‘Some ways we can help’ box?
+
+## Give Help
+Desktop & Mobile
+[GLOBAL] Match typeface, kerning, and spacing with wireframe
+Missing the image here
+
+## Donate
+Desktop & Mobile
+[GLOBAL] Match typeface, kerning, and spacing with wireframe
