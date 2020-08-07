@@ -20,7 +20,7 @@ const App = () => {
   );
 }
 
-App.propTypes = {}
+// App.propTypes = {}
 
 
 export default App;

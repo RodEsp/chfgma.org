@@ -13,10 +13,17 @@ function Header() {
   
   const location = useLocation();
   const [headerClass, setHeaderClass] = useState(getHeaderClass(location.pathname))
+  const [prevLocation, setLocation] = useState(location.pathname)
 
   useEffect(() => {
     setHeaderClass(getHeaderClass(location.pathname))
-  }, [location])
+    console.log(location)
+    
+    if (location !== prevLocation) {
+      document.querySelector('body').scrollTo(0,0)
+      setLocation(location)
+    }
+  }, [location, prevLocation])
 
   return (
     <header className={`responsive-header ${headerClass}`}>
@@ -34,7 +41,7 @@ function Header() {
           {/* <li><NavLink to="/search" className="search-link"><img src={magnifyingGlassSVG} alt="search icon"/></NavLink></li> */}
         </ul>
       </nav>
-      <label for="nav-toggle" className="nav-toggle-label">
+      <label htmlFor="nav-toggle" className="nav-toggle-label">
         <span></span>
       </label>
     </header>
