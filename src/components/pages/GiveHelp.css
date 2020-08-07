@@ -8,7 +8,7 @@
 }
 
 .give-help .helpful-resources > .header1 {
-    margin-bottom: calc(10px + (60 - 10) * ((100vw - 300px) / (1600 - 300)));
+    margin-bottom: calc(10px + (60 - 10) * ((100vw - 300px) / (1440 - 300)));
 }
 .give-help .help-us-spread {
     margin-bottom: calc(20px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));
