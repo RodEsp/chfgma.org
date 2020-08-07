@@ -299,10 +299,11 @@ Other
 *****************************/
 
 .jumbo-title {
-    padding: 3em 1em;
+    padding-top: 3em;
+    padding-bottom: 3em;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
+    font-size: calc(33px + (40 - 33) * ((100vw - (var(--page-min-width) * 1px)) / (var(--page-max-width) - var(--page-min-width)))); 
     line-height: 44px;
     text-align: center;
     width: 100%;

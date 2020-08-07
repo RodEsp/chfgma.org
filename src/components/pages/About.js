@@ -23,7 +23,7 @@ function About() {
         <div className="about polygon-page">
 
             {/* The Neighborhood */}
-            <div className="page-row row" id="the-neighborhood">
+            <section className="page-row row" id="the-neighborhood">
                 <div className="row-container flex-row" >
                     <div className="split-wrapper">
                         <div className="split-col y-center">
@@ -39,10 +39,10 @@ function About() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             {/* Where We Act */}
-            <div className="page-row row">
+            <section className="page-row row">
                 <div className="row-container">
                     <div className="split-wrapper">
                         <div className="split-col y-center">
@@ -54,10 +54,10 @@ function About() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             {/* Our Principles */}
-            <div className="page-row row" id="our-principles">
+            <section className="page-row row" id="our-principles">
                 <div className="row-container flex-row" >
                     <p className="header1">Our principles</p>
                     {ourPrinciples.map(({ title, description }, i) => (
@@ -67,10 +67,10 @@ function About() {
                         </div>
                     ))}
                 </div>
-            </div>
+            </section>
 
             {/* Since March 2020 */}
-            <div className="page-row row since-row">
+            <section className="page-row row since-row">
                 <div className="row-container flex-row">
                     <div className="since-content">
                         <div className="header1">Since March 2020</div>
@@ -88,11 +88,11 @@ function About() {
                         <img src={peopleHoldingTrashIMG} className="people-holding-trash-svg" alt="people holding trash" />
                     </div>
                 </div>
-            </div>
+            </section>
 
 
             {/* Stay up to date */}
-            <div className="page-row row stay-up-to-date">
+            <section className="page-row row stay-up-to-date">
                 <div className="row-container">
                     <div className="header1 title">Stay up to date</div>
                     <div className="cards-wrapper">
@@ -106,17 +106,17 @@ function About() {
                         ))}
                     </div>
                 </div>
-            </div>
+            </section>
 
             {/* Instagram Updates */}
-            <div className="page-row row instagram-updates">
+            <section className="page-row row instagram-updates">
                 <div className="row-container">
                     <div className="header1 title">Instagram updates</div>
                     <div className="small-text text">Share photos of you taking action and tag us so that we can share with the community! (Of course, only take and share photos of others with their consent.)</div>
                     {/* TODO: Instagram tiles? */}
                     <img className="instagram-updates-img" src={instagramUpdatesIMG} alt="instagram updates" />
                 </div>
-            </div>
+            </section>
         </div>
     )
 }

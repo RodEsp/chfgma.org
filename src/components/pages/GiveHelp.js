@@ -6,7 +6,7 @@ import pullingBoxesIMG from "../../assets/pulling-boxes.png"
 function GiveHelp() {
     return (
         <div className="give-help polygon-page">
-            <div className="page-row row jumbo-title font-color-primary">Join our growing community</div>
+            <section className="page-row row jumbo-title font-color-primary">Join our growing community</section>
             <Help />
             <Stats />
             <HelpfulResources />
@@ -16,7 +16,7 @@ function GiveHelp() {
 
 function Help() {
     return (
-        <div className="page-row grid-row help">
+        <section className="page-row grid-row help">
             <div className="content-wrapper grid-row-span-66">
 
                 <div className="text-group">
@@ -50,7 +50,7 @@ function Help() {
 
             </div>
             <img className="pulling-boxes-img" src={pullingBoxesIMG} alt="image of person pulling boxes" />
-        </div>
+        </section>
     )
 }
 
@@ -69,7 +69,7 @@ function Stats() {
         subtitle: "wellness callers",
     }];
     return (
-        <div className="page-row row give-help-stats">
+        <section className="page-row row give-help-stats">
             <div className="row-container">
                 <div className="tiles-container">
                     {tiles && tiles.map(({ title, subtitle }, i) => (
@@ -80,13 +80,13 @@ function Stats() {
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
 function HelpfulResources() {
     return (
-        <div className="page-row row helpful-resources-spread standard-text">
+        <section className="page-row row helpful-resources-spread standard-text">
             <div className="row-container">
 
                 <div className="help-us-spread split-wrapper">
@@ -127,7 +127,7 @@ function HelpfulResources() {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 }
 

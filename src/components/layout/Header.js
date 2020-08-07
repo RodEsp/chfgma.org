@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import "./Header.css"
-import magnifyingGlassSVG from "../../assets/icons/icon-magnifying-glass.svg"
+// import magnifyingGlassSVG from "../../assets/icons/icon-magnifying-glass.svg"
+// import homeIMG from "../../assets/icons/home.png"
 
 // TODO: responsive header for mobile with hamburger
 
@@ -21,6 +22,8 @@ function Header() {
     <header className={`responsive-header ${headerClass}`}>
       <h1 className="logo logo-long"><NavLink to="/" exact={true}>Clinton Hill Fort Greene Mutual Aid</NavLink></h1>
       <h1 className="logo logo-short"><NavLink to="/" exact={true}>Mutual Aid</NavLink></h1>
+      {/* <h1 className="logo logo-short"><NavLink to="/" exact={true}><img src={homeIMG} alt="home icon"/></NavLink></h1> */}
+      
       <input type="checkbox" id="nav-toggle" className="nav-toggle"/>
       <nav>
         <ul>

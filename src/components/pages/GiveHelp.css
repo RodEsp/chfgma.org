@@ -22,7 +22,7 @@
 }
 
 .give-help .help .content-wrapper>div:not(:last-child) {
-    padding-bottom: calc(100px + (50 - 100) * ((100vw - (var(--page-min-width) * 1px)) / (var(--page-max-width) - var(--page-min-width))));
+    margin-bottom: calc(50px + (100 - 50) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .give-help .help.grid-row {

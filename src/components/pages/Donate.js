@@ -23,11 +23,11 @@ function Donate() {
 
 function Row(props) {
     return (
-        <div className="row">
+        <section className="row page-row">
             <div className="row-container">
                 <GenericElement {...props} />
             </div>
-        </div>
+        </section>
     )
 }
 

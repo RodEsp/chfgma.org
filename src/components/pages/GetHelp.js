@@ -7,9 +7,9 @@ function GetHelp() {
 
     return (
         <div className="get-help">
-            <div className="jumbo-title">The neighborhood's got you</div>
+            <section className="page-row jumbo-title">The neighborhood's got you</section>
 
-            <div className="row submit-a-request">
+            <section className="row submit-a-request">
                 <div className="row-container">
                     <div className="split-wrapper">
                         <div className="split-col text-group" style={{ justifyContent: "space-evenly" }}>
@@ -31,9 +31,9 @@ function GetHelp() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div className="page-row row">
+            <section className="page-row row">
                 <div className="row-container">
                     <div className="other-resources">
                         <div className="header1">Other resources</div>
@@ -54,11 +54,11 @@ function GetHelp() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div className="row">
+            <section className="row">
                 <img src={airTableScreenshot} style={{ maxWidth: "1144px", marginBottom: "100px" }} alt="airtable screenshot" />
-            </div>
+            </section>
         </div>
     )
 }

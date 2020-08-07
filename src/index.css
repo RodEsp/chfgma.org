@@ -38,7 +38,7 @@
   /* 18px */
   --font-size-responsive: calc(16px + (18 - 16) * ((100vw - (var(--page-min-width) * 1px)) / (var(--page-max-width) - var(--page-min-width)))); 
   /* 18px */
-  --font-size-responsive-small: calc(14px + (14px - 14px) * ((100vw - (var(--page-min-width) * 1px)) / (var(--page-max-width) - var(--page-min-width)))); 
+  --font-size-responsive-small: calc(14px + (14 - 14) * ((100vw - (var(--page-min-width) * 1px)) / (var(--page-max-width) - var(--page-min-width)))); 
 }
 
 html, body {
