@@ -52,6 +52,68 @@ header.donate nav {
  Nav 
 ****************************/
 
+nav {
+    position: absolute;
+    text-align: left;
+    left: 0;
+    top: 100%;
+    height: 100vh;
+    width: fit-content;
+    padding: 10px 10px 10px 0;
+    background-color: var(--background);
+    /* Toggle Animation - collapse/expand */
+    transform: translateX(-100%);
+    transform-origin: left;
+    transition: transform 400ms ease-in-out;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--font-size-responsive);
+    line-height: 22px;
+    /* Toggle Animation - Collapse */
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+/* The ~ looks for any preceding sibling, it doesn't have to be immediately after. */
+
+.nav-toggle:checked~nav {
+    /* Toggle Animation */
+    transform: translateX(0);
+}
+
+.nav-toggle:checked~nav a {
+    /* Animation - Expand */
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+
+
+
+
+nav a.is-active.about-link {
+    color: var(--font-color-about);
+}
+
+nav a.is-active.get-help-link {
+    color: var(--font-color-get-help);
+}
+
+nav a.is-active.give-help-link {
+    color: var(--font-color-give-help);
+}
+
+nav a.is-active.donate-link {
+    color: var(--font-color-donate);
+}
+
+/* Nav Hamburger */
+
 .nav-toggle {
     display: none;
 }
@@ -66,8 +128,6 @@ header.donate nav {
     align-items: center;
     cursor: pointer;
 }
-
-/* TODO: Use this same logic to create that bottom line for the nav links */
 
 .nav-toggle-label span, .nav-toggle-label span::before, .nav-toggle-label span::after {
     position: relative;
@@ -91,20 +151,6 @@ header.donate nav {
     top: 7px;
 }
 
-nav {
-    position: absolute;
-    text-align: left;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    /* TOOD: make background color dynamic based on page */
-    background-color: var(--background);
-    /* Toggle Animation - collapse/expand */
-    transform: scale(1, 0);
-    transform-origin: top;
-    transition: transform 400ms ease-in-out;
-}
-
 nav ul {
     margin: 0;
     padding: 0;
@@ -116,35 +162,9 @@ nav li {
     margin-left: 1em;
 }
 
-nav a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 1);
-    font-style: normal;
-    font-weight: 600;
-    font-size: var(--font-size-responsive);
-    line-height: 22px;
-    /* Toggle Animation - Collapse */
-    opacity: 0;
-    transition: opacity 150ms ease-in-out;
-}
-
-
 nav a:hover {
     /* TODO: change hover later */
     font-weight: bolder;
-}
-
-/* The ~ looks for any preceding sibling, it doesn't have to be immediately after. */
-
-.nav-toggle:checked~nav {
-    /* Toggle Animation */
-    transform: scale(1, 1);
-}
-
-.nav-toggle:checked~nav a {
-    /* Animation - Expand */
-    opacity: 1;
-    transition: opacity 250ms ease-in-out 250ms;
 }
 
 /***************
@@ -190,7 +210,6 @@ nav a:hover {
     header nav {
         background: none;
     }
-
     /* Logo */
     header .logo {
         grid-column: 2 / 3;
@@ -198,7 +217,6 @@ nav a:hover {
     header .nav-toggle-label {
         display: none;
     }
-
     /* nav */
     nav {
         /* The all takes off all the styles on the nav */
@@ -220,7 +238,6 @@ nav a:hover {
         opacity: 1;
         position: relative;
     }
-    
     /* nav animations */
     nav a::after {
         content: '';
@@ -245,18 +262,6 @@ nav a:hover {
         /* Animation */
         transform: scale(1, 1);
     }
-    nav a.is-active.about-link {
-        color: var(--font-color-about);
-    }
-    nav a.is-active.get-help-link {
-        color: var(--font-color-get-help);
-    }
-    nav a.is-active.give-help-link {
-        color: var(--font-color-give-help);
-    }
-    nav a.is-active.donate-link {
-        color: var(--font-color-donate);
-    }
     nav a.about-link::after {
         background: var(--font-color-about);
     }
@@ -268,5 +273,5 @@ nav a:hover {
     }
     nav a.donate-link::after {
         background: var(--font-color-donate);
-    }   
+    }
 }

@@ -18,7 +18,12 @@
 /* help */
 
 .give-help .help .pulling-boxes-img {
-    padding-top: 2em;
+    display: none;
+}
+
+.give-help .help .content-wrapper {
+    grid-column: 3/8;
+    row-gap: calc(100px + (50 - 100) * ((100vw - (var(--page-min-width) * 1px)) / (var(--page-max-width) - var(--page-min-width))));
 }
 
 .give-help .help .content-wrapper>div:not(:last-child) {
@@ -32,8 +37,7 @@
 /* helpful resources */
 
 .give-help .helpful-resources {
-    font-weight: bold;
-    width: 80%;
+    width: 100%;
 }
 
 .give-help .helpful-resources>.header1 {
@@ -94,15 +98,16 @@
  Media Queries
 *****************************/
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .give-help .helpful-resources {
-        width: 100%;
+        font-weight: bold;
+        width: 80%;
     }
     .give-help .help .pulling-boxes-img {
-        display: none;
+        padding-top: 2em;
+        display: block;
     }
     .give-help .help .content-wrapper {
-        grid-column: 3/8;
-        row-gap: calc(100px + (50 - 100) * ((100vw - (var(--page-min-width) * 1px)) / (var(--page-max-width) - var(--page-min-width))));
+        grid-column: 3/6;
     }
 }

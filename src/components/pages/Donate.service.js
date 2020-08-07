@@ -1,5 +1,6 @@
-export const rows = [{
-    Tag: "div",
+export const rows = [
+    {
+    Tag: "section",
     classString: "split-wrapper",
     children: [{
         Tag: "div",
@@ -88,7 +89,7 @@ export const rows = [{
         }]
     }]
 }, {
-    Tag: "div",
+    Tag: "section",
     classString: "split-wrapper",
     children: [{
         Tag: "div",
@@ -176,7 +177,4 @@ export const rows = [{
             }]
         }]
     }]
-}, {
-    Tag: "p",
-    text: "These numbers were last updated on July 8, 2020.",
 }];

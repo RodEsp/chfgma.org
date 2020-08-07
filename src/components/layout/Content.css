@@ -42,7 +42,7 @@ a.inline-link:hover, a:active {
 *********************/
 
 .page-row {
-    padding: calc(20px + (100 - 20) * ((100vw - 300px) / (1600 - 300))) 1em;
+    padding: calc(20px + (100 - 20) * ((100vw - 300px) / (1440 - 300))) 1em;
 }
 
 /*********************
@@ -271,13 +271,15 @@ Tiles
 *****************************/
 
 .tiles-container {
-    display: flex;
-    flex-direction: space-between;
+    text-align: center;
+    display: grid;
+    column-gap: 1em;
 }
 
-.tiles-container>.tile {
-    width: 100%;
-    text-align: center;
+@media screen and (min-width: 480px) {
+    .tiles-container {
+        grid-template-columns: repeat( auto-fit, minmax(10px, 1fr));
+    }
 }
 
 /* Polygons */

@@ -12,12 +12,16 @@ function Donate() {
         <div className="page-donate">
             <div className="jumbo-title donate-font-color donate-background-color">Support mutual aid financially</div>
             <div className="page-row">
-            {rows && rows.length > 0 && rows.map((row, key) => {
-                return (
-                    <Row {...row} key={key}/>
-                )
-            })}
+                {rows && rows.length > 0 && rows.map((row, key) => {
+                    return (
+                        <Row {...row} key={key} />
+                    )
+                })}
+                <div className="grid-row ">
+                    <p className="grid-row-span-center">These numbers were last updated on July 8, 2020.</p>
+                </div>
             </div>
+
         </div>
     )
 }
