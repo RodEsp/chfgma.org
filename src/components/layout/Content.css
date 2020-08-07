@@ -6,6 +6,34 @@
 }
 
 /*****************************************
+ Elements
+*****************************************/
+
+a.inline-link {
+    text-decoration: none;
+}
+
+a.inline-link:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.inline-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.inline-link:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.inline-link:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*****************************************
  Rows
 *****************************************/
 
@@ -14,7 +42,7 @@
 *********************/
 
 .page-row {
-    padding: calc(20px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));
+    padding: calc(20px + (100 - 20) * ((100vw - 300px) / (1600 - 300))) 1em;
 }
 
 /*********************
@@ -304,7 +332,7 @@ Other
     padding-bottom: 3em;
     font-style: normal;
     font-weight: bold;
-    font-size: calc(33px + (40 - 33) * ((100vw - (var(--page-min-width) * 1px)) / (var(--page-max-width) - var(--page-min-width)))); 
+    font-size: calc(33px + (40 - 33) * ((100vw - (var(--page-min-width) * 1px)) / (var(--page-max-width) - var(--page-min-width))));
     line-height: 44px;
     text-align: center;
     width: 100%;

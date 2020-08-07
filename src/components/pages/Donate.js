@@ -7,23 +7,24 @@ import { rows } from "./Donate.service.js"
 import "./Donate.css"
 
 function Donate() {
-    console.log("DONATE :::", {rows})
-    // const { rows } = data;
+    // console.log("DONATE :::", {rows})
     return (
         <div className="page-donate">
-            <div className="page-row row jumbo-title donate-font-color donate-background-color">Support mutual aid financially</div>
+            <div className="jumbo-title donate-font-color donate-background-color">Support mutual aid financially</div>
+            <div className="page-row">
             {rows && rows.length > 0 && rows.map((row, key) => {
                 return (
                     <Row {...row} key={key}/>
                 )
             })}
+            </div>
         </div>
     )
 }
 
 function Row(props) {
     return (
-        <section className="row page-row">
+        <section className="row">
             <div className="row-container">
                 <GenericElement {...props} />
             </div>
