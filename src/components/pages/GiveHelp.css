@@ -103,4 +103,10 @@
     .give-help .helpful-resources {
         width: 100%;
     }
+    .give-help .help .pulling-boxes-img {
+        display: none;
+    }
+    .give-help .help .content-wrapper {
+        grid-column: 3/8;
+    }
 }

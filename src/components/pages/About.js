@@ -72,7 +72,7 @@ function About() {
             {/* Since March 2020 */}
             <div className="page-row row since-row">
                 <div className="row-container flex-row">
-                    <div className="since-content" >
+                    <div className="since-content">
                         <div className="header1">Since March 2020</div>
                         <p className="standard-text">In just a few short months, we’ve done a lot together—and this is just the start. These numbers were last updated on July 8, 2020.</p>
                         <div className="since-items-wrapper">

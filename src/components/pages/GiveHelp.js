@@ -1,7 +1,7 @@
 import React from 'react';
 import "./GiveHelp.css";
 import flyerPreviewIMG from "../../assets/flyer-preview.png"
-import statsGraphicIMG from "../../assets/stats-graphic.png"
+import pullingBoxesIMG from "../../assets/pulling-boxes.png"
 
 function GiveHelp() {
     return (
@@ -10,6 +10,76 @@ function GiveHelp() {
             <Help />
             <Stats />
             <HelpfulResources />
+        </div>
+    )
+}
+
+function Help() {
+    return (
+        <div className="page-row grid-row help">
+            <div className="content-wrapper grid-row-span-66">
+
+                <div className="text-group">
+                    <div className="header1">How you can help</div>
+                    <ul>
+                        <li>Shop for groceries and essential supplies to people isolating at home</li>
+                        <li>Provide transportation for making deliveries</li>
+                        <li>Make wellness calls to seniors</li>
+                        <li>Donate working laptops, air conditioners, and other necessities</li>
+                    </ul>
+                </div>
+
+                <div className="fancy-list-wrapper">
+                    <div className="header1">If you’re new, here’s how to get plugged in...</div>
+                    <div>
+                        <div className="fancy-list-container standard-text">
+                            <span><b>01</b></span>
+                            <span>Learn what <span className="text-important">mutual aid</span> means, and read <span className="text-important">our principles</span>
+                            </span>
+                        </div>
+                        <div className="fancy-list-container standard-text">
+                            <span><b>02</b></span>
+                            <span>Take a minute to fill out our <span className="text-important">volunteer intake form</span></span>
+                        </div>
+                        <div className="fancy-list-container standard-text">
+                            <span><b>03</b></span>
+                            <span>Join our <span className="text-important">Slack team</span> to get the latest updates</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <img className="pulling-boxes-img" src={pullingBoxesIMG} alt="image of person pulling boxes" />
+        </div>
+    )
+}
+
+function Stats() {
+    const tiles = [{
+        title: "988",
+        subtitle: "Slack members",
+    }, {
+        title: "32",
+        subtitle: "Slack channels",
+    }, {
+        title: "145",
+        subtitle: "delivery people",
+    }, {
+        title: "38",
+        subtitle: "wellness callers",
+    }];
+    return (
+        <div className="page-row row give-help-stats">
+            <div className="row-container">
+                <div className="tiles-container">
+                    {tiles && tiles.map(({ title, subtitle }, i) => (
+                        <div className="tile" key={i}>
+                            <div className="tile-title header1 font-color-primary">{title}</div>
+                            <div className="tile-subtitle standard-text">{subtitle}</div>
+                        </div>
+                    ))}
+                </div>
+            </div>
         </div>
     )
 }
@@ -57,74 +127,6 @@ function HelpfulResources() {
                 </div>
 
             </div>
-        </div>
-    )
-}
-
-
-function Stats() {
-    const tiles = [{
-        title: "988",
-        subtitle: "Slack members",
-    }, {
-        title: "32",
-        subtitle: "Slack channels",
-    }, {
-        title: "145",
-        subtitle: "delivery people",
-    }, {
-        title: "38",
-        subtitle: "wellness callers",
-    }];
-    return (
-        <div className="page-row row give-help-stats">
-            <div className="row-container">
-                <div className="tiles-container">
-                    {tiles && tiles.map(({ title, subtitle }, i) => (
-                        <div className="tile" key={i}>
-                            <div className="tile-title header1 font-color-primary">{title}</div>
-                            <div className="tile-subtitle standard-text">{subtitle}</div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </div>
-    )
-}
-
-function Help() {
-    return (
-        <div className="page-row grid-row help">
-
-            <div className="text-group grid-row-span-66">
-                <div className="header1">How you can help</div>
-                <ul>
-                    <li>Shop for groceries and essential supplies to people isolating at home</li>
-                    <li>Provide transportation for making deliveries</li>
-                    <li>Make wellness calls to seniors</li>
-                    <li>Donate working laptops, air conditioners, and other necessities</li>
-                </ul>
-            </div>
-
-            <div className="fancy-list-wrapper grid-row-span-66">
-                <div className="header1">If you’re new, here’s how to get plugged in...</div>
-                <div>
-                    <div className="fancy-list-container standard-text">
-                        <span><b>01</b></span>
-                        <span>Learn what <span className="text-important">mutual aid</span> means, and read <span className="text-important">our principles</span>
-                        </span>
-                    </div>
-                    <div className="fancy-list-container standard-text">
-                        <span><b>02</b></span>
-                        <span>Take a minute to fill out our <span className="text-important">volunteer intake form</span></span>
-                    </div>
-                    <div className="fancy-list-container standard-text">
-                        <span><b>03</b></span>
-                        <span>Join our <span className="text-important">Slack team</span> to get the latest updates</span>
-                    </div>
-                </div>
-            </div>
-
         </div>
     )
 }
