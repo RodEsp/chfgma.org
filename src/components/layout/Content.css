@@ -2,14 +2,74 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+    padding-top: 80px;
 }
 
-/************************
+/*****************************************
+ Elements
+*****************************************/
+
+a.inline-link {
+    text-decoration: none;
+}
+
+a.inline-link:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.inline-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.inline-link:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.inline-link:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*****************************************
  Rows
-************************/
+*****************************************/
+
+/*********************
+ Page Row
+*********************/
 
 .page-row {
-    padding: calc(20px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));
+    padding: calc(20px + (100 - 20) * ((100vw - 300px) / (1440 - 300))) 1em;
+}
+
+/*********************
+ Grid Row
+*********************/
+
+.grid-row {
+    display: grid;
+    grid-template-columns: auto minmax(1em, auto) minmax(auto, 188px) minmax(auto, 188px) minmax(auto, 188px) minmax(auto, 188px) minmax(auto, 188px) minmax(1em, auto) auto;
+}
+
+.grid-row>.grid-row-span-center {
+    grid-column: 3/8;
+}
+
+.grid-row>.grid-row-span-66 {
+    grid-column: 3/6;
+}
+
+.grid-row>.grid-row-span-left {
+    grid-column: 3/5;
+}
+
+.grid-row-split {
+    display: grid;
+    column-gap: minmax(auto, 100px);
+    grid-template-columns: minmax(auto, 1fr) minmax(1em, 1fr);
 }
 
 /************************
@@ -17,15 +77,17 @@
 ************************/
 
 /* font-size: 34px */
+
 .header1 {
     font-style: normal;
     font-weight: bold;
-    font-size: var(--font-size-responsive-h1);
     /* font-size: 34px; */
+    font-size: var(--font-size-responsive-h1);
     line-height: 41px;
 }
 
 /* font-size: 24px */
+
 .header2 {
     font-style: normal;
     font-weight: bold;
@@ -34,7 +96,15 @@
     text-transform: capitalize;
 }
 
+.header2-light {
+    font-style: normal;
+    font-size: var(--font-size-responsive-h2);
+    line-height: 28px;
+    text-transform: capitalize;
+}
+
 /* font-size: 18px */
+
 .standard-text {
     font-style: normal;
     font-weight: 500;
@@ -43,6 +113,7 @@
 }
 
 /* font-size: 18px */
+
 .small-text {
     font-style: normal;
     font-weight: 500;
@@ -73,7 +144,6 @@ a.button-link {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     border: none;
     border-radius: 100px;
-
     color: #FFFFFF;
     font-family: Montserrat;
     font-style: normal;
@@ -104,14 +174,12 @@ Rows
     flex: 1;
     display: flex;
     justify-content: center;
-    padding: 0 2em;
 }
 
 .row-container {
     width: 100%;
     max-width: 940px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    /* max-width: calc((var(--page-max-width) / 2) * 1px); */
     justify-content: space-between;
 }
 
@@ -150,6 +218,7 @@ Text Group
 .text-group.y-center {
     justify-content: center;
 }
+
 .text-group.padded {
     padding: 40px 0 0 0;
 }
@@ -197,21 +266,20 @@ Text Box
     }
 }
 
-
-
-
 /***************************** 
 Tiles 
 *****************************/
 
 .tiles-container {
-    display: flex;
-    flex-direction: space-between;
+    text-align: center;
+    display: grid;
+    column-gap: 1em;
 }
 
-.tiles-container>.tile {
-    width: 100%;
-    text-align: center;
+@media screen and (min-width: 480px) {
+    .tiles-container {
+        grid-template-columns: repeat( auto-fit, minmax(10px, 1fr));
+    }
 }
 
 /* Polygons */
@@ -262,10 +330,11 @@ Other
 *****************************/
 
 .jumbo-title {
-    padding: 3em 0;
+    padding-top: 3em;
+    padding-bottom: 3em;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
+    font-size: calc(33px + (40 - 33) * ((100vw - (var(--page-min-width) * 1px)) / (var(--page-max-width) - var(--page-min-width))));
     line-height: 44px;
     text-align: center;
     width: 100%;
@@ -274,8 +343,6 @@ Other
 /*************************
  Polygon Page
 *************************/
-
-
 
 .polygon-page .row:not(:first-child):not(:last-child) {
     clip-path: polygon(0 calc(0% + 10px), 100% 0%, 100% calc(100% - 10px), 0% 100%);

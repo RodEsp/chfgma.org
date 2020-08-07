@@ -1,12 +1,12 @@
 import React from 'react';
 import "./GiveHelp.css";
 import flyerPreviewIMG from "../../assets/flyer-preview.png"
-import statsGraphicIMG from "../../assets/stats-graphic.png"
+import pullingBoxesIMG from "../../assets/pulling-boxes.png"
 
 function GiveHelp() {
     return (
         <div className="give-help polygon-page">
-            <div className="page-row row jumbo-title font-color-primary">Join our growing community</div>
+            <section className="page-row row jumbo-title font-color-primary">Join our growing community</section>
             <Help />
             <Stats />
             <HelpfulResources />
@@ -14,9 +14,79 @@ function GiveHelp() {
     )
 }
 
+function Help() {
+    return (
+        <section className="page-row grid-row help">
+            <div className="content-wrapper grid-row-span-66">
+
+                <div className="text-group">
+                    <div className="header1">How you can help</div>
+                    <ul>
+                        <li>Shop for groceries and essential supplies to people isolating at home</li>
+                        <li>Provide transportation for making deliveries</li>
+                        <li>Make wellness calls to seniors</li>
+                        <li>Donate working laptops, air conditioners, and other necessities</li>
+                    </ul>
+                </div>
+
+                <div className="fancy-list-wrapper">
+                    <div className="header1">If you’re new, here’s how to get plugged in...</div>
+                    <div>
+                        <div className="fancy-list-container standard-text">
+                            <span><b>01</b></span>
+                            <span>Learn what <span className="text-important">mutual aid</span> means, and read <span className="text-important">our principles</span>
+                            </span>
+                        </div>
+                        <div className="fancy-list-container standard-text">
+                            <span><b>02</b></span>
+                            <span>Take a minute to fill out our <span className="text-important">volunteer intake form</span></span>
+                        </div>
+                        <div className="fancy-list-container standard-text">
+                            <span><b>03</b></span>
+                            <span>Join our <span className="text-important">Slack team</span> to get the latest updates</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <img className="pulling-boxes-img" src={pullingBoxesIMG} alt="image of person pulling boxes" />
+        </section>
+    )
+}
+
+function Stats() {
+    const tiles = [{
+        title: "988",
+        subtitle: "Slack members",
+    }, {
+        title: "32",
+        subtitle: "Slack channels",
+    }, {
+        title: "145",
+        subtitle: "delivery people",
+    }, {
+        title: "38",
+        subtitle: "wellness callers",
+    }];
+    return (
+        <section className="page-row row give-help-stats">
+            <div className="row-container">
+                <div className="tiles-container">
+                    {tiles && tiles.map(({ title, subtitle }, i) => (
+                        <div className="tile" key={i}>
+                            <div className="tile-title header1 font-color-primary">{title}</div>
+                            <div className="tile-subtitle standard-text">{subtitle}</div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    )
+}
+
 function HelpfulResources() {
     return (
-        <div className="page-row row helpful-resources-spread standard-text">
+        <section className="page-row row helpful-resources-spread standard-text">
             <div className="row-container">
 
                 <div className="help-us-spread split-wrapper">
@@ -32,7 +102,7 @@ function HelpfulResources() {
 
                 <div className="helpful-resources">
                     <div className="header1">Helpful resources</div>
-                    <div className="grid-list grid-row-span-3-5 grid-row">
+                    <div className="grid-list">
 
                         <span className="grid-list-key">Face Masks</span>
                         <u className="grid-list-value">
@@ -57,75 +127,7 @@ function HelpfulResources() {
                 </div>
 
             </div>
-        </div>
-    )
-}
-
-
-function Stats() {
-    const tiles = [{
-        title: "988",
-        subtitle: "Slack members",
-    }, {
-        title: "32",
-        subtitle: "Slack channels",
-    }, {
-        title: "145",
-        subtitle: "delivery people",
-    }, {
-        title: "38",
-        subtitle: "wellness callers",
-    }];
-    return (
-        <div className="page-row row give-help-stats">
-            <div className="row-container">
-                <div className="tiles-container">
-                    {tiles && tiles.map(({ title, subtitle }, i) => (
-                        <div className="tile" key={i}>
-                            <div className="tile-title header1 font-color-primary">{title}</div>
-                            <div className="tile-subtitle standard-text">{subtitle}</div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </div>
-    )
-}
-
-function Help() {
-    return (
-        <div className="page-row grid-row help">
-
-            <div className="text-group grid-row-span-66">
-                <div className="header1">How you can help</div>
-                <ul>
-                    <li>Shop for groceries and essential supplies to people isolating at home</li>
-                    <li>Provide transportation for making deliveries</li>
-                    <li>Make wellness calls to seniors</li>
-                    <li>Donate working laptops, air conditioners, and other necessities</li>
-                </ul>
-            </div>
-
-            <div className="fancy-list-wrapper grid-row-span-66">
-                <div className="header1">If you’re new, here’s how to get plugged in...</div>
-                <div>
-                    <div className="fancy-list-container standard-text">
-                        <span><b>01</b></span>
-                        <span>Learn what <span className="text-important">mutual aid</span> means, and read <span className="text-important">our principles</span>
-                        </span>
-                    </div>
-                    <div className="fancy-list-container standard-text">
-                        <span><b>02</b></span>
-                        <span>Take a minute to fill out our <span className="text-important">volunteer intake form</span></span>
-                    </div>
-                    <div className="fancy-list-container standard-text">
-                        <span><b>03</b></span>
-                        <span>Join our <span className="text-important">Slack team</span> to get the latest updates</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        </section>
     )
 }
 

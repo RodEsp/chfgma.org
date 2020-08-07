@@ -12,5 +12,6 @@
     padding: 20px 0;
 }
 
-
-
+.page-donate .page-row > section {
+    margin-bottom: calc(20px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));;
+}

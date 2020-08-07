@@ -11,12 +11,20 @@
     color: var(--font-color-get-help)
 }
 
-.get-help .other-resources {
-    width: 100%;
+.get-help section.submit-a-request {
+    padding-bottom: calc(20px + (160 - 20) * ((100vw - 300px) / (1440 - 300)));
 }
 
-.get-help .button-request-help {
-    width: 100%;
+.get-help .other-resources {
+    padding-bottom: calc(20px + (60 - 20) * ((100vw - 300px) / (1440 - 300)));
+}
+.get-help .other-resources > .header1,
+.get-help .other-resources > .text-group:not(:last-child) {
+    padding-bottom: calc(20px + (60 - 20) * ((100vw - 300px) / (1440 - 300)));
+}
+
+.get-help .airtable-img {
+    width: min(1144px, 100%);
 }
 
 @media screen and (min-width: 768px) {

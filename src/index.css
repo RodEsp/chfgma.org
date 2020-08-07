@@ -8,6 +8,11 @@
 }
 
 :root {
+  /* Page Width */
+  --page-max-width: 1440;
+  --page-min-width: 300;
+  /* Content Width */
+  --content-max-width: 940;
   /* Background Colors */
   --background: rgba(255, 255, 255, 1);
   --background-about: rgba(241, 253, 247, 1);
@@ -26,10 +31,14 @@
   --font-color-give-help: rgba(214, 16, 135, 1);
   --font-color-donate: rgba(243, 106, 29, 1);
   /* Font Sizes */
-  --font-size-responsive-h1: calc(29px + (34 - 29) * ((100vw - 300px) / (1440 - 300))); /* 34px */
-  --font-size-responsive-h2: calc(21px + (24 - 21) * ((100vw - 300px) / (1440 - 300))); /* 24px */
-  --font-size-responsive: calc(16px + (18 - 16) * ((100vw - 300px) / (1440 - 300))); /* 18px */
-  --font-size-responsive-small: calc(14px + (14px - 14px) * ((100vw - 300px) / (1440 - 300))); /* 18px */
+  /* 34px */
+  --font-size-responsive-h1: calc(29px + (34 - 29) * ((100vw - (var(--page-min-width) * 1px)) / (var(--page-max-width) - var(--page-min-width)))); 
+  /* 24px */
+  --font-size-responsive-h2: calc(21px + (24 - 21) * ((100vw - (var(--page-min-width) * 1px)) / (var(--page-max-width) - var(--page-min-width)))); 
+  /* 18px */
+  --font-size-responsive: calc(16px + (18 - 16) * ((100vw - (var(--page-min-width) * 1px)) / (var(--page-max-width) - var(--page-min-width)))); 
+  /* 18px */
+  --font-size-responsive-small: calc(14px + (14 - 14) * ((100vw - (var(--page-min-width) * 1px)) / (var(--page-max-width) - var(--page-min-width)))); 
 }
 
 html, body {
