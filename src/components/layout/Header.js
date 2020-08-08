@@ -3,13 +3,6 @@ import { useLocation } from 'react-router-dom';
 // import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import "./Header.css"
-// import magnifyingGlassSVG from "../../assets/icons/icon-magnifying-glass.svg"
-// import homeIMG from "../../assets/icons/home.png"
-
-// TODO: responsive header for mobile with hamburger
-
-
-
 
 function Header() {
   console.log("Responsive Header", this)
@@ -30,7 +23,6 @@ function Header() {
   // Nav
   const [navExpanded, setNav] = useState(false)
   const ref = useRef(null)
-  // handleOutsideNavEvent(headerRef, () => setNav(false))
   useEffect(() => {
     function handleClickOutside(event) {
       if (ref.current && !ref.current.contains(event.target)) {
@@ -46,7 +38,6 @@ function Header() {
       document.removeEventListener("mousedown", handleClickOutside);
       body.removeEventListener("scroll", handleClickOutside);
     };
-
   }, [ref]);
   
 
@@ -54,7 +45,6 @@ function Header() {
     <header className={`responsive-header ${headerClass}`} ref={ref}>
       <h1 className="logo logo-long"><NavLink to="/" exact={true}>Clinton Hill Fort Greene Mutual Aid</NavLink></h1>
       <h1 className="logo logo-short"><NavLink to="/" exact={true}>CHFGMA</NavLink></h1>
-      {/* <h1 className="logo logo-short"><NavLink to="/" exact={true}><img src={homeIMG} alt="home icon"/></NavLink></h1> */}
 
       <input type="checkbox" id="nav-toggle" className="nav-toggle" checked={navExpanded} onClick={() => setNav(!navExpanded)} />
       <nav>
@@ -72,10 +62,6 @@ function Header() {
     </header>
   )
 }
-
-// function handleOutsideNavEvent(ref, callback) {
-  
-// }
 
 function getHeaderClass(pathname) {
   console.log("getPageClass :::", pathname)

@@ -16,7 +16,7 @@
   - [ ] Footer
     - [ ] Col1 and Col2 should become Row1 and Row2
   - [ ] Header
-    - [ ] Should read "CHFG Mutual Aid" on Mobile and fix font size so it doesn't overlap the hamburger
+    - [x] Should read "CHFGMA" on Mobile and fix font size so it doesn't overlap the hamburger
   - [ ] /get-help
     - [ ] Local Organizations section, comment it out until we have more info.
   - [ ] /give-help
