@@ -1,8 +1,6 @@
 .content {
-    display: flex;
-    flex-direction: column;
     flex: 1;
-    padding-top: 80px;
+    padding-top: 80px;   
 }
 
 /*****************************************
@@ -42,7 +40,7 @@ a.inline-link:hover, a:active {
 *********************/
 
 .page-row {
-    padding: calc(20px + (100 - 20) * ((100vw - 300px) / (1440 - 300))) 1em;
+    padding: 100px 2em;
 }
 
 /*********************
@@ -145,7 +143,6 @@ a.button-link {
     border: none;
     border-radius: 100px;
     color: #FFFFFF;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -304,17 +301,10 @@ Split
     grid-template-columns: repeat(1, 100%);
 }
 
-@media screen and (min-width: 768px) {
-    .split-wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: calc(10px + (100 - 10) * ((100vw - 768px) / (1600 - 300)));
-    }
-}
-
-.split-wrapper>.split-col {
+.split-wrapper > .split-col {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .split-wrapper>.split-col>.split-col-img {
@@ -324,6 +314,23 @@ Split
 .split-wrapper>.split-col.y-center {
     justify-content: center;
 }
+
+@media screen and (min-width: 768px) {
+    .split-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-gap: calc(10px + (100 - 10) * ((100vw - 768px) / (1600 - 300))); */
+        column-gap: 100px; 
+    }
+    .split-wrapper > .split-col {
+        max-width: 460px;
+        width: 100%;
+    }
+}
+
+
+
+
 
 /***************************** 
 Other

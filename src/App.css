@@ -1,8 +1,7 @@
 /* Layout */
 #app-container {
   display: flex;
-  flex-direction: column;
-  font-family: Montserrat;
+  flex-direction: column;;
   font-style: normal;
 }
 

@@ -9,7 +9,8 @@
   - [ ] Our Principles
     - [ ] In Mobile: Title should be on top, Description should be on bottom
   - [ ] Fonts
-    - [ ] Medium should be the base font
+    - [x] Medium should be the base font
+    - [ ] Check fonts on everything to make sure it's correct
   - [ ] Stay up to date Tiles are links: found in the design document
   - [ ] Instagram Updates
     - [ ] Photo should actually be images from Instagram: Use Pwr
