@@ -175,11 +175,17 @@ nav a:hover {
 .logo a {
     font-style: normal;
     font-weight: bold;
-    font-size: var(--font-size-responsive-h1);
+    font-size: 18px;
     line-height: 29px;
     text-decoration: none;
     text-transform: none;
     color: black;
+}
+
+.logo.logo-short {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .logo.logo-long {

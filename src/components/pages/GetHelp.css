@@ -6,25 +6,51 @@
     color: #432BFA;
 }
 
+.get-help .page-row {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .get-help .jumbo-title {
     background-color: var(--background-get-help);
-    color: var(--font-color-get-help)
+    color: var(--font-color-get-help);
+    padding: 72px 32px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
 }
 
-.get-help section.submit-a-request {
-    padding-bottom: calc(20px + (160 - 20) * ((100vw - 300px) / (1440 - 300)));
+.get-help section.submit-a-request .group-1 .title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
 }
 
-.get-help .other-resources {
-    padding-bottom: calc(20px + (60 - 20) * ((100vw - 300px) / (1440 - 300)));
-}
-.get-help .other-resources > .header1,
-.get-help .other-resources > .text-group:not(:last-child) {
-    padding-bottom: calc(20px + (60 - 20) * ((100vw - 300px) / (1440 - 300)));
+.get-help section.submit-a-request .group-1 .subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
 }
 
-.get-help .airtable-img {
-    width: min(1144px, 100%);
+.get-help a.button-link.button-request-help {
+    line-height: 40px;
+    margin: 10px 0;
+}
+
+.get-help .text-box {
+    margin: 40px 0;
+    padding: 40px;
+}
+
+.get-help .other-resources .header1, .get-help .other-resources .header2 {
+    padding: 20px 0;
+}
+
+.get-help .other-resources p {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
 }
 
 @media screen and (min-width: 768px) {

@@ -6,50 +6,48 @@ import pullingBoxesIMG from "../../assets/pulling-boxes.png"
 function GiveHelp() {
     return (
         <div className="give-help polygon-page">
-            <section className="page-row row jumbo-title font-color-primary">Join our growing community</section>
+            <section className="page-row jumbo-title">Join our growing community</section>
             <Help />
             <Stats />
-            {/* <HelpfulResources /> */}
+            <HelpfulResources />
         </div>
     )
 }
 
 function Help() {
     return (
-        <section className="page-row grid-row help">
-            <div className="content-wrapper grid-row-span-66">
+        <section className="page-row help">
 
-                <div className="text-group">
-                    <div className="header1">How you can help</div>
-                    <ul>
-                        <li>Shop for groceries and essential supplies to people isolating at home</li>
-                        <li>Provide transportation for making deliveries</li>
-                        <li>Make wellness calls to seniors</li>
-                        <li>Donate working laptops, air conditioners, and other necessities</li>
-                    </ul>
-                </div>
-
-                <div className="fancy-list-wrapper">
-                    <div className="header1">If you’re new, here’s how to get plugged in...</div>
-                    <div>
-                        <div className="fancy-list-container standard-text">
-                            <span><b>01</b></span>
-                            <span>Learn what <span className="text-important">mutual aid</span> means, and read <span className="text-important">our principles</span>
-                            </span>
-                        </div>
-                        <div className="fancy-list-container standard-text">
-                            <span><b>02</b></span>
-                            <span>Take a minute to fill out our <span className="text-important">volunteer intake form</span></span>
-                        </div>
-                        <div className="fancy-list-container standard-text">
-                            <span><b>03</b></span>
-                            <span>Join our <span className="text-important">Slack team</span> to get the latest updates</span>
-                        </div>
-                    </div>
-                </div>
-
+            <div className="text-group">
+                <div className="header1">How you can help</div>
+                <ul>
+                    <li>Shop for groceries and essential supplies to people isolating at home</li>
+                    <li>Provide transportation for making deliveries</li>
+                    <li>Make wellness calls to seniors</li>
+                    <li>Donate working laptops, air conditioners, and other necessities</li>
+                </ul>
             </div>
             <img className="pulling-boxes-img" src={pullingBoxesIMG} alt="image of person pulling boxes" />
+
+            <div className="fancy-list-wrapper">
+                <div className="header1">If you’re new, here’s how to get plugged in...</div>
+                <div>
+                    <div className="fancy-list-container standard-text">
+                        <span><b>01</b></span>
+                        <span>Learn what <span className="text-important">mutual aid</span> means, and read <span className="text-important">our principles</span>
+                        </span>
+                    </div>
+                    <div className="fancy-list-container standard-text">
+                        <span><b>02</b></span>
+                        <span>Take a minute to fill out our <span className="text-important">volunteer intake form</span></span>
+                    </div>
+                    <div className="fancy-list-container standard-text">
+                        <span><b>03</b></span>
+                        <span>Join our <span className="text-important">Slack team</span> to get the latest updates</span>
+                    </div>
+                </div>
+            </div>
+
         </section>
     )
 }
@@ -70,63 +68,77 @@ function Stats() {
     }];
     return (
         <section className="page-row row give-help-stats">
-            <div className="row-container">
-                <div className="tiles-container">
-                    {tiles && tiles.map(({ title, subtitle }, i) => (
-                        <div className="tile" key={i}>
-                            <div className="tile-title header1 font-color-primary">{title}</div>
-                            <div className="tile-subtitle standard-text">{subtitle}</div>
-                        </div>
-                    ))}
+            {tiles && tiles.map(({ title, subtitle }, i) => (
+                <div className="tile" key={i}>
+                    <div className="tile-title header1 font-color-primary">{title}</div>
+                    <div className="tile-subtitle standard-text">{subtitle}</div>
                 </div>
-            </div>
+            ))}
         </section>
     )
 }
 
 function HelpfulResources() {
+    // TODO: Add link hrefs and alts
+    const resources = [{
+        title: "Face Masks",
+        links: [
+            { title: "CDC: Use of Cloth Face Coverings to Help Slow the Spread of COVID-19" },
+            { title: "Washington Post: Answers to your DIY face mask questions, including what material you should use" },
+            { title: "HuffPost: Coronavirus Face Masks: Everything You Need To Know" },
+        ]
+    }, {
+        title: "Safe Deliveries",
+        links: [
+            { title: "QueerCare: Protocols for delivering items to and collecting items from someone in self-isolation during the COVID-19 Pandemic" }
+        ]
+    }, {
+        title: "Supporting Local Businesses",
+        links: [
+            { title: "Myrtle Business Guide: Who’s Open & Delivering" }
+        ]
+    }, {
+        title: "Other Information",
+        links: [
+            { title: "Wirecutter: Your Coronavirus Questions Answered" },
+            { title: "New York Times: Neighbors Not Practicing Social Distancing? Here’s What to Do" }
+        ]
+    }]
     return (
         <section className="page-row row helpful-resources-spread standard-text">
             <div className="row-container">
 
                 {/* Comment out until we have the correct links */}
-                {/* <div className="help-us-spread split-wrapper">
+                <div className="help-us-spread split-wrapper">
                     <div className="split-col text-group">
-                        <div className="header1">Help us spread the word</div>
-                        <p>If you have access to a printer, print and share our flyers, or make one of your own. Flyering your building/street/block is key to connecting those in need to our resources.</p>
-                        <p>Our flyer is available in English, Spanish, and Chinese. Download all three at once here.</p>
+                        <div className="title">Help us spread the word</div>
+                        <div className="text-group-content">
+                            <p>If you have access to a printer, print and share our flyers, or make one of your own. Flyering your building/street/block is key to connecting those in need to our resources.</p>
+                            {/* TODO: links */}
+                            <p>Our flyer is available in <a href="" alt="" className="download-link">English</a>, <a href="" alt="" className="download-link">Spanish</a>, and <a href="" alt="" className="download-link">Chinese</a>. Download all three at once here.</p>
+                        </div>
                     </div>
                     <div className="split-col">
                         <img className="split-col-img" src={flyerPreviewIMG} alt="flyer preview" />
                     </div>
-                </div> */}
+                </div>
 
                 {/* Comment out until we have more info */}
-                {/* <div className="helpful-resources">
+                <div className="helpful-resources">
                     <div className="header1">Helpful resources</div>
-                    <div className="grid-list">
-
-                        <span className="grid-list-key">Face Masks</span>
-                        <u className="grid-list-value">
-                            <div>CDC: Use of Cloth Face Coverings to Help Slow the Spread of COVID-19</div>
-                            <div>Washington Post: Answers to your DIY face mask questions, including what material you should use</div>
-                            <div>HuffPost: Coronavirus Face Masks: Everything You Need To Know</div>
-                        </u>
-
-                        <span className="grid-list-key">Safe Deliveries</span>
-                        <u className="grid-list-value">QueerCare: Protocols for delivering items to and collecting items from someone in self-isolation during the COVID-19 Pandemic</u>
-
-                        <span className="grid-list-key">Supporting Local Businesses</span>
-                        <u className="grid-list-value">{`Myrtle Business Guide: Who’s Open & Delivering`}</u>
-
-                        <span className="grid-list-key">Other Information</span>
-                        <u className="grid-list-value">
-                            <div>Wirecutter: Your Coronavirus Questions Answered</div>
-                            <div>New York Times: Neighbors Not Practicing Social Distancing? Here’s What to Do</div>
-                        </u>
-
+                    <div className="helpful-resources-content">
+                    {resources.map(({ title, links }) => (
+                        <React.Fragment>
+                            <div className="resource-title">{title}</div>
+                            <div className="resource-links">
+                                {links.map(({ title }) => (
+                                    <div key={title}>{title}</div>
+                                ))}
+                            </div>
+                        </React.Fragment>
+                    ))}
                     </div>
-                </div> */}
+                </div>
 
             </div>
         </section>

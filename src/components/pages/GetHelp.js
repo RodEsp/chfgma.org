@@ -1,7 +1,10 @@
 import React from 'react';
 import "./GetHelp.css"
 import { ButtonLink } from "../layout/buttons/ButtonLink.js"
-import airTableScreenshot from "../../assets/airtable-screenshot.png"
+// import airTableScreenshot from "../../assets/airtable-screenshot.png"
+import config from "../../config.js"
+
+const { MUTUAL_AID_AIRTABLE_LINK, MUTUAL_AID_EMAIL_ADDRESS_HELLO } = config;
 
 function GetHelp() {
 
@@ -13,11 +16,12 @@ function GetHelp() {
                 <section className="row submit-a-request">
                     <div className="row-container">
                         <div className="split-wrapper">
-                            <div className="split-col text-group" style={{ justifyContent: "space-evenly" }}>
-                                <div className="header1">Submit a request</div>
+                            <div className="split-col text-group group-1" style={{ justifyContent: "space-evenly" }}>
+                                <div className="title">Submit a request</div>
                                 {/* TODO: make phone number and email links? */}
-                                <p className="standard-text">The best way to submit a request is to go through our aid request form. After you submit a request, we’ll respond as soon as possible. You can also call/text us at 862-277-0747 or email us at hello@chfgma.org.</p>
-                                <ButtonLink className="button-request-help" linkTo="/get-help" text="Request aid" styles={{ backgroundColor: "#432BFA", flex: "0" }} />
+                                <p className="subtitle">The best way to submit a request is to go through our aid request form. After you submit a request, we’ll respond as soon as possible. You can also call/text us at 862-277-0747 or email us at hello@chfgma.org.</p>
+                                {/* TODO: Link ofr this button? Because it links to the same page as it's on right now. */}
+                                <ButtonLink className="button-request-help" linkTo="/get-help" text="Request aid" styles={{ backgroundColor: "#432BFA" }} />
                             </div>
                             <div className="split-col text-box y-space-evenly">
                                 <div className="title">SOME WAYS WE CAN HELP</div>
@@ -42,16 +46,16 @@ function GetHelp() {
                             <div className="text-group">
                                 <div className="header2">NYC Resources</div>
                                 <p><span className="text-important">Mutual Aid NYC</span> is a citywide network of groups like ours organizing to provide aid and support to New Yorkers in the midst of the COVID-19 pandemic. If you're outside our neighborhood, you can look here for a group closer to you.</p>
-                                <p><span className="text-important">Help Now</span> NYC has a large list of citywide assistance resources for New Yorkers.</p>
+                                <p><span className="text-important">Help Now NYC</span> has a large list of citywide assistance resources for New Yorkers.</p>
                                 <p><span className="text-important">NYC Well</span> is New York City's free and confidential 24/7 mental health support service.</p>
                                 <p><span className="text-important">Notify NYC</span> is New York City's official source for information about emergency alerts and important city services. You can get regular updates on the latest developments with coronavirus in New York City by texting COVID to 692-692.</p>
                             </div>
                             {/* Comment this out until we have more info. */}
-                            {/* <div className="text-group">
+                            <div className="text-group">
                                 <div className="header2">Local Organizations</div>
-                                <p>The organizations and resources below serve a range of different needs throughout our community. Click on each one to expand it and see more information. This list is always evolving. If you think any of them can help you (or if you can help them!), they are all available for you to contact or pursue directly.</p>
-                                <p>If you have information that will allow us to update or add to this list, please email us at hello@chfgma.org to let us know.</p>
-                            </div> */}
+                                <p>We’ve created a <a href={MUTUAL_AID_AIRTABLE_LINK} alt="mutual aid Airtable">database</a> of organizations and resources that serve a range of different needs throughout our community. Click on each one to expand it and see more information. This list is always evolving. If you think any of them can help you (or if you can help them!), they are all available for you to contact or pursue directly.</p>
+                                <p>If you have information that will allow us to update or add to this list, please email us at <a href={MUTUAL_AID_EMAIL_ADDRESS_HELLO} alt={`mutual aid email address ${MUTUAL_AID_EMAIL_ADDRESS_HELLO}`}>{MUTUAL_AID_EMAIL_ADDRESS_HELLO}</a> to let us know.</p>
+                            </div>
                         </div>
                     </div>
                 </section>

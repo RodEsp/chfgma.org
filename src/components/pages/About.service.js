@@ -19,28 +19,30 @@ export const stayUpToDateCards = [{
     text: "Follow us on Instagram for updates",
 }];
 
-export const stats = [{
-    stat: "$44,997",
-    text: "total contributed to our Mutual Aid Fund and Direct Action Funds",
-}, {
-    stat: "10,000",
-    text: "grocery packages delivered through our weekly collaboration with food pantries",
-}, {
-    stat: "658",
-    text: "requests fulfilled for groceries and essential supplies",
-}, {
-    stat: "135+",
-    text: "people attended training sessions",
-}, {
-    stat: "533",
-    text: "callbacks to requests on our hotline",
-}, {
-    stat: "988",
-    text: "people have joined our Slack community",
-}, {
-    stat: "948",
-    text: "wellness check calls made",
-}, {
-    stat: "760",
-    text: "people have followed our Instagram account",
-}]
+export const stats = [
+    {
+        stat: "$44,997",
+        text: "total contributed to our Mutual Aid Fund and Direct Action Funds",
+    }, {
+        stat: "658",
+        text: "requests fulfilled for groceries and essential supplies",
+    }, {
+        stat: "533",
+        text: "callbacks to requests on our hotline",
+    }, {
+        stat: "948",
+        text: "wellness check calls made",
+    }, {
+        stat: "10,000",
+        text: "grocery packages delivered through our weekly collaboration with food pantries",
+    }, {
+        stat: "135+",
+        text: "people attended training sessions",
+    }, {
+        stat: "988",
+        text: "people have joined our Slack community",
+    }, {
+        stat: "760",
+        text: "people have followed our Instagram account",
+    }
+]
