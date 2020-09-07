@@ -40,7 +40,7 @@ a.inline-link:hover, a:active {
 *********************/
 
 .page-row {
-    padding: 100px 2em;
+    padding: 0 30px;
 }
 
 /*********************
@@ -91,14 +91,12 @@ a.inline-link:hover, a:active {
     font-weight: bold;
     font-size: var(--font-size-responsive-h2);
     line-height: 28px;
-    text-transform: capitalize;
 }
 
 .header2-light {
     font-style: normal;
     font-size: var(--font-size-responsive-h2);
     line-height: 28px;
-    text-transform: capitalize;
 }
 
 /* font-size: 18px */
@@ -135,10 +133,10 @@ Buttons
 ************************/
 
 a.button-link {
-    display: inline-block;
-    flex: 1;
-    margin: 2px;
-    padding: 9px 25px;
+    /* display: inline-block; */
+    /* flex: 1; */
+    /* margin: 2px; */
+    /* padding: 9px 25px; */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     border: none;
     border-radius: 100px;

@@ -6,18 +6,41 @@
 Components
 ********************************/
 
-/* Stay up to date component */
+/* The Neighborhood */
 
-.about .stayUpToDate-content {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.about #the-neighborhood .title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #212121;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.about .stay-up-to-date .title {
-    margin-bottom: calc(20px + (40 - 20) * ((100vw - 300px) / (1440 - 300)));
+.about #the-neighborhood .home-passing-boxes-img {
+    padding: 30px;
+}
+
+.about #the-neighborhood .btn-wrapper {
+    display: grid;
+    grid-template-rows: 40px 40px;
+    grid-gap: 16px;
+}
+
+.about #the-neighborhood .btn-wrapper a.button-link {
+    background-color: #009E78;
+    line-height: 40px;
+}
+
+.about #the-neighborhood .small-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 40px 0;
 }
 
 /* Since Component  */
@@ -117,11 +140,18 @@ Inputs
 ********************************/
 
 .about .btn-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 20px 0;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: 40px 40px; 
+    grid-gap: 16px;
+}
+
+.about .btn-wrapper a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
 }
 
 /********************************
@@ -158,4 +188,18 @@ Inputs
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: unset;
     }
+}
+
+/* Stay up to date component */
+
+.about .stayUpToDate-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about .stay-up-to-date .title {
+    /* margin-bottom: calc(20px + (40 - 20) * ((100vw - 300px) / (1440 - 300))); */
 }

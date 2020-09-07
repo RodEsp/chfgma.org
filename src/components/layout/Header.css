@@ -14,6 +14,7 @@ header {
     z-index: 9999;
     width: 100%;
     position: fixed;
+    padding: 0 20px;
 }
 
 header.about {
@@ -118,7 +119,7 @@ nav a.is-active.donate-link {
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: 1em;
+    margin-left: 20px;
     height: 100%;
     display: flex;
     align-items: center;

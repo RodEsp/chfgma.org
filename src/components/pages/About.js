@@ -7,7 +7,7 @@ import { ourPrinciples, stayUpToDateCards, stats } from "./About.service.js";
 import './About.css'
 // Images
 // TODO: figure out why the color of this image is wrong. It should be brown instead of orange.
-import peoplePassingBoxesIMG from "../../assets/people-passing-boxes.png"
+import homePassingBoxes from "../../assets/home-passing-boxes.png"
 import mapNeighborhoodIMG from "../../assets/map-neighborhood.png"
 import instagramUpdatesIMG from "../../assets/instagram-updates.png"
 import peopleHoldingTrashIMG from "../../assets/people-holding-trash.png"
@@ -28,13 +28,13 @@ function About() {
                 <div className="row-container flex-row" >
                     <div className="split-wrapper">
                         <div className="split-col y-center">
-                            <img className="split-col-img" src={peoplePassingBoxesIMG} alt="people passing boxes" />
+                            <img className="split-col-img home-passing-boxes-img" src={homePassingBoxes} alt="people passing boxes" />
                         </div>
                         <div className="text-group split-col y-center">
-                            <div className="header2-light">We are neighbors in Clinton Hill and Fort Greene coming together to care for one another through the COVID-19 pandemic and beyond.</div>
+                            <div className="title">We are neighbors in Clinton Hill and Fort Greene coming together to care for one another through the COVID-19 pandemic and beyond.</div>
                             <div className="btn-wrapper">
-                                <ButtonLink linkTo="/get-help" text="I need help" styles={{ backgroundColor: "#009E78" }} />
-                                <ButtonLink linkTo="/give-help" text="I can help" styles={{ backgroundColor: "#009E78" }} />
+                                <ButtonLink linkTo="/get-help" text="I need help"/>
+                                <ButtonLink linkTo="/give-help" text="I can help"/>
                             </div>
                             <p className="small-text">Want to help financially? You can <NavLink to="/donate" exact={true}><b><u>donate</u></b></NavLink> to our Mutual Aid Fund—100% of funds raised go towards purchasing essentials for people in the community.</p>
                         </div>
