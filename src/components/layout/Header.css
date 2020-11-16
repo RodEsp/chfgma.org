@@ -10,11 +10,16 @@ header {
     /* TODO: Dynamic background color */
     background: var(--background);
     text-align: center;
-    /* position: sticky; */
+    position: sticky;
     z-index: 9999;
     width: 100%;
     position: fixed;
     padding: 0 20px;
+}
+
+header .logo {
+    width: 50px;
+    margin: 10px;
 }
 
 header.about {
@@ -121,6 +126,7 @@ nav a.is-active.donate-link {
     left: 0;
     margin-left: 20px;
     height: 100%;
+    /* height: 50px; */
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -180,25 +186,6 @@ nav a:hover {
     text-decoration: none;
     text-transform: none;
     color: black;
-}
-
-.logo.logo-short {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-}
-
-.logo.logo-long {
-    display: none;
-}
-
-@media screen and (min-width: 1260px) {
-    .logo.logo-long {
-        display: initial;
-    }
-    .logo.logo-short {
-        display: none;
-    }
 }
 
 /***************

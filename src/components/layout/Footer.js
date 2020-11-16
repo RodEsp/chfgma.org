@@ -22,6 +22,7 @@ const {
 // TODO: Links
 export default () => (
     <div className="footer">
+        <hr/>
         <div className="content-wrapper">
             <div className="stay-connected">
                 <div className="title capitalize"><b>clinton hill fort greene mutual aid</b></div>

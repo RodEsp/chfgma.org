@@ -5,49 +5,53 @@ import pullingBoxesIMG from "../../assets/pulling-boxes.png"
 
 function GiveHelp() {
     return (
-        <div className="give-help polygon-page">
-            <section className="page-row jumbo-title">Join our growing community</section>
+        <div className="page give-help polygon-page">
+            <section className="jumbo-title">Join our growing community</section>
             <Help />
             <Stats />
-            <HelpfulResources />
+            {/* Comment out until we have the correct links */}
+            {/* Comment out until we have more info */}
+            {/* <HelpfulResources /> */}
         </div>
     )
 }
 
 function Help() {
     return (
-        <section className="page-row help">
+        <section className="help">
+            <div className="row-container">
 
-            <div className="text-group">
-                <div className="header1">How you can help</div>
-                <ul>
-                    <li>Shop for groceries and essential supplies to people isolating at home</li>
-                    <li>Provide transportation for making deliveries</li>
-                    <li>Make wellness calls to seniors</li>
-                    <li>Donate working laptops, air conditioners, and other necessities</li>
-                </ul>
-            </div>
-            <img className="pulling-boxes-img" src={pullingBoxesIMG} alt="image of person pulling boxes" />
+                <div className="text-group">
+                    <div className="header1">How you can help</div>
+                    <ul>
+                        <li>Shop for groceries and essential supplies to people isolating at home</li>
+                        <li>Provide transportation for making deliveries</li>
+                        <li>Make wellness calls to seniors</li>
+                        <li>Donate working laptops, air conditioners, and other necessities</li>
+                    </ul>
+                </div>
 
-            <div className="fancy-list-wrapper">
-                <div className="header1">If you’re new, here’s how to get plugged in...</div>
-                <div>
-                    <div className="fancy-list-container standard-text">
-                        <span><b>01</b></span>
-                        <span>Learn what <span className="text-important">mutual aid</span> means, and read <span className="text-important">our principles</span>
-                        </span>
-                    </div>
-                    <div className="fancy-list-container standard-text">
-                        <span><b>02</b></span>
-                        <span>Take a minute to fill out our <span className="text-important">volunteer intake form</span></span>
-                    </div>
-                    <div className="fancy-list-container standard-text">
-                        <span><b>03</b></span>
-                        <span>Join our <span className="text-important">Slack team</span> to get the latest updates</span>
+                <img className="pulling-boxes-img" src={pullingBoxesIMG} alt="image of person pulling boxes" />
+
+                <div className="fancy-list-wrapper">
+                    <div className="header1">If you’re new, here’s how to get plugged in...</div>
+                    <div>
+                        <div className="fancy-list-container standard-text">
+                            <span><b>01</b></span>
+                            <span>Learn what <span className="text-important">mutual aid</span> means, and read <span className="text-important">our principles</span>
+                            </span>
+                        </div>
+                        <div className="fancy-list-container standard-text">
+                            <span><b>02</b></span>
+                            <span>Take a minute to fill out our <span className="text-important">volunteer intake form</span></span>
+                        </div>
+                        <div className="fancy-list-container standard-text">
+                            <span><b>03</b></span>
+                            <span>Join our <span className="text-important">Slack team</span> to get the latest updates</span>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </section>
     )
 }
@@ -67,13 +71,15 @@ function Stats() {
         subtitle: "wellness callers",
     }];
     return (
-        <section className="page-row row give-help-stats">
-            {tiles && tiles.map(({ title, subtitle }, i) => (
-                <div className="tile" key={i}>
-                    <div className="tile-title header1 font-color-primary">{title}</div>
-                    <div className="tile-subtitle standard-text">{subtitle}</div>
-                </div>
-            ))}
+        <section>
+            <div className="give-help-stats row-container">
+                {tiles && tiles.map(({ title, subtitle }, i) => (
+                    <div className="tile" key={i}>
+                        <div className="tile-title header1 font-color-primary">{title}</div>
+                        <div className="tile-subtitle standard-text">{subtitle}</div>
+                    </div>
+                ))}
+            </div>
         </section>
     )
 }
@@ -105,10 +111,10 @@ function HelpfulResources() {
         ]
     }]
     return (
-        <section className="page-row row helpful-resources-spread standard-text">
+        <section className=" helpful-resources-spread standard-text">
             <div className="row-container">
 
-                {/* Comment out until we have the correct links */}
+
                 <div className="help-us-spread split-wrapper">
                     <div className="split-col text-group">
                         <div className="title">Help us spread the word</div>
@@ -123,20 +129,19 @@ function HelpfulResources() {
                     </div>
                 </div>
 
-                {/* Comment out until we have more info */}
                 <div className="helpful-resources">
                     <div className="header1">Helpful resources</div>
                     <div className="helpful-resources-content">
-                    {resources.map(({ title, links }) => (
-                        <React.Fragment>
-                            <div className="resource-title">{title}</div>
-                            <div className="resource-links">
-                                {links.map(({ title }) => (
-                                    <div key={title}>{title}</div>
-                                ))}
-                            </div>
-                        </React.Fragment>
-                    ))}
+                        {resources.map(({ title, links }) => (
+                            <React.Fragment>
+                                <div className="resource-title">{title}</div>
+                                <div className="resource-links">
+                                    {links.map(({ title }) => (
+                                        <div key={title}>{title}</div>
+                                    ))}
+                                </div>
+                            </React.Fragment>
+                        ))}
                     </div>
                 </div>
 

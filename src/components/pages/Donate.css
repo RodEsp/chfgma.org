@@ -1,17 +1,123 @@
 .donate-font-color {
     color: #F36A1D;
 }
+
 .donate-background-color {
     background-color: #FFF6F0;
 }
 
-.stats-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10px;
-    padding: 20px 0;
+
+@media screen and (min-width: 768px) {
+    .donate-page .row-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+    }
 }
 
-.page-donate .page-row > section {
-    margin-bottom: calc(20px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));;
+/* ************** */
+
+.page-donate {
+    font-family: Montserrat;
+    letter-spacing: 0em;
+    font-style: normal;
+    letter-spacing: 0em;
+    padding-bottom: 60px;
+}
+
+.page-donate .jumbo-title {
+    border-radius: 0 0 100% 100% / 15%;
+}
+
+.page-donate .title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.page-donate .paragraph {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+
+.page-donate .group-1 .row-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+}
+
+.group-1 .stats {
+    text-align: center;
+}
+
+.page-donate .stat .value {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 5px;
+}
+
+.page-donate .stat .value {
+    margin-top: 40px;
+}
+
+.page-donate .stat .type {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@media screen and (min-width: 768px) {
+    .page-donate .group-1 .row-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 100px;
+    }
+    .page-donate .stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: left;
+        text-align: left;
+    }
+    .page-donate .stat .value {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+
+/*  */
+
+.contribute {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding: 48px 40px 45px 40px;
+}
+
+.contribute > .title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.contribute .vendor {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #F36A1D;
+}
+
+.contribute .info:not(:last-of-type) {
+    margin-bottom: 1em;
 }

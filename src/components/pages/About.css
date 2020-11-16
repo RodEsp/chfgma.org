@@ -6,6 +6,7 @@ Components
 
 .about #the-neighborhood {
     background-color: #F1FDF7;
+    padding-top: 50px;
 }
 
 .about #the-neighborhood .title {
@@ -27,7 +28,15 @@ Components
 .about #the-neighborhood .btn-wrapper {
     display: grid;
     grid-template-rows: 40px 40px;
-    grid-gap: 16px;
+    grid-gap: 1em;
+}
+
+@media screen and (min-width: 768px) {
+    .about #the-neighborhood .btn-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: unset !important;
+    }    
 }
 
 .about #the-neighborhood .btn-wrapper a.button-link {
@@ -57,9 +66,7 @@ Components
 
 /* Where We Act */
 
-.about #where-we-act {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.about #where-we-act .row-container {
     display: grid;
 }
 
@@ -78,10 +85,29 @@ Components
     margin-bottom: 30px;
 }
 
+.about #where-we-act .split-col-img {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .about #where-we-act .row-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 100px;
+    }
+    .about #where-we-act .split-col-img {
+        width: 100%;
+    }
+}
+
+
+
+
 /* Since Component  */
 
-.about .since {
+.about .since .row-container {
     display: grid;
+    justify-content: center;
+    row-gap: 30px;
 }
 
 .about .since .since-items-wrapper {
@@ -89,6 +115,8 @@ Components
     display: grid;
     row-gap: 40px;
     margin-top: 60px;
+    justify-content: center;
+    grid-template-columns: 80%;
 }
 
 .about .since .since-items-wrapper .since-item {
@@ -107,11 +135,26 @@ Components
     line-height: 26px;
 }
 
-.about .since .people-holding-trash-svg {
+.about .since img.people-holding-trash-svg {
     width: 250px;
-    position: relative;
-    bottom: -55px;
-    margin: auto;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .about .since .row-container {
+        grid-template-columns: 70%;
+        justify-content: left;
+    }
+
+    .about .since .since-items-wrapper {
+        text-align: left;
+        grid-template-columns: auto auto;
+        grid-column-gap: 30px;
+    }
+
+    .about .since .people-holding-trash-svg {
+        display: none;
+    }
 }
 
 /* Component: Our Principles  */
@@ -172,6 +215,7 @@ Components
     grid-gap: 25px;
     align-items: center;
     justify-items: center;
+    grid-template-columns: 1fr;
 }
 
 .cards-wrapper .card {
@@ -183,6 +227,7 @@ Components
     align-items: center;
     text-align: center;
     height: 220px;
+    width: 100%;
 }
 
 /* Desktop */
@@ -200,7 +245,7 @@ Components
 /* Instagram Updates */
 
 .instagram-updates {
-    margin: 60px 0;
+    margin: 60px 0 0 0;
 }
 
 .instagram-updates .title {
@@ -214,12 +259,12 @@ Components
     line-height: 26px;
 }
 
-.instagram-updates .instagram-images-wrapper {
-    display: grid;
-    grid-gap: 30px;
-    margin: 32px;
+.iframe-container {
+    overflow-y: scroll;
+    width: 100%;
 }
 
-.instagram-updates .instagram-images-wrapper > img {
-    width: 100%;
+.instagram-updates #instagram-iframe {
+    border: none;
+    
 }

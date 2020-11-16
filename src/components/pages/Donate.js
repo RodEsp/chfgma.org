@@ -1,38 +1,50 @@
 import React from "react";
-// Components
 import GenericElement from "../layout/GenericElement.js"
-// Services
 import { rows } from "./Donate.service.js"
-// Styles
 import "./Donate.css"
 
 function Donate() {
-    // console.log("DONATE :::", {rows})
     return (
-        <div className="page-donate">
-            <div className="jumbo-title donate-font-color donate-background-color">Support mutual aid financially</div>
-            <div className="page-row">
-                {rows && rows.length > 0 && rows.map((row, key) => {
-                    return (
-                        <Row {...row} key={key} />
-                    )
-                })}
-                <div className="grid-row ">
-                    <p className="grid-row-span-center">These numbers were last updated on July 8, 2020.</p>
+        <div className="page page-donate">
+            <section className="jumbo-title donate-font-color donate-background-color">Support mutual aid financially</section>
+            <section className="group-1">
+                <div className="row-container">
+
+                    <div className="split">
+                        <div className="title">Mutual Aid Fund</div>
+                        <div className="paragraph">This fund makes it possible to support anyone in this crisis regardless of individual financial resources. 100% goes towards purchasing groceries and essential supplies for people in our community (transparent fund tracking is being handled via the Slack). These essentials are then dropped off by delivery volunteers.</div>
+                        <div className="stats">
+                            <div className="stat">
+                                <div className="value">+$45k</div>
+                                <div className="type">total raised</div>
+                            </div>
+                            <div className="stat">
+                                <div className="value">-$36.7k</div>
+                                <div className="type">total disbursed</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="split">
+                        <div className=" contribute">
+                            <div className="title">CONTRIBUTE</div>
+                            <div>
+                                <div className="vendor">Venmo</div>
+                                <div className="info">@bklynneighbors if prompted, enter digits 1139</div>
+                                <div className="vendor">CashApp</div>
+                                <div className="info">$bklynneighbors</div>
+                                <div className="vendor">PayPal, Google Pay</div>
+                                <div className="info">bklynneighbors@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
+
+            </section>
+
 
         </div>
-    )
-}
-
-function Row(props) {
-    return (
-        <section className="row">
-            <div className="row-container">
-                <GenericElement {...props} />
-            </div>
-        </section>
     )
 }
 

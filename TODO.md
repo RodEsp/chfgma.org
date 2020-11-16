@@ -1,5 +1,13 @@
 # TODO
 
+## Meeting Notes
+
+- [ ] Contact domain name owner to setup hosting
+- [ ] Figure out who will own the AWS account and pay for the hosting
+- [ ] Re-occuring payments through the site
+- [ ] Instagram Feed
+
+
 ## MVP
 
 - [ ] Feedback

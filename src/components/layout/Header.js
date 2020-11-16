@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 // import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import "./Header.css"
+import logo from "../../assets/logo.png"
 
 function Header() {
   console.log("Responsive Header", this)
@@ -29,7 +30,7 @@ function Header() {
         setNav(false)
       }
     }
-    
+
     document.addEventListener("mousedown", handleClickOutside);
     const body = document.querySelector('body');
     body.addEventListener("scroll", handleClickOutside);
@@ -39,13 +40,14 @@ function Header() {
       body.removeEventListener("scroll", handleClickOutside);
     };
   }, [ref]);
-  
+
 
   return (
     <header className={`responsive-header ${headerClass}`} ref={ref}>
-      <h1 className="logo logo-long"><NavLink to="/" exact={true}>Clinton Hill Fort Greene Mutual Aid</NavLink></h1>
-      <h1 className="logo logo-short"><NavLink to="/" exact={true}>CHFGMA</NavLink></h1>
+      {/* <h1 className="logo "><NavLink to="/" exact={true}>Clinton Hill Fort Greene Mutual Aid</NavLink></h1> */}
 
+      {/* <h1 className="logo logo-short"><NavLink to="/" exact={true}>CHFGMA</NavLink></h1> */}
+      <NavLink to="/" exact={true} className="logo"><img className="logo" src={logo} alt="logo" /></NavLink>
       <input type="checkbox" id="nav-toggle" className="nav-toggle" checked={navExpanded} onClick={() => setNav(!navExpanded)} />
       <nav>
         <ul>

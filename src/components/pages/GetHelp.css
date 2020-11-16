@@ -6,19 +6,9 @@
     color: #432BFA;
 }
 
-.get-help .page-row {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
 .get-help .jumbo-title {
     background-color: var(--background-get-help);
     color: var(--font-color-get-help);
-    padding: 72px 32px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 38px;
 }
 
 .get-help section.submit-a-request .group-1 .title {

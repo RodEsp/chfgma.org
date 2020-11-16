@@ -1,6 +1,6 @@
 .content {
     flex: 1;
-    padding-top: 50px;   
+    padding-top: 50px;
 }
 
 /*****************************************
@@ -31,17 +31,58 @@ a.inline-link:hover, a:active {
     color: inherit;
 }
 
-/*****************************************
- Rows
-*****************************************/
 
 /*********************
- Page Row
+ Page
 *********************/
 
-.page-row {
-    padding: 0 30px;
+.page {
+    display: grid;
+    row-gap: 60px;
 }
+
+.page > section {
+    padding: 0 30px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+
+.page > section:nth-child(2) {
+    padding-top: 20px;
+}
+
+.page > section:last-child {
+    padding-bottom: 40px;
+}
+
+.page > section.jumbo-title {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+/***************************** 
+Rows
+*****************************/
+
+.row {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.row-container {
+    width: 100%;
+    max-width: 940px;
+}
+
+@media screen and (min-width: 768px) {
+    .text-box {
+        padding: 48px 40px 40px 40px;
+    }
+}
+
 
 /*********************
  Grid Row
@@ -133,10 +174,6 @@ Buttons
 ************************/
 
 a.button-link {
-    /* display: inline-block; */
-    /* flex: 1; */
-    /* margin: 2px; */
-    /* padding: 9px 25px; */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     border: none;
     border-radius: 100px;
@@ -152,37 +189,15 @@ a.button-link {
 
 a.button-link::after {
     content: url(../../assets/icons/chevron.svg);
-    margin-left: 10px;
+    margin-left: 5px;
     position: absolute;
     transition: margin-left 250ms ease-in-out;
 }
 
 a.button-link:hover::after {
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
-/***************************** 
-Rows
-*****************************/
-
-.row {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.row-container {
-    width: 100%;
-    max-width: 940px;
-    /* max-width: calc((var(--page-max-width) / 2) * 1px); */
-    justify-content: space-between;
-}
-
-@media screen and (min-width: 768px) {
-    .text-box {
-        padding: 48px 40px 40px 40px;
-    }
-}
 
 /***************************** 
 Flex
