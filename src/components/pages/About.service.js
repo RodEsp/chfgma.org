@@ -21,28 +21,22 @@ export const stayUpToDateCards = [{
 
 export const stats = [
     {
-        stat: "$44,997",
-        text: "total contributed to our Mutual Aid Fund and Direct Action Funds",
+        stat: "$146,143",
+        text: "total contributed to our Groceries & Essentials and Direct Action Funds",
     }, {
-        stat: "658",
+        stat: "25,000",
+        text: "grocery packages delivered in collaboration with local food pantries",
+    }, {
+        stat: "2000",
         text: "requests fulfilled for groceries and essential supplies",
     }, {
-        stat: "533",
-        text: "callbacks to requests on our hotline",
+        stat: "974",
+        text: "unique callbacks to requests on our hotline",
+    }, {
+        stat: "1,279",
+        text: "members of our Slack community",
     }, {
         stat: "948",
-        text: "wellness check calls made",
-    }, {
-        stat: "10,000",
-        text: "grocery packages delivered through our weekly collaboration with food pantries",
-    }, {
-        stat: "135+",
-        text: "people attended training sessions",
-    }, {
-        stat: "988",
-        text: "people have joined our Slack community",
-    }, {
-        stat: "760",
-        text: "people have followed our Instagram account",
+        text: "wellness calls made",
     }
 ]

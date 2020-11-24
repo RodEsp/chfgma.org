@@ -136,7 +136,11 @@
 /* Fancy List */
 
 .fancy-list-wrapper>.header1 {
-    margin-bottom: calc(10px + (40 - 10) * ((100vw - 300px) / (1600 - 300)));
+    margin-bottom: 30px;
+}
+
+.fancy-list-wrapper>.fancy-list {
+    margin: 13px 0;
 }
 
 .fancy-list-container {

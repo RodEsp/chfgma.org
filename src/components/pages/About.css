@@ -1,3 +1,8 @@
+.about a.button-link {
+    background-color: #009E78;
+    line-height: 40px;
+}
+
 /******************************** 
 Components
 ********************************/
@@ -6,7 +11,12 @@ Components
 
 .about #the-neighborhood {
     background-color: #F1FDF7;
-    padding-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .about #the-neighborhood .split-wrapper {
+        grid-template-columns: 40fr 60fr;
+    }
 }
 
 .about #the-neighborhood .title {
@@ -15,9 +25,8 @@ Components
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
-    text-align: center;
+    text-align: left;
     color: #212121;
-    text-align: center;
     margin-bottom: 40px;
 }
 
@@ -25,35 +34,9 @@ Components
     padding: 30px;
 }
 
-.about #the-neighborhood .btn-wrapper {
-    display: grid;
-    grid-template-rows: 40px 40px;
-    grid-gap: 1em;
-}
-
-@media screen and (min-width: 768px) {
-    .about #the-neighborhood .btn-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: unset !important;
-    }    
-}
-
 .about #the-neighborhood .btn-wrapper a.button-link {
     background-color: #009E78;
     line-height: 40px;
-}
-
-.about #the-neighborhood .btn-wrapper {
-    display: grid;
-    grid-template-rows: 40px 40px;
-    grid-gap: 16px;
-}
-
-.about #the-neighborhood .btn-wrapper a {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
 }
 
 .about #the-neighborhood .small-text {
@@ -99,9 +82,6 @@ Components
     }
 }
 
-
-
-
 /* Since Component  */
 
 .about .since .row-container {
@@ -145,13 +125,11 @@ Components
         grid-template-columns: 70%;
         justify-content: left;
     }
-
     .about .since .since-items-wrapper {
         text-align: left;
         grid-template-columns: auto auto;
         grid-column-gap: 30px;
     }
-
     .about .since .people-holding-trash-svg {
         display: none;
     }
@@ -241,7 +219,6 @@ Components
     }
 }
 
-
 /* Instagram Updates */
 
 .instagram-updates {
@@ -266,5 +243,4 @@ Components
 
 .instagram-updates #instagram-iframe {
     border: none;
-    
 }

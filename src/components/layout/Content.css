@@ -1,7 +1,7 @@
 .content {
     flex: 1;
-    padding-top: 50px;
 }
+
 
 /*****************************************
  Elements
@@ -61,6 +61,15 @@ a.inline-link:hover, a:active {
     padding-top: 60px;
     padding-bottom: 40px;
 }
+
+/*******************************
+Hero
+********************************/
+
+.page section.hero {
+    padding-top: 180px !important;
+}
+
 
 /***************************** 
 Rows
@@ -311,21 +320,19 @@ Split
 *****************************/
 
 .split-wrapper {
-    grid-template-columns: repeat(1, 100%);
-}
-
-.split-wrapper > .split-col {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.split-wrapper>.split-col>.split-col-img {
-    width: 100%;
-}
-
-.split-wrapper>.split-col.y-center {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
+    row-gap: 30px;
+}
+
+.split-wrapper>img, div {
+    width: 100%;
+}
+
+.split-wrapper>img.align-right {
+    width: 215px;
+    margin: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -333,16 +340,44 @@ Split
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         /* grid-gap: calc(10px + (100 - 10) * ((100vw - 768px) / (1600 - 300))); */
-        column-gap: 100px; 
+        column-gap: 115px; 
     }
-    .split-wrapper > .split-col {
-        max-width: 460px;
-        width: 100%;
+    .split-wrapper>img.align-right {
+        width: 215px;
+        margin-left: auto;
     }
 }
 
+/*****************************
+Button
+*****************************/
 
 
+.btn-wrapper {
+    display: grid;
+    grid-template-rows: 40px 40px;
+    grid-gap: 1em;
+}
+
+@media screen and (min-width: 768px) {
+    .btn-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: unset !important;
+    }    
+}
+
+.btn-wrapper {
+    display: grid;
+    grid-template-rows: 40px 40px;
+    grid-gap: 16px;
+}
+
+.btn-wrapper a {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
 
 
 /***************************** 
