@@ -52,8 +52,15 @@ a.inline-link:hover, a:active {
 }
 
 .page>section.jumbo-title {
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding-top: 180px;
+    padding-bottom: 134px;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
 }
 
 /*******************************
@@ -203,9 +210,23 @@ Rows
 Buttons
 ************************/
 
+.btn-wrapper {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .btn-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: unset !important;
+    }
+}
+
 a.button-link {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1.25em;
+    padding-right: 2.25em;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     border: none;
     border-radius: 100px;
@@ -220,13 +241,20 @@ a.button-link {
 
 a.button-link::after {
     content: url(../../assets/icons/chevron.svg);
-    margin-left: 1em;
+    margin-left: 10px;
     position: absolute;
     transition: margin-left 250ms ease-in-out;
 }
 
 a.button-link:hover::after {
-    margin-left: 10px;
+    margin-left: 1em;
+}
+
+@media screen and (min-width: 768px) {
+    a.button-link {
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
 }
 
 /***************************** 
@@ -351,10 +379,6 @@ Split
     width: 100%;
 }
 
-/* .split-wrapper.thin>img, div {
-    width: 90%;
-} */
-
 .split-wrapper>img.align-right {
     width: 215px;
     margin-left: auto;
@@ -365,7 +389,7 @@ Split
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         /* grid-gap: calc(10px + (100 - 10) * ((100vw - 768px) / (1600 - 300))); */
-        column-gap: 115px;
+        column-gap: 99px;
     }
     .split-wrapper>img.align-right {
         width: 215px;
@@ -373,35 +397,12 @@ Split
     }
 }
 
-/*****************************
-Button
-*****************************/
-
-@media screen and (min-width: 768px) {
-    .btn-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: unset !important;
-    }
-}
-
-.btn-wrapper {
-    display: grid;
-    grid-template-rows: repeat(auto-fit, 1fr);
-    grid-gap: 16px;
-}
-
-.btn-wrapper a {
-    font-weight: bold;
-    font-size: 18px;
-}
-
 /***************************** 
 Other
 *****************************/
 
 .jumbo-title {
-    padding-top: 3em;
+    padding-top: 100px;
     padding-bottom: 3em;
     font-style: normal;
     font-weight: bold;

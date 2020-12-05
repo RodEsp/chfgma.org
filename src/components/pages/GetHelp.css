@@ -11,25 +11,29 @@
     color: var(--font-color-get-help);
 }
 
-.get-help section.submit-a-request .group-1 .title {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 34px;
+.get-help section.submit-a-request .split-wrapper {
+    margin-bottom: 20px;
 }
 
-.get-help section.submit-a-request .group-1 .subtitle {
+.text-group .title {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.text-group .subtitle {
+    font-size: 18px;
+    font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-}
-
-.get-help a.button-link.button-request-help {
-    line-height: 40px;
-    margin: 10px 0;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 .get-help .text-box {
-    margin: 40px 0;
     padding: 40px;
 }
 
@@ -44,10 +48,13 @@
 }
 
 @media screen and (min-width: 768px) {
+    .get-help section.submit-a-request .text-group {
+        margin-top: 30px;
+    }
     .get-help .other-resources {
         width: 66%;
     }
-    .get-help .button-request-help {
+    .button-request-help {
         width: 50%;
     }
 }
