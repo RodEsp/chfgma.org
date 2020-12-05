@@ -1,6 +1,5 @@
 .about a.button-link {
     background-color: #009E78;
-    line-height: 40px;
 }
 
 /******************************** 
@@ -13,28 +12,17 @@ Components
     background-color: #F1FDF7;
 }
 
-@media screen and (min-width: 768px) {
-    .about #the-neighborhood .row-container {
-        max-width: 825px;
-    }
-    .about #the-neighborhood .split-wrapper {
-        grid-template-columns: 40fr 60fr;
-    }
+.about #the-neighborhood .split-wrapper>img {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 
 .about #the-neighborhood .title {
     text-align: left;
     color: #212121;
     margin-bottom: 40px;
-}
-
-.about #the-neighborhood .home-passing-boxes-img {
-    padding: 30px;
-}
-
-.about #the-neighborhood .btn-wrapper a.button-link {
-    background-color: #009E78;
-    line-height: 40px;
 }
 
 .about #the-neighborhood .small-text {
@@ -45,7 +33,23 @@ Components
     padding: 40px 0;
 }
 
+@media screen and (min-width: 768px) {
+    .about #the-neighborhood .row-container {
+        max-width: 825px;
+    }
+    .about #the-neighborhood .split-wrapper {
+        grid-template-columns: 40fr 60fr;
+    }
+    .about #the-neighborhood .split-wrapper>img {
+        width: 100%;
+    }
+}
+
 /* About us */
+
+.about #about-us .row-container .split-wrapper .subheader {
+    margin-bottom: 60px;
+}
 
 @media screen and (min-width: 768px) {
     .about #about-us .row-container .split-wrapper {
@@ -62,6 +66,10 @@ Components
 }
 
 /* What is mutual aid */
+
+section#what-is-mutual-aid .fancy-list-wrapper .fancy-list .fancy-list-container {
+    grid-column-gap: 4em;
+}
 
 @media screen and (min-width: 768px) {
     section#what-is-mutual-aid .fancy-list-wrapper {
@@ -111,17 +119,16 @@ Components
 
 .about .since .row-container {
     display: grid;
-    justify-content: center;
     row-gap: 30px;
+    justify-content: left;
 }
 
 .about .since .since-items-wrapper {
-    text-align: center;
     display: grid;
     row-gap: 40px;
     margin-top: 60px;
-    justify-content: center;
     grid-template-columns: 80%;
+    text-align: left;
 }
 
 .about .since .since-items-wrapper .since-item {
@@ -141,17 +148,16 @@ Components
 }
 
 .about .since img.people-holding-trash-svg {
-    width: 250px;
+    padding-top: 100px;
+    width: 80%;
     margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
     .about .since .row-container {
         grid-template-columns: 70%;
-        justify-content: left;
     }
     .about .since .since-items-wrapper {
-        text-align: left;
         grid-template-columns: auto auto;
         grid-column-gap: 30px;
     }
@@ -251,7 +257,7 @@ Components
 }
 
 .instagram-updates .title {
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 .instagram-updates .text {

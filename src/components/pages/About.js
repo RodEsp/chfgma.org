@@ -30,7 +30,7 @@ function About() {
             <section id="the-neighborhood" className="hero">
                 <div className="row-container" >
                     <div className="split-wrapper">
-                        <img className="align-right" src={logoBlack} alt="mutual aid logo" />
+                        <img src={logoBlack} alt="mutual aid logo" />
                         <div className="text-group">
                             <div className="title">We are neighbors in Clinton Hill and Fort Greene coming together to care for one another through the COVID-19 pandemic and beyond.</div>
                             <div className="btn-wrapper">
@@ -48,7 +48,7 @@ function About() {
                     <div className="split-wrapper">
                         <div>
                             <div className="header1">About us</div>
-                            <p className="standard-text">We came together in March 2020 when the COVID-19 lockdown began. We created a phone hotline, a website, a Slack workspace, and a weekly newsletter. Since then, we’ve organized a network of thousands of neighbors to share what we have and fulfill what we need. Recognizing that our community has been impacted by gentrification and systemic racism, we seek to repair harm and create equity through redistribution and advocacy.</p>
+                            <p className="subheader standard-text">We came together in March 2020 when the COVID-19 lockdown began. We created a phone hotline, a website, a Slack workspace, and a weekly newsletter. Since then, we’ve organized a network of thousands of neighbors to share what we have and fulfill what we need. Recognizing that our community has been impacted by gentrification and systemic racism, we seek to repair harm and create equity through redistribution and advocacy.</p>
                             <div className="btn-wrapper">
                                 <ButtonLink linkTo="/donate" text="Donate" />
                             </div>
@@ -87,11 +87,8 @@ function About() {
 
             <section className="since">
                 <div className="row-container">
-
                     <div className="header1">Since March 2020</div>
-                    <div className="header2">As of November 2020</div>
                     <div className="copy">
-                        <p className="standard-text">In just a few short months, we’ve done a lot together—and this is just the start. These numbers were last updated on July 8, 2020.</p>
                         <div className="since-items-wrapper">
                             {stats.map(({ stat, text }) => (
                                 <div className="since-item">
@@ -101,8 +98,9 @@ function About() {
                             ))}
                         </div>
                     </div>
-                    <img src={peopleHoldingTrashIMG} className="people-holding-trash-svg" alt="people holding trash" />
-
+                    <div className="img-wrapper">
+                        <img src={peopleHoldingTrashIMG} className="people-holding-trash-svg" alt="people holding trash" />
+                    </div>
                 </div>
             </section>
 
@@ -124,8 +122,7 @@ function About() {
 
             <section className="instagram-updates">
                 <div className="row-container">
-                    <div className="header1 title">Instagram updates</div>
-                    <div className="small-text text">Share photos of you taking action and tag us so that we can share with the community! (Of course, only take and share photos of others with their consent.)</div>
+                    <div className="header1 title">We're on Instagram</div>
                     <div className="iframe-container">
                         <Iframe url="https://www.powr.io/instagram-feed/u/d93addb1_1586953295?isCookieAllowed=undefined#platform=embed"
                             powrindex="0"

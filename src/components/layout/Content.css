@@ -204,6 +204,8 @@ Buttons
 ************************/
 
 a.button-link {
+    padding-top: 1em;
+    padding-bottom: 1em;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     border: none;
     border-radius: 100px;
@@ -211,7 +213,6 @@ a.button-link {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 22px;
     text-align: center;
     white-space: nowrap;
     text-decoration: none;
@@ -376,12 +377,6 @@ Split
 Button
 *****************************/
 
-.btn-wrapper {
-    display: grid;
-    grid-template-rows: 40px 40px;
-    grid-gap: 1em;
-}
-
 @media screen and (min-width: 768px) {
     .btn-wrapper {
         display: grid;
@@ -392,14 +387,13 @@ Button
 
 .btn-wrapper {
     display: grid;
-    grid-template-rows: 40px 40px;
+    grid-template-rows: repeat(auto-fit, 1fr);
     grid-gap: 16px;
 }
 
 .btn-wrapper a {
     font-weight: bold;
     font-size: 18px;
-    line-height: 22px;
 }
 
 /***************************** 
