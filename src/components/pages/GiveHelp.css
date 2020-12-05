@@ -133,24 +133,7 @@
     row-gap: 20px;
 }
 
-/* Fancy List */
 
-.fancy-list-wrapper>.header1 {
-    margin-bottom: 30px;
-}
-
-.fancy-list-wrapper>.fancy-list {
-    margin: 13px 0;
-}
-
-.fancy-list-container {
-    padding: 1rem 0;
-    font-style: normal;
-    color: #212121;
-    border-top: 2px solid #DBDBDB;
-    display: grid;
-    grid-template-columns: 3rem auto;
-}
 
 /* Grid List */
 

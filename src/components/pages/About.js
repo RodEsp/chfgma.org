@@ -12,6 +12,7 @@ import peopleHoldingTrashIMG from "../../assets/people-holding-trash.png"
 import logoBlack from "../../assets/logo-black.png"
 
 import Iframe from 'react-iframe'
+import { render } from '@testing-library/react';
 
 const mutualAidNYCLink = "https://mutualaid.nyc/"
 
@@ -36,7 +37,7 @@ function About() {
                                 <ButtonLink linkTo="/get-help" text="I need help" />
                                 <ButtonLink linkTo="/give-help" text="I can help" />
                             </div>
-                            <p className="small-text">If you’re outside the Fort Greene and Clinton Hill area, you can find a group closer to you through <a href={mutualAidNYCLink} alt={`Mutual Aid NYC website link: ${mutualAidNYCLink}`}><b><u>Mutual Aid NYC</u></b></a>.</p>
+                            <div className="sub-title small-text">If you’re outside the Fort Greene and Clinton Hill area, you can find a group closer to you through <a href={mutualAidNYCLink} alt={`Mutual Aid NYC website link: ${mutualAidNYCLink}`}><b><u>Mutual Aid NYC</u></b></a>.</div>
                         </div>
                     </div>
                 </div>
@@ -57,11 +58,11 @@ function About() {
                 </div>
             </section>
 
-            <section>
+            <section id="what-is-mutual-aid">
                 <div className="row-container">
                     <div className="fancy-list-wrapper">
                         <div className="header1">What is mutual aid?</div>
-                        <div className="standard-text">Mutual aid is a form of community organizing where people, not institutions, take on the responsibility of caring for one another. It has a long history of being practiced around the world, and is rooted in Black, Indigenous, and other marginalized communities. Mutual aid rejects charity and the power of a privileged few for the solidarity of our fellow human beings and community.</div>
+                        <div className="subheader standard-text">Mutual aid is a form of community organizing where people, not institutions, take on the responsibility of caring for one another. It has a long history of being practiced around the world, and is rooted in Black, Indigenous, and other marginalized communities. Mutual aid rejects charity and the power of a privileged few for the solidarity of our fellow human beings and community.</div>
                         <div className="fancy-list">
                             <div className="fancy-list-container standard-text">
                                 <span><b>01</b></span>
@@ -105,20 +106,6 @@ function About() {
                 </div>
             </section>
 
-
-
-            <section id="where-we-act">
-                <div className="row-container">
-                    <div>
-                        <div className="header1">Where we act</div>
-                        <p>We live and act in the neighborhoods of Clinton Hill and Fort Greene in Brooklyn. If you’re outside this area, you can find a group closer to you through <b><u>Mutual Aid NYC</u></b>.</p>
-                    </div>
-                    <img className="split-col-img" src={whereWeActMap} alt="map of where we act" />
-                </div>
-            </section>
-
-
-
             <section className="stay-up-to-date">
                 <div className="row-container">
                     <div className="header1 title">Stay up to date</div>
@@ -155,18 +142,6 @@ function About() {
                 </div>
             </section>
 
-            {/* <section  id="our-principles">
-                <div className="row-container flex-row" >
-                    <p className="header1">Our principles</p>
-                    {ourPrinciples.map(({ title, description }, i) => (
-                        <div className="ourPrinciples-container" key={"our-principles-" + i}>
-                            <div className="ourPrinciples-name">{title}</div>
-                            <div className="ourPrinciples-description">{description}</div>
-                        </div>
-                    ))}
-                </div>
-            </section> */}
-
         </div>
     )
 }
@@ -174,3 +149,32 @@ function About() {
 export default About;
 
 
+// function whereWeAct() {
+//     return (
+//         <section id="where-we-act">
+//             <div className="row-container">
+//                 <div>
+//                     <div className="header1">Where we act</div>
+//                     <p>We live and act in the neighborhoods of Clinton Hill and Fort Greene in Brooklyn. If you’re outside this area, you can find a group closer to you through <b><u>Mutual Aid NYC</u></b>.</p>
+//                 </div>
+//                 <img className="split-col-img" src={whereWeActMap} alt="map of where we act" />
+//             </div>
+//         </section>
+//     )
+// }
+
+// function ourPrinciples() {
+//     return (
+//         <section id="our-principles">
+//             <div className="row-container flex-row" >
+//                 <p className="header1">Our principles</p>
+//                 {ourPrinciples.map(({ title, description }, i) => (
+//                     <div className="ourPrinciples-container" key={"our-principles-" + i}>
+//                         <div className="ourPrinciples-name">{title}</div>
+//                         <div className="ourPrinciples-description">{description}</div>
+//                     </div>
+//                 ))}
+//             </div>
+//         </section>
+//     )
+// }

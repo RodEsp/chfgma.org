@@ -2,7 +2,6 @@
     flex: 1;
 }
 
-
 /*****************************************
  Elements
 *****************************************/
@@ -31,7 +30,6 @@ a.inline-link:hover, a:active {
     color: inherit;
 }
 
-
 /*********************
  Page
 *********************/
@@ -41,23 +39,19 @@ a.inline-link:hover, a:active {
     row-gap: 60px;
 }
 
-.page > section {
-    padding: 0 30px;
+.page>section {
+    padding: 60px 30px;
     width: 100%;
     display: grid;
     grid-template-rows: 1fr;
     justify-content: center;
 }
 
-.page > section:nth-child(2) {
-    padding-top: 20px;
-}
-
-.page > section:last-child {
+.page>section:last-child {
     padding-bottom: 40px;
 }
 
-.page > section.jumbo-title {
+.page>section.jumbo-title {
     padding-top: 60px;
     padding-bottom: 40px;
 }
@@ -68,8 +62,17 @@ Hero
 
 .page section.hero {
     padding-top: 180px !important;
+    padding-bottom: 100px;
 }
 
+.page section.hero .title {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+}
 
 /***************************** 
 Rows
@@ -91,7 +94,6 @@ Rows
         padding: 48px 40px 40px 40px;
     }
 }
-
 
 /*********************
  Grid Row
@@ -118,6 +120,25 @@ Rows
     display: grid;
     column-gap: minmax(auto, 100px);
     grid-template-columns: minmax(auto, 1fr) minmax(1em, 1fr);
+}
+
+/* Fancy List */
+
+.fancy-list-wrapper>.header1 {
+    margin-bottom: 30px;
+}
+
+.fancy-list-wrapper>.fancy-list {
+    margin: 13px 0;
+}
+
+.fancy-list-container {
+    padding: 1rem 0;
+    font-style: normal;
+    color: #212121;
+    border-top: 2px solid #DBDBDB;
+    display: grid;
+    grid-template-columns: 3rem auto;
 }
 
 /************************
@@ -198,7 +219,7 @@ a.button-link {
 
 a.button-link::after {
     content: url(../../assets/icons/chevron.svg);
-    margin-left: 5px;
+    margin-left: 1em;
     position: absolute;
     transition: margin-left 250ms ease-in-out;
 }
@@ -206,7 +227,6 @@ a.button-link::after {
 a.button-link:hover::after {
     margin-left: 10px;
 }
-
 
 /***************************** 
 Flex
@@ -321,7 +341,7 @@ Split
 
 .split-wrapper {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, 1fr);
     justify-content: center;
     row-gap: 30px;
 }
@@ -330,9 +350,13 @@ Split
     width: 100%;
 }
 
+/* .split-wrapper.thin>img, div {
+    width: 90%;
+} */
+
 .split-wrapper>img.align-right {
     width: 215px;
-    margin: auto;
+    margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -340,7 +364,7 @@ Split
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         /* grid-gap: calc(10px + (100 - 10) * ((100vw - 768px) / (1600 - 300))); */
-        column-gap: 115px; 
+        column-gap: 115px;
     }
     .split-wrapper>img.align-right {
         width: 215px;
@@ -351,7 +375,6 @@ Split
 /*****************************
 Button
 *****************************/
-
 
 .btn-wrapper {
     display: grid;
@@ -364,7 +387,7 @@ Button
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: unset !important;
-    }    
+    }
 }
 
 .btn-wrapper {
@@ -378,7 +401,6 @@ Button
     font-size: 18px;
     line-height: 22px;
 }
-
 
 /***************************** 
 Other

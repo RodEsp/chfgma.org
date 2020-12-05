@@ -14,17 +14,15 @@ Components
 }
 
 @media screen and (min-width: 768px) {
+    .about #the-neighborhood .row-container {
+        max-width: 825px;
+    }
     .about #the-neighborhood .split-wrapper {
         grid-template-columns: 40fr 60fr;
     }
 }
 
 .about #the-neighborhood .title {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 28px;
     text-align: left;
     color: #212121;
     margin-bottom: 40px;
@@ -45,6 +43,33 @@ Components
     font-size: 14px;
     line-height: 24px;
     padding: 40px 0;
+}
+
+/* About us */
+
+@media screen and (min-width: 768px) {
+    .about #about-us .row-container .split-wrapper {
+        grid-template-columns: 8fr 7fr;
+        column-gap: 50px;
+    }
+    .about #about-us .row-container img {
+        margin-left: 10px;
+        margin-top: -30px;
+        margin-bottom: 10px;
+        height: 115%;
+        width: unset;
+    }
+}
+
+/* What is mutual aid */
+
+@media screen and (min-width: 768px) {
+    section#what-is-mutual-aid .fancy-list-wrapper {
+        padding-right: 30%;
+    }
+    section#what-is-mutual-aid .fancy-list-wrapper .subheader {
+        padding-right: 10%;
+    }
 }
 
 /* Where We Act */
