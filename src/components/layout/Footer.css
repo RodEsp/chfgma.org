@@ -11,11 +11,20 @@
     border-top: .5px solid grey;
 }
 
+.footer .content-wrapper .contact-info {
+    display: flex;
+    flex-direction: column;
+}
 
 @media screen and (min-width: 768px) {
     .footer .content-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding: 0 20px;
+    }
+    .footer .content-wrapper .contact-info {
+        display: flex;
+        flex-direction: row;
     }
 }
 

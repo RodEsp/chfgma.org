@@ -6,9 +6,7 @@ import Footer from './components/layout/Footer.js';
 import './App.css';
 
 
-
 const App = () => {
-  // console.debug("App")
   return (
     <div id="app-container">
       <Router>
@@ -19,8 +17,5 @@ const App = () => {
     </div>
   );
 }
-
-// App.propTypes = {}
-
 
 export default App;
