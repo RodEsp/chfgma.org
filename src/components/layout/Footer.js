@@ -1,13 +1,9 @@
 import React from "react";
-// Config
 import config from "../../config.js"
-// Styles
 import "./Footer.css";
-// Images
 import iconFacebook from "../../assets/icons/icon-facebook.svg"
 import iconInstagram from "../../assets/icons/icon-instagram.svg"
 
-// TODO: move to config
 const {
     MUTUAL_AID_NEWSLETTER_SUBSCRIBE_LINK,
     MUTUAL_AID_SLACK_LINK,
@@ -18,8 +14,6 @@ const {
     MUTUAL_AID_FACEBOOK_LINK
 } = config;
 
-// TODO: Style links
-// TODO: Links
 export default () => (
     <div className="footer">
         <hr/>
