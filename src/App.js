@@ -6,7 +6,6 @@ import Footer from './components/layout/Footer.js';
 import './App.css';
 
 
-
 const App = () => {
   // console.debug("App")
   return (

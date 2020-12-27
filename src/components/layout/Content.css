@@ -44,7 +44,7 @@ a.inline-link:hover, a:active {
     width: 100%;
     display: grid;
     grid-template-rows: 1fr;
-    justify-content: center;
+    justify-items: center;
 }
 
 .page>section:last-child {

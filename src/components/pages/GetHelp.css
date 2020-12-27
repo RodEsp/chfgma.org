@@ -37,6 +37,35 @@
     padding: 40px;
 }
 
+@media screen and (min-width: 768px) {
+    .get-help section.submit-a-request .text-group {
+        margin-top: 30px;
+    }
+    .button-request-help {
+        width: 50%;
+    }
+}
+
+/****************************
+Join the Conversation
+****************************/
+
+@media screen and (min-width: 768px) {
+    .join-the-conversation .text-group {
+        width: 40%;
+    }
+}
+
+/****************************
+Other Resources
+****************************/
+
+@media screen and (min-width: 768px) {
+    .other-resources .text-group {
+        padding-right: 30%;
+    }
+}
+
 .get-help .other-resources .header1, .get-help .other-resources .header2 {
     padding: 20px 0;
 }
@@ -45,16 +74,4 @@
     font-style: normal;
     font-size: 16px;
     line-height: 26px;
-}
-
-@media screen and (min-width: 768px) {
-    .get-help section.submit-a-request .text-group {
-        margin-top: 30px;
-    }
-    .get-help .other-resources {
-        width: 66%;
-    }
-    .button-request-help {
-        width: 50%;
-    }
 }
