@@ -7,20 +7,30 @@
     line-height: 28px;
 }
 
+.footer .content-wrapper {
+    margin-top: 42px;
+}
+
 .footer > hr {
-    border-top: .5px solid grey;
+    border-top: .5px solid #DBDBDB;
 }
 
 .footer .content-wrapper .contact-info {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer .content-wrapper .contact-info .section {
+    width: auto;
+    margin-left: 16px;
 }
 
 @media screen and (min-width: 768px) {
     .footer .content-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 0 20px;
+        padding: 0 32px;
     }
     .footer .content-wrapper .contact-info {
         display: flex;
@@ -60,7 +70,7 @@
 .footer .contact-info .section .title {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     color: #7A7A7A;
 }
 

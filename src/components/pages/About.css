@@ -30,7 +30,12 @@ Components
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
-    padding: 40px 0;
+    padding-top: 40px;
+}
+
+.about #the-neighborhood .logo {
+    height: 230px;
+    width: auto !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -196,6 +201,7 @@ section#what-is-mutual-aid .fancy-list-wrapper .fancy-list .fancy-list-container
 .about .stay-up-to-date {
     background-color: #F1FDF7;
     padding-bottom: 90px;
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 }
 
 .about .stay-up-to-date .title {
@@ -231,12 +237,35 @@ section#what-is-mutual-aid .fancy-list-wrapper .fancy-list .fancy-list-container
     background-color: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    padding: 35px 61px;
+    padding: 35px 35px;
     display: grid;
     align-items: center;
     text-align: center;
     height: 220px;
     width: 100%;
+}
+
+.cards-wrapper a {
+    text-decoration: none;
+}
+
+a .card {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none;
+    text-transform: none;
+    color: black;
+}
+
+.cards-wrapper .card:hover {
+    transform: translateY(-3px);
+    transition: transform ease-in-out 250ms;
+}
+
+.cards-wrapper .card:active {
+    transform: translateY(-2px);
+    transition: transform ease-in-out 50ms;
 }
 
 /* Desktop */

@@ -21,7 +21,7 @@ export default () => (
             <div className="stay-connected">
                 <div className="title capitalize"><b>clinton hill fort greene mutual aid</b></div>
                 <div className="subtitle"><a href={MUTUAL_AID_NEWSLETTER_SUBSCRIBE_LINK} alt={`subscribe to newsletter link: ${MUTUAL_AID_NEWSLETTER_SUBSCRIBE_LINK}`}>Subscribe</a> to our weekly newsletter</div>
-                <div className="subtitle"><a href={MUTUAL_AID_SLACK_LINK} alt={`slack link: ${MUTUAL_AID_SLACK_LINK}`}>Join</a> us on Slack</div>
+                <div className="subtitle">Join us on <a href={MUTUAL_AID_SLACK_LINK} alt={`slack link: ${MUTUAL_AID_SLACK_LINK}`}>Slack</a></div>
             </div>
             <div className="contact-info">
                 <div className="section">

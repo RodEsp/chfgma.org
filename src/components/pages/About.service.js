@@ -9,14 +9,20 @@ export const stayUpToDateCards = [{
     image: iconMailboxIMG,
     alt: "mailbox icon",
     text: "Subscribe to our weekly newsletter",
+    // Do we want updated tracking on these links?
+    url: 'http://www.google.com/url?q=http%3A%2F%2Feepurl.com%2FgYkOfr&sa=D&sntz=1&usg=AFQjCNE1FlYIFs1Cq8cgbyVfUUPzgSG4-A',
+    offsetX: -12,
 }, {
     image: iconMessagesIMG,
     alt: "message icon",
     text: "Join the conversation on Slack",
+    url: 'http://www.google.com/url?q=http%3A%2F%2Fbit.ly%2Fjoinchfg&sa=D&sntz=1&usg=AFQjCNEaZgUO6kj0g8PYCgH9pkquadJDWw',
 }, {
     image: iconPicIMG,
     alt: "picture icon",
     text: "Follow us on Instagram for updates",
+    url: 'https://lh4.googleusercontent.com/5yXz9DqNE2ToQQd_L4bI4iL-uDcJEMqMufHLbZWUkkSPJmXHdYbm5pt6PQUjOEcbq-7McK0=w1280',
+    offsetX: -12,
 }];
 
 export const stats = [

@@ -26,18 +26,22 @@ TODO:
 function About() {
     return (
         <div className="about page polygon-page">
-
             <section id="the-neighborhood" className="hero">
                 <div className="row-container" >
                     <div className="split-wrapper">
-                        <img src={logoBlack} alt="mutual aid logo" />
+                        <img className="logo" src={logoBlack} alt="mutual aid logo" />
                         <div className="text-group">
                             <div className="title">We are neighbors in Clinton Hill and Fort Greene coming together to care for one another through the COVID-19 pandemic and beyond.</div>
                             <div className="btn-wrapper">
                                 <ButtonLink linkTo="/get-help" text="I need help" />
                                 <ButtonLink linkTo="/give-help" text="I can help" />
                             </div>
-                            <div className="sub-title small-text">If you’re outside the Fort Greene and Clinton Hill area, you can find a group closer to you through <a href={mutualAidNYCLink} alt={`Mutual Aid NYC website link: ${mutualAidNYCLink}`}><b><u>Mutual Aid NYC</u></b></a>.</div>
+                            <div className="sub-title small-text">
+                                You can be both someone who needs help and can help. Mutual aid recognizes that your identity is not tied up in one or the other.
+                            </div>
+                            <div className="sub-title small-text">
+                                If you’re outside the Fort Greene and Clinton Hill area, you can find a group closer to you through <a href={mutualAidNYCLink} alt={`Mutual Aid NYC website link: ${mutualAidNYCLink}`}><b><u>Mutual Aid NYC</u></b></a>.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -53,6 +57,7 @@ function About() {
                                 <ButtonLink linkTo="/donate" text="Donate" />
                             </div>
                         </div>
+                        {/*Do we have a higher-quality version of this image? */}
                         <img className="split-col-img" src={homePassingBoxes} alt="people passing boxes" />
                     </div>
                 </div>
@@ -90,8 +95,8 @@ function About() {
                     <div className="header1">Since March 2020</div>
                     <div className="copy">
                         <div className="since-items-wrapper">
-                            {stats.map(({ stat, text }) => (
-                                <div className="since-item">
+                            {stats.map(({ stat, text }, i) => (
+                                <div className="since-item" key={"about-stat-" + i}>
                                     <div className="since-item-title">{stat}</div>
                                     <div className="since-item-description">{text}</div>
                                 </div>
@@ -108,13 +113,15 @@ function About() {
                 <div className="row-container">
                     <div className="header1 title">Stay up to date</div>
                     <div className="cards-wrapper">
-                        {stayUpToDateCards.map(({ image, text, alt }, i) => (
-                            <div className="card" key={"stayUpToDate-tile-" + i}>
-                                <div className="stayUpToDate-icon-image">
-                                    <img src={image} alt={alt} />
+                        {stayUpToDateCards.map(({ image, text, alt, url, offsetX }, i) => (
+                            <a href={url} target="_blank" key={"stayUpToDate-tile-" + i}>
+                                <div className="card">
+                                    <div className="stayUpToDate-icon-image">
+                                        <img src={image} alt={alt} style={{ transform: `translateX(${offsetX ? offsetX : 0}px)` }}/>
+                                    </div>
+                                    <div className="stayUpToDate-icon-text">{text}</div>
                                 </div>
-                                <div className="stayUpToDate-icon-text">{text}</div>
-                            </div>
+                            </a>
                         ))}
                     </div>
                 </div>
