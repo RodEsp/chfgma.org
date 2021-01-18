@@ -14,12 +14,7 @@ header {
     z-index: 9999;
     width: 100%;
     position: fixed;
-    padding: 0 20px;
-}
-
-header .logo {
-    width: 50px;
-    margin: 10px;
+    padding: 25px 40px;
 }
 
 header.about {
@@ -54,8 +49,37 @@ header.donate nav {
     background: var(--nav-background-donate);
 }
 
+header a.home {
+    white-space: nowrap;
+    text-decoration: none;
+    text-transform: none;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+}
+
+@media screen and (min-width: 900px) {
+    header a.long-home {
+        display: unset;
+    }
+    header a.short-home {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header a.long-home {
+        display: none;
+    }
+    header a.short-home {
+        display: unset;
+    }
+}
+
 /****************************
- Nav 
+*            Nav            *
 ****************************/
 
 nav {
@@ -78,14 +102,12 @@ nav a {
     color: rgba(0, 0, 0, 1);
     font-style: normal;
     font-weight: 600;
-    font-size: var(--font-size-responsive);
+    font-size: 18px;
     line-height: 22px;
     /* Toggle Animation - Collapse */
     opacity: 0;
     transition: opacity 150ms ease-in-out;
 }
-
-/* The ~ looks for any preceding sibling, it doesn't have to be immediately after. */
 
 .nav-toggle:checked~nav {
     /* Toggle Animation */
@@ -155,14 +177,16 @@ nav a.is-active.donate-link {
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
+    padding: 0 1em;
     list-style: none;
 }
 
-nav li {
-    margin-bottom: 1em;
-    margin-left: 1em;
+nav ul li a {
+    font-size: 32px;
+}
+
+nav ul li {
+    padding: 1em;
 }
 
 nav a:hover {
@@ -171,42 +195,31 @@ nav a:hover {
 }
 
 /***************
- Logo
-***************/
-
-.logo {
-    white-space: nowrap;
-}
-
-.logo a {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 29px;
-    text-decoration: none;
-    text-transform: none;
-    color: black;
-}
-
-/***************
  Desktop 
 ***************/
 
 @media screen and (min-width: 768px) {
+    /**************************
+    *         Header          *
+    **************************/
+
     header {
         display: grid;
-        grid-template-columns: minmax(10px, 40px) auto minmax(600px, 3fr) minmax(10px, 40px);
+        font-size: 24px;
+        line-height: 29px;
     }
+
+    /**************************
+    *           Nav           *
+    **************************/
+
     header nav {
         background: none;
-    }
-    /* Logo */
-    header .logo {
-        grid-column: 2 / 3;
     }
     header .nav-toggle-label {
         display: none;
     }
+
     /* nav */
     nav {
         /* The all takes off all the styles on the nav */
@@ -215,14 +228,13 @@ nav a:hover {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        white-space: nowrap;
     }
     nav ul {
-        display: flex;
-        justify-content: flex-end;
-    }
-    nav li {
-        margin-left: 3em;
-        margin-bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: right;
+        gap: 0 calc(0px + (30 - 0) * ((70vw - (var(--page-min-width) * 1px)) / (var(--page-max-width) - var(--page-min-width))));
     }
     nav a {
         opacity: 1;
