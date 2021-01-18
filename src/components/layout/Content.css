@@ -132,7 +132,7 @@ Rows
 /* Fancy List */
 
 .fancy-list-wrapper>.header1 {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .fancy-list-wrapper>.fancy-list {
@@ -160,6 +160,7 @@ Rows
     /* font-size: 34px; */
     font-size: var(--font-size-responsive-h1);
     line-height: 41px;
+    padding-bottom: 20px;
 }
 
 /* font-size: 24px */
