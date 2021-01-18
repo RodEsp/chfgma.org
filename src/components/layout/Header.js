@@ -52,7 +52,6 @@ function Header() {
           <li><NavLink to="/get-help" className="get-help-link" activeClassName='is-active'>Get Help</NavLink></li>
           <li><NavLink to="/give-help" className="give-help-link" activeClassName='is-active'>Give Help</NavLink></li>
           <li><NavLink to="/donate" className="donate-link" activeClassName='is-active'>Donate</NavLink></li>
-          {/* <li><NavLink to="/search" className="search-link"><img src={magnifyingGlassSVG} alt="search icon"/></NavLink></li> */}
         </ul>
       </nav>
       <label htmlFor="nav-toggle" className="nav-toggle-label">
@@ -63,7 +62,6 @@ function Header() {
 }
 
 function getHeaderClass(pathname) {
-  // console.log("getPageClass :::", pathname)
   switch (pathname) {
     case "/":
       return "about";
