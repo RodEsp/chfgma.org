@@ -66,11 +66,16 @@ Stats
     grid-template-columns: 1fr;
 }
 
+.give-help .give-help-stats .tile {
+    display: grid;
+    row-gap: 5px;
+}
+
 @media screen and (min-width: 768px) {
     .give-help .give-help-stats {
-        grid-template-columns: repeat(4, 1fr);
-        justify-content: space-evenly;
-        column-gap: 100px;
+        grid-template-columns: repeat(4, 218px);
+        justify-content: space-between;
+        padding: 0 25px;
     }
 }
 
