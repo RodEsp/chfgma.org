@@ -6,7 +6,6 @@
     background-color: #FFF6F0;
 }
 
-
 @media screen and (min-width: 768px) {
     .donate-page .row-container {
         display: grid;
@@ -15,7 +14,9 @@
     }
 }
 
-/* ************** */
+/***********************************
+*               Page               *
+***********************************/
 
 .page-donate {
     font-family: Montserrat;
@@ -43,6 +44,9 @@
     line-height: 28px;
 }
 
+/****************************
+*           Group           *
+****************************/
 
 .page-donate .group-1 .row-container {
     display: grid;
@@ -50,58 +54,43 @@
     row-gap: 40px;
 }
 
-.group-1 .stats {
-    text-align: center;
-}
-
-.page-donate .stat .value {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    margin-bottom: 5px;
-}
-
-.page-donate .stat .value {
-    margin-top: 40px;
-}
-
-.page-donate .stat .type {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-}
-
 @media screen and (min-width: 768px) {
     .page-donate .group-1 .row-container {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 100px;
     }
-    .page-donate .stats {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: left;
-        text-align: left;
-    }
-    .page-donate .stat .value {
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 29px;
-        margin-bottom: 5px;
-    }
 }
 
-
-
-
-/*  */
-
-.contribute {
+.right {
     background: #FFFFFF;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
     padding: 48px 40px 45px 40px;
+    letter-spacing: 0.05em;
 }
 
+.right>.title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+}
+
+.right>.vendors {
+    font-size: 18px;
+    line-height: 28px;
+    display: grid;
+    grid-row-gap: 2em;
+}
+
+.right>.vendors>.vendor>.name {
+    color: #F36A1D;
+    font-weight: bold;
+}
+
+.right>.vendors>.vendor>.description {}
+
+/* 
 .contribute > .title {
     font-weight: 600;
     font-size: 18px;
@@ -120,4 +109,4 @@
 
 .contribute .info:not(:last-of-type) {
     margin-bottom: 1em;
-}
+} */
