@@ -6,7 +6,9 @@
     color: var(--font-color-give-help);
 }
 
-/* jumbo title */
+/************************** 
+Jumbo Title
+**************************/
 
 .give-help .jumbo-title {
     background-color: var(--background-give-help);
@@ -61,7 +63,7 @@ Stats
 
 @media screen and (min-width: 768px) {
     .give-help .give-help-stats {
-        grid-template-columns: repeat(4, 218px);
+        grid-template-columns: repeat(4, minmax(20%, 218px));
         justify-content: space-between;
         padding: 0 25px;
     }
