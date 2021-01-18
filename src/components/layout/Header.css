@@ -60,7 +60,7 @@ header a.home {
     text-align: left;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
     header a.long-home {
         display: unset;
     }
@@ -69,7 +69,7 @@ header a.home {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
     header a.long-home {
         display: none;
     }
@@ -109,11 +109,6 @@ nav ul li {
     font-size: 32px;
 }
 
-nav a:hover {
-    /* TODO: change hover later */
-    font-weight: bolder;
-}
-
 nav a {
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
@@ -123,6 +118,11 @@ nav a {
     /* Toggle Animation - Collapse */
     opacity: 0;
     transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+    /* TODO: change hover later */
+    font-weight: bolder;
 }
 
 .nav-toggle:checked~nav {
@@ -213,6 +213,7 @@ nav a.is-active.donate-link {
 
     header nav {
         background: none;
+        
     }
     header .nav-toggle-label {
         display: none;
@@ -234,6 +235,11 @@ nav a.is-active.donate-link {
         justify-content: right;
         gap: 0 calc(0px + (30 - 0) * ((70vw - (var(--page-min-width) * 1px)) / (var(--page-max-width) - var(--page-min-width))));
         margin: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+        font-size: 18px
     }
     
     nav a {
