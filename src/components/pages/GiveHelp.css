@@ -13,12 +13,8 @@
     color: var(--font-color-give-help);
 }
 
-/***************************
-two-in-one
-***************************/
 .give-help .two-in-one .row-container {
     display: grid;
-    row-gap: 50px;
 }
 
 .give-help .two-in-one .text-group ul {
@@ -29,8 +25,8 @@ two-in-one
     line-height: 26px;
 }
 
-.give-help .two-in-one .row-container > img {
-    width: 250px;
+.give-help .two-in-one .row-container>img {
+    width: 380px;
     margin: auto;
 }
 
@@ -41,15 +37,7 @@ two-in-one
     }
 }
 
-/************************
-Help
-*************************/
 
-.give-help .help .fancy-list-wrapper .header1 {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 34px;
-}
 
 /************************** 
 Stats 
@@ -113,10 +101,6 @@ Stats
     margin-top: 50px;
 }
 
-.give-help .helpful-resources .helpful-resources-content {
-
-}
-
 .give-help .helpful-resources .header1 {
     font-weight: bold;
     font-size: 34px;
@@ -161,6 +145,108 @@ Stats
     grid-template-columns: 100%;
     row-gap: 1em;
     grid-column: 2/3;
+}
+
+
+/***************************
+*     How You Can Help     *
+****************************/
+
+@media screen and (min-width: 768px) {
+.give-help .how-you-can-help .row-container .section-1 {
+    grid-area: section1;
+    margin-bottom: 60px;
+}
+.give-help .how-you-can-help .row-container .pulling-boxes-img {
+    grid-area: img;
+    padding-top: 45px;
+}
+.give-help .how-you-can-help .row-container .section-2 {
+    grid-area: section2;
+}
+.give-help .how-you-can-help .row-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "section1 section1 . . ." 
+        "section1 section1 img img img"
+        "section2 section2 section2 . .";
+}
+
+.give-help .how-you-can-help ul {
+    padding: 0 0 0 1.5em;
+}
+
+.give-help .how-you-can-help .section-2 {
+    max-width: 700px;
+}
+}
+
+/***********************************
+* Food Security and Working Groups *
+***********************************/
+
+@media screen and (min-width: 768px) {
+    .food-security-and-working-groups .row-container .section-1 {
+        grid-area: section1;
+    }
+    .food-security-and-working-groups .row-container .img {
+        grid-area: img;
+    }
+    .food-security-and-working-groups .row-container .section-2 {
+        grid-area: section2;
+    }
+    .food-security-and-working-groups .row-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: "section1 section1 . ." "section1 section1 img img" "section2 section2 img img";
+    }
+    .food-security-and-working-groups .row-container .people-making-donations-img {
+        width: 400px;
+    }
+    .food-security-and-working-groups .row-container .food-security {
+        margin-bottom: 180px;
+    }
+}
+
+/* Food Security */
+
+.food-security .title {
+    margin-bottom: 1.5em;
+}
+
+.food-security ol {
+    padding: 0;
+    counter-reset: item;
+}
+
+.food-security ol > li {
+    list-style-type: none;
+    counter-increment: item;
+    margin: 0 0 1.5em 0;
+}
+
+.food-security ol > li:last-of-type {
+    margin: 0;
+}
+
+.food-security ol>li:before {
+    display: inline-block;
+    width: 1em;
+    padding-right: 0.5em;
+    font-weight: bold;
+    text-align: right;
+    content: counter(item) ".";
+}
+
+/**************************
+* Help Us Spread The Word *
+**************************/
+
+.help-us-spread-the-word img.newsletter {
+    max-width: 330px;
 }
 
 /*****************************

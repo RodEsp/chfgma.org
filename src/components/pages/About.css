@@ -166,31 +166,6 @@ section#what-is-mutual-aid .fancy-list-wrapper .fancy-list .fancy-list-container
     }
 }
 
-/* Component: Our Principles  */
-
-/**********************************
-.about .ourPrinciples-container {
-    padding: 20px 0;
-    font-style: normal;
-    color: #212121;
-    border-top: 2px solid #8F8F8F;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-size: var(--font-size-responsive);
-    line-height: 28px;
-}
-.about .ourPrinciples-name {
-    font-weight: bold;
-    text-transform: capitalize;
-    flex: .30;
-}
-.about .ourPrinciples-description {
-    flex: .60;
-}
-**********************************/
-
 /* Stay up to date component */
 
 .about .stay-up-to-date {
