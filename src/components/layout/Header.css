@@ -95,6 +95,23 @@ nav {
     transform: translateX(-100%);
     transform-origin: left;
     transition: transform 400ms ease-in-out;
+    font-size: 18px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 1em;
+    font-size: 32px;
+}
+
+nav a:hover {
+    /* TODO: change hover later */
+    font-weight: bolder;
 }
 
 nav a {
@@ -102,7 +119,6 @@ nav a {
     color: rgba(0, 0, 0, 1);
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
     line-height: 22px;
     /* Toggle Animation - Collapse */
     opacity: 0;
@@ -176,24 +192,6 @@ nav a.is-active.donate-link {
     top: 7px;
 }
 
-nav ul {
-    padding: 0 1em;
-    list-style: none;
-}
-
-nav ul li a {
-    font-size: 32px;
-}
-
-nav ul li {
-    padding: 1em;
-}
-
-nav a:hover {
-    /* TODO: change hover later */
-    font-weight: bolder;
-}
-
 /***************
  Desktop 
 ***************/
@@ -235,7 +233,9 @@ nav a:hover {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: right;
         gap: 0 calc(0px + (30 - 0) * ((70vw - (var(--page-min-width) * 1px)) / (var(--page-max-width) - var(--page-min-width))));
+        margin: 0;
     }
+    
     nav a {
         opacity: 1;
         position: relative;
