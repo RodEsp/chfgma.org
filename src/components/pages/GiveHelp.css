@@ -37,14 +37,14 @@
     }
 }
 
-
-
 /************************** 
 Stats 
 **************************/
 
 .give-help .stats {
     background-color: var(--background-give-help);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
 }
 
 .give-help .give-help-stats {
@@ -124,8 +124,6 @@ Stats
     row-gap: 20px;
 }
 
-
-
 /* Grid List */
 
 .grid-list {
@@ -147,40 +145,39 @@ Stats
     grid-column: 2/3;
 }
 
-
 /***************************
 *     How You Can Help     *
 ****************************/
 
 @media screen and (min-width: 768px) {
-.give-help .how-you-can-help .row-container .section-1 {
-    grid-area: section1;
-    margin-bottom: 60px;
+    .give-help .how-you-can-help .row-container .section-1 {
+        grid-area: section1;
+        margin-bottom: 60px;
+    }
+    .give-help .how-you-can-help .row-container .pulling-boxes-img {
+        grid-area: img;
+        padding-top: 45px;
+    }
+    .give-help .how-you-can-help .row-container .section-2 {
+        grid-area: section2;
+    }
+    .give-help .how-you-can-help .row-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: "section1 section1 . . ." "section1 section1 img img img" "section2 section2 section2 . .";
+    }
+    .give-help .how-you-can-help ul {
+        padding: 0 0 0 1.5em;
+    }
+    .give-help .how-you-can-help .section-2 {
+        max-width: 700px;
+    }
 }
+
 .give-help .how-you-can-help .row-container .pulling-boxes-img {
-    grid-area: img;
-    padding-top: 45px;
-}
-.give-help .how-you-can-help .row-container .section-2 {
-    grid-area: section2;
-}
-.give-help .how-you-can-help .row-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "section1 section1 . . ." 
-        "section1 section1 img img img"
-        "section2 section2 section2 . .";
-}
-
-.give-help .how-you-can-help ul {
-    padding: 0 0 0 1.5em;
-}
-
-.give-help .how-you-can-help .section-2 {
-    max-width: 700px;
-}
+    margin: auto;
+    display: block;
 }
 
 /***********************************
@@ -191,7 +188,7 @@ Stats
     .food-security-and-working-groups .row-container .section-1 {
         grid-area: section1;
     }
-    .food-security-and-working-groups .row-container .img {
+    .food-security-and-working-groups .row-container .people-making-donations-img {
         grid-area: img;
     }
     .food-security-and-working-groups .row-container .section-2 {
@@ -211,6 +208,10 @@ Stats
     }
 }
 
+.food-security-and-working-groups .row-container .people-making-donations-img {
+    width: 100%;
+}
+
 /* Food Security */
 
 .food-security .title {
@@ -222,13 +223,13 @@ Stats
     counter-reset: item;
 }
 
-.food-security ol > li {
+.food-security ol>li {
     list-style-type: none;
     counter-increment: item;
     margin: 0 0 1.5em 0;
 }
 
-.food-security ol > li:last-of-type {
+.food-security ol>li:last-of-type {
     margin: 0;
 }
 

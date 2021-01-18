@@ -119,7 +119,7 @@ function FoodSecurityAndWorkingGroups() {
     return <section className="food-security-and-working-groups">
         <div className="row-container standard-text two-in-one-v2">
             <FoodSecurity />
-            <img className="people-making-donations-img img" src={peopleMakingDonationsIMG} alt="people making donations" />
+            <img className="people-making-donations-img" src={peopleMakingDonationsIMG} alt="people making donations" />
             <WorkingGroups />
         </div>
     </section>
