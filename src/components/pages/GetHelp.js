@@ -1,11 +1,8 @@
 import React from 'react';
 import "./GetHelp.css"
 import { ButtonLink } from "../layout/buttons/ButtonLink.js"
-import config from "../../config.js"
-import communityFridgeImg from "../../assets/community-fridge.png"
-
-
-const {
+import {
+    MUTUAL_AID_REQUEST_FORM, 
     MUTUAL_AID_AIRTABLE_LINK,
     MUTUAL_AID_EMAIL_ADDRESS_HELLO,
     MUTUAL_AID_PHONE_NUMBER_COUNTRY_CODE,
@@ -14,7 +11,9 @@ const {
     MUTUAL_AID_INSTAGRAM_FRIDGE_LINK,
     MUTUAL_AID_SLACK_LINK,
     COVID_TEXTING_HOTLINE
-} = config;
+} from "../../config.js"
+import communityFridgeImg from "../../assets/community-fridge.png"
+
 
 
 function GetHelp() {
@@ -43,7 +42,7 @@ function SubmitARequest() {
                         <p className="subtitle">
                             You can make a request by calling our hotline at {phoneNumberLink} or by submitting your request via the form in the button below.
                             </p>
-                        <ButtonLink className="button-request-help" linkTo="/get-help" text="Request form" styles={{ backgroundColor: "#432BFA" }} />
+                        <ButtonLink className="button-request-help" linkTo={MUTUAL_AID_REQUEST_FORM} text="Request form" styles={{ backgroundColor: "#432BFA" }} />
                     </div>
                     <div className="text-box">
                         <div className="title">SOME WAYS WE CAN HELP</div>

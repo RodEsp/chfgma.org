@@ -3,11 +3,7 @@ import "./GiveHelp.css";
 import peopleMakingDonationsIMG from "../../assets/people-making-donations.png"
 import newsletterIMG from "../../assets/newsletter.png"
 import pullingBoxesIMG from "../../assets/pulling-boxes.png"
-import config from "../../config.js"
-
-const {
-    MUTUAL_AID_INSTAGRAM_FRIDGE_LINK
-} = config;
+import {MUTUAL_AID_SLACK_LINK, MUTUAL_AID_INSTAGRAM_FRIDGE_LINK, MUTUAL_AID_WIKIPEDIA, MUTUAL_AID_NOTION_LINK} from "../../config.js"
 
 function GiveHelp() {
     return (
@@ -38,18 +34,15 @@ function Help() {
             <div>
                 <div className="fancy-list-container standard-text">
                     <span><b>01</b></span>
-                    {/* TODO: Is this a link? */}
-                    <span>Learn what <span className="text-important">mutual aid</span> means (we practice solidarity, not charity)</span>
+                    <span>Learn what <a className="text-important" href={MUTUAL_AID_WIKIPEDIA} alt="mutual aid wikipedia link">mutual aid</a> means (we practice solidarity, not charity)</span>
                 </div>
                 <div className="fancy-list-container standard-text">
                     <span><b>02</b></span>
-                    {/* TODO: Is this a link? */}
-                    <span>Take a minute to fill out our <span className="text-important">volunteer intake form</span></span>
+                    <span>Take a minute to fill out our <a className="text-important" href={MUTUAL_AID_NOTION_LINK} alt="mutual aid notion link">volunteer intake form</a></span>
                 </div>
                 <div className="fancy-list-container standard-text">
                     <span><b>03</b></span>
-                    {/* TODO: Is this a link? */}
-                    <span>Join us on <span className="text-important">Slack</span> to organize with other volunteers</span>
+                    <span>Join us on <a className="text-important" href={MUTUAL_AID_SLACK_LINK} alt="mutual aid slack link">Slack</a> to organize with other volunteers</span>
                 </div>
             </div>
         </div>
