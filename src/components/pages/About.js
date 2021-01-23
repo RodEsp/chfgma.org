@@ -119,11 +119,11 @@ function StayUpToDate() {
         <div className="row-container">
             <div className="header1 title">Stay up to date</div>
             <div className="cards-wrapper">
-                {stayUpToDateCards.map(({ image, text, alt }, i) => (
+                {stayUpToDateCards.map(({ image, text, alt, link }, i) => (
                     <div className="card" key={"stayUpToDate-tile-" + i}>
-                        <div className="stayUpToDate-icon-image">
+                        <a className="stayUpToDate-icon-image" href={link}>
                             <img src={image} alt={alt} />
-                        </div>
+                        </a>
                         <div className="stayUpToDate-icon-text">{text}</div>
                     </div>
                 ))}

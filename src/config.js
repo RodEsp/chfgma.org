@@ -13,6 +13,9 @@ export const MUTUAL_AID_AIRTABLE_LINK = "https://airtable.com/shrAwewkpHBHWyh5L/
 export const MUTUAL_AID_INSTAGRAM_FRIDGE_LINK = "https://www.instagram.com/fgcommunityfridge/";
 export const MUTUAL_AID_FRIDGE_LOCATION_LINK = "https://www.google.com/maps/place/357+Myrtle+Ave,+Brooklyn,+NY+11205/@40.6847488,-73.97376,14z/data=!4m5!3m4!1s0x89c25bb7f11a68b7:0xca08dde714414b59!8m2!3d40.6934011!4d-73.9717401"
 export const COVID_TEXTING_HOTLINE = "692-692"
+export const MUTUAL_AID_REQUEST_FORM = "https://mutualaid.nyc/request-assistance"
+export const MUTUAL_AID_WIKIPEDIA = "https://en.wikipedia.org/wiki/Mutual_aid_(organization_theory)#:~:text=In%20organization%20theory%2C%20mutual%20aid,another%20and%20changing%20political%20conditions."
+export const MUTUAL_AID_NOTION_LINK = "https://www.notion.so/Clinton-Hill-Fort-Greene-Mutual-Aid-55c77817239345ee89eb5e8b13563dcd"
 
 export const IOBY_LINK = "https://ioby.org/project/clinton-hill-fort-greene-mutual-aid"
 export const DONORBOX_LINK = "https://donorbox.org/chfgma"
