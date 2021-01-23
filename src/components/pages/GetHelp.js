@@ -1,6 +1,6 @@
 import React from 'react';
 import "./GetHelp.css"
-import { ButtonLink } from "../layout/buttons/ButtonLink.js"
+import { ButtonExternalLink } from "../layout/buttons/ButtonLink.js"
 import {
     MUTUAL_AID_REQUEST_FORM, 
     MUTUAL_AID_AIRTABLE_LINK,
@@ -42,7 +42,7 @@ function SubmitARequest() {
                         <p className="subtitle">
                             You can make a request by calling our hotline at {phoneNumberLink} or by submitting your request via the form in the button below.
                             </p>
-                        <ButtonLink className="button-request-help" linkTo={MUTUAL_AID_REQUEST_FORM} text="Request form" styles={{ backgroundColor: "#432BFA" }} />
+                        <ButtonExternalLink className="button-request-help" linkTo={MUTUAL_AID_REQUEST_FORM} text="Request form" styles={{ backgroundColor: "#432BFA" }} />
                     </div>
                     <div className="text-box">
                         <div className="title">SOME WAYS WE CAN HELP</div>
