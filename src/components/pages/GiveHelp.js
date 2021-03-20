@@ -3,7 +3,7 @@ import "./GiveHelp.css";
 import peopleMakingDonationsIMG from "../../assets/people-making-donations.png"
 import newsletterIMG from "../../assets/newsletter.png"
 import pullingBoxesIMG from "../../assets/pulling-boxes.png"
-import { MUTUAL_AID_SLACK_LINK, MUTUAL_AID_INSTAGRAM_FRIDGE_LINK, MUTUAL_AID_WIKIPEDIA, MUTUAL_AID_NOTION_LINK } from "../../config.js"
+import { MUTUAL_AID_SLACK_LINK, MUTUAL_AID_INSTAGRAM_FRIDGE_LINK, MUTUAL_AID_WIKIPEDIA, MUTUAL_AID_NOTION_LINK, FLYER_PDF_LINK } from "../../config.js"
 
 function GiveHelp() {
     return (
@@ -124,7 +124,7 @@ const HelpUsSpreadTheWord = () => (
             <div>
                 <div className="header1">Help us spread the word</div>
                 <div>
-                    <div>If you have access to a printer, print and share our flyers, or make one of your own. Flyering your building/street/block is key to connecting those in need to our resources.<br /><br />Our flyer is available in English, Spanish, and Chinese. Download all three in one PDF here.</div>
+                    <div>If you have access to a printer, print and share our flyers, or make one of your own. Flyering your building/street/block is key to connecting those in need to our resources.<br /><br />Our flyer is available in English, Spanish, and Chinese. Download all three in one PDF <a href={FLYER_PDF_LINK} alt="flyer pdf link">here</a>.</div>
                 </div>
             </div>
             <img src={newsletterIMG} alt="newsletter" />

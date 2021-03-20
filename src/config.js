@@ -18,4 +18,5 @@ export const MUTUAL_AID_NYC_LINK = "https://mutualaid.nyc/",
     DONORBOX_LINK = "https://donorbox.org/chfgma",
     HELP_NOW_NYC_LINK = "https://www1.nyc.gov/site/helpnownyc/index.page",
     NYC_WELL_LINK = "https://nycwell.cityofnewyork.us/en/",
-    NOTIFY_NYC_LINK = "https://a858-nycnotify.nyc.gov/notifynyc";
+    NOTIFY_NYC_LINK = "https://a858-nycnotify.nyc.gov/notifynyc",
+    FLYER_PDF_LINK = "bit.ly/chfgflyer";
