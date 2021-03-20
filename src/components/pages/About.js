@@ -7,9 +7,7 @@ import homePassingBoxes from "../../assets/home-passing-boxes.png"
 import peopleHoldingTrashIMG from "../../assets/people-holding-trash.png"
 import logoBlack from "../../assets/logo-black.png"
 
-import config from "../../config"
-
-const { MUTUAL_AID_NYC_LINK } = config;
+import { MUTUAL_AID_NYC_LINK } from "../../config"
 
 
 /********************************  
@@ -25,7 +23,7 @@ function About() {
         <WhatIsMutualAid />
         <Since />
         <StayUpToDate />
-        <InstagramUpdates />
+        {/* <InstagramUpdates /> */}
     </div>
 }
 

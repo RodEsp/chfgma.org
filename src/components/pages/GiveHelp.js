@@ -3,7 +3,7 @@ import "./GiveHelp.css";
 import peopleMakingDonationsIMG from "../../assets/people-making-donations.png"
 import newsletterIMG from "../../assets/newsletter.png"
 import pullingBoxesIMG from "../../assets/pulling-boxes.png"
-import {MUTUAL_AID_SLACK_LINK, MUTUAL_AID_INSTAGRAM_FRIDGE_LINK, MUTUAL_AID_WIKIPEDIA, MUTUAL_AID_NOTION_LINK} from "../../config.js"
+import { MUTUAL_AID_SLACK_LINK, MUTUAL_AID_INSTAGRAM_FRIDGE_LINK, MUTUAL_AID_WIKIPEDIA, MUTUAL_AID_NOTION_LINK } from "../../config.js"
 
 function GiveHelp() {
     return (
@@ -56,7 +56,7 @@ function Help() {
     </section>
 }
 
-function Stats() {
+const Stats = () => {
     const tiles = [{
         title: "1,325",
         subtitle: "Slack members",
@@ -69,7 +69,7 @@ function Stats() {
     }, {
         title: "50",
         subtitle: "neighbors supporting the Community Fridge",
-    }];
+    }]
     return (
         <section className="stats">
             <div className="give-help-stats row-container">
@@ -118,19 +118,19 @@ function FoodSecurityAndWorkingGroups() {
     </section>
 }
 
-function HelpUsSpreadTheWord() {
-    return <section className="help-us-spread-the-word">
+const HelpUsSpreadTheWord = () => (
+    <section className="help-us-spread-the-word">
         <div className="row-container standard-text split-wrapper">
             <div>
                 <div className="header1">Help us spread the word</div>
                 <div>
-                    <div>If you have access to a printer, print and share our flyers, or make one of your own. Flyering your building/street/block is key to connecting those in need to our resources.<br/><br/>Our flyer is available in English, Spanish, and Chinese. Download all three in one PDF here.</div>
+                    <div>If you have access to a printer, print and share our flyers, or make one of your own. Flyering your building/street/block is key to connecting those in need to our resources.<br /><br />Our flyer is available in English, Spanish, and Chinese. Download all three in one PDF here.</div>
                 </div>
             </div>
             <img src={newsletterIMG} alt="newsletter" />
         </div>
     </section>
-}
+)
 
 
 export default GiveHelp;

@@ -11,7 +11,7 @@ function Donate() {
     const Right = () => {
         const vendors = [{
             name: "ioby campaign",
-            description: <span>Only contributions made through our <a href={IOBY_LINK} alt="ioby link">our ioby campaign</a> campaign are tax-deductible.</span>
+            description: <span>Only contributions made through <a href={IOBY_LINK} alt="ioby link">our ioby campaign</a> are tax-deductible.</span>
         }, {
             name: "Donorbox",
             description: <span>Contribute weekly or monthly through <a href={DONORBOX_LINK} alt="donorbox link">Donorbox</a> to keep our fund healthy and sustainable.</span>
