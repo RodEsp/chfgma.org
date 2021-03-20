@@ -1,22 +1,14 @@
 import React from "react";
-import config from "../../config.js"
+import {
+    MUTUAL_AID_NEWSLETTER_SUBSCRIBE_LINK, MUTUAL_AID_SLACK_LINK, MUTUAL_AID_PHONE_NUMBER_COUNTRY_CODE, MUTUAL_AID_PHONE_NUMBER, MUTUAL_AID_EMAIL_ADDRESS_HELLO, MUTUAL_AID_INSTAGRAM_LINK, MUTUAL_AID_FACEBOOK_LINK
+} from "../../config.js"
 import "./Footer.css";
 import iconFacebook from "../../assets/icons/icon-facebook.svg"
 import iconInstagram from "../../assets/icons/icon-instagram.svg"
 
-const {
-    MUTUAL_AID_NEWSLETTER_SUBSCRIBE_LINK,
-    MUTUAL_AID_SLACK_LINK,
-    MUTUAL_AID_PHONE_NUMBER_COUNTRY_CODE,
-    MUTUAL_AID_PHONE_NUMBER,
-    MUTUAL_AID_EMAIL_ADDRESS_HELLO,
-    MUTUAL_AID_INSTAGRAM_LINK,
-    MUTUAL_AID_FACEBOOK_LINK
-} = config;
-
 export default () => (
     <div className="footer">
-        <hr/>
+        <hr />
         <div className="content-wrapper">
             <div className="stay-connected">
                 <div className="title capitalize"><b>clinton hill fort greene mutual aid</b></div>
