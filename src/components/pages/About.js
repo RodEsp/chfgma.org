@@ -23,7 +23,7 @@ function About() {
         <WhatIsMutualAid />
         <Since />
         <StayUpToDate />
-        {/* <InstagramUpdates /> */}
+        <InstagramUpdates />
     </div>
 }
 
@@ -133,7 +133,7 @@ function StayUpToDate() {
 function InstagramUpdates() {
     return <section className="instagram-updates">
         <div className="row-container">
-            <div className="header1 title">We're on Instagram</div>
+            {/* <div className="header1 title">We're on Instagram</div>
             <div className="iframe-container">
                 <Iframe url="https://www.powr.io/instagram-feed/u/d93addb1_1586953295?isCookieAllowed=undefined#platform=embed"
                     powrindex="0"
@@ -146,7 +146,7 @@ function InstagramUpdates() {
                     id="instagram-iframe"
                     display="initial"
                 />
-            </div>
+            </div> */}
         </div>
     </section>
 }
