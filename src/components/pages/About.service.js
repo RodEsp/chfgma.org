@@ -23,22 +23,22 @@ export const stayUpToDateCards = [{
 
 export const stats = [
     {
-        stat: "$146,143",
+        stat: "$208,862",
         text: "total contributed to our Groceries & Essentials and Direct Action Funds",
     }, {
-        stat: "25,000",
+        stat: "40,000",
         text: "grocery packages delivered in collaboration with local food pantries",
     }, {
-        stat: "2000",
+        stat: "2,326",
         text: "requests fulfilled for groceries and essential supplies",
     }, {
-        stat: "974",
-        text: "unique callbacks to requests on our hotline",
+        stat: "8,837",
+        text: "responses to calls, texts, and voicemails",
     }, {
-        stat: "1,279",
+        stat: "1,440",
         text: "members of our Slack community",
     }, {
-        stat: "948",
+        stat: "1,319",
         text: "wellness calls made",
     }
 ]
