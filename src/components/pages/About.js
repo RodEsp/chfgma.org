@@ -94,7 +94,7 @@ function WhatIsMutualAid() {
 function Since() {
     return <section className="since">
         <div className="row-container">
-            <div className="header1">Since March 2020</div>
+            <div className="header1">2020 Stats</div>
             <div className="copy">
                 <div className="since-items-wrapper">
                     {stats.map(({ stat, text }) => (
