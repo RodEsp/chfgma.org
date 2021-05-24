@@ -22,6 +22,7 @@ function About() {
         <AboutUs />
         <WhatIsMutualAid />
         <Since />
+        <HowItWorks />
         <StayUpToDate />
         <InstagramUpdates />
     </div>
@@ -92,7 +93,7 @@ function WhatIsMutualAid() {
 }
 
 function Since() {
-    return <section className="since">
+    return <section id="since">
         <div className="row-container">
             <div className="header1">2020 Stats</div>
             <div className="copy">
@@ -112,8 +113,17 @@ function Since() {
     </section>
 }
 
+function HowItWorks() {
+    return <section id="howItWorks">
+        <div className="row-container">
+            <div className="header1">How It Works</div>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZZPrnpsHvoo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+}
+
 function StayUpToDate() {
-    return <section className="stay-up-to-date">
+    return <section id="stay-up-to-date">
         <div className="row-container">
             <div className="header1 title">Stay up to date</div>
             <div className="cards-wrapper">
@@ -131,7 +141,7 @@ function StayUpToDate() {
 }
 
 function InstagramUpdates() {
-    return <section className="instagram-updates">
+    return <section id="instagram-updates">
         <div className="row-container">
             {/* <div className="header1 title">We're on Instagram</div>
             <div className="iframe-container">
