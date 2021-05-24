@@ -50,7 +50,7 @@ function Help() {
     return <section className="how-you-can-help standard-text">
         <div className="row-container">
             <HowYouCanHelp />
-            <img className="pulling-boxes-img" src={pullingBoxesIMG} alt="image of person pulling boxes" />
+            <img className="pulling-boxes-img" src={pullingBoxesIMG} alt="person pulling boxes" />
             <List />
         </div>
     </section>

@@ -1,13 +1,12 @@
 import React from 'react'
 import { stayUpToDateCards, stats } from "./About.service.js";
-import { ButtonLink } from "../layout/buttons/ButtonLink.js"
-import Iframe from 'react-iframe'
-import './About.css'
-import homePassingBoxes from "../../assets/home-passing-boxes.png"
-import peopleHoldingTrashIMG from "../../assets/people-holding-trash.png"
-import logoBlack from "../../assets/logo-black.png"
+import { ButtonLink } from "../layout/buttons/ButtonLink.js";
+import './About.css';
+import homePassingBoxes from "../../assets/home-passing-boxes.png";
+import peopleHoldingTrashIMG from "../../assets/people-holding-trash.png";
+import logoBlack from "../../assets/logo-black.png";
 
-import { MUTUAL_AID_NYC_LINK } from "../../config"
+import { MUTUAL_AID_NYC_LINK } from "../../config";
 
 
 /********************************  
