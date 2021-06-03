@@ -9,7 +9,7 @@ export function ButtonLink({linkTo, text, styles, className}) {
 
 export function ButtonExternalLink({linkTo, text, styles, className}) {
     return (
-        <a className={`button-link ${className}`} style={{...styles}} href={linkTo}>{text}</a>
+        <a className={`button-link ${className}`} style={{...styles}} href={linkTo} target='_blank' rel='noreferrer'>{text}</a>
     )
 }
 

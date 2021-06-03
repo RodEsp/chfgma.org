@@ -115,15 +115,15 @@ section#what-is-mutual-aid .fancy-list-wrapper .fancy-list .fancy-list-container
     }
 }
 
-/* Since Component  */
+/* Stats Component  */
 
-.about #since .row-container {
+.about #stats .row-container {
     display: grid;
     row-gap: 30px;
     justify-content: left;
 }
 
-.about #since .since-items-wrapper {
+.about #stats .stats-items-wrapper {
     display: grid;
     row-gap: 40px;
     margin-top: 60px;
@@ -131,37 +131,37 @@ section#what-is-mutual-aid .fancy-list-wrapper .fancy-list .fancy-list-container
     text-align: left;
 }
 
-.about #since .since-items-wrapper .since-item {
+.about #stats .stats-items-wrapper .stats-item {
     display: grid;
     row-gap: 5px;
 }
 
-.about #since .since-items-wrapper .since-item .since-item-title {
+.about #stats .stats-items-wrapper .stats-item .stats-item-title {
     font-weight: bold;
     font-size: 24px;
     line-height: 34px;
 }
 
-.about #since .since-items-wrapper .since-item .since-item-description {
+.about #stats .stats-items-wrapper .stats-item .stats-item-description {
     font-size: 16px;
     line-height: 26px;
 }
 
-.about #since img.people-holding-trash-svg {
+.about #stats img.people-holding-trash-svg {
     padding-top: 100px;
     width: 80%;
     margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
-    .about #since .row-container {
+    .about #stats .row-container {
         grid-template-columns: 70%;
     }
-    .about #since .since-items-wrapper {
+    .about #stats .stats-items-wrapper {
         grid-template-columns: auto auto;
         grid-column-gap: 30px;
     }
-    .about #since .people-holding-trash-svg {
+    .about #stats .people-holding-trash-svg {
         display: none;
     }
 }

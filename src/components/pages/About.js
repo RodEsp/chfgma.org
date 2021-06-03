@@ -20,8 +20,8 @@ function About() {
         <TheNeighborhood />
         <AboutUs />
         <WhatIsMutualAid />
-        <Since />
         <HowItWorks />
+        <Stats />
         <StayUpToDate />
         <InstagramUpdates />
     </div>
@@ -91,16 +91,25 @@ function WhatIsMutualAid() {
     </section>
 }
 
-function Since() {
-    return <section id="since">
+function HowItWorks() {
+    return <section id="howItWorks">
+        <div className="row-container">
+            <div className="header1">How It Works</div>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/FY1eF66hoo0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+}
+
+function Stats() {
+    return <section id="stats">
         <div className="row-container">
             <div className="header1">2020 Stats</div>
             <div className="copy">
-                <div className="since-items-wrapper">
+                <div className="stats-items-wrapper">
                     {stats.map(({ stat, text }) => (
-                        <div className="since-item">
-                            <div className="since-item-title">{stat}</div>
-                            <div className="since-item-description">{text}</div>
+                        <div className="stats-item">
+                            <div className="stats-item-title">{stat}</div>
+                            <div className="stats-item-description">{text}</div>
                         </div>
                     ))}
                 </div>
@@ -108,15 +117,6 @@ function Since() {
             <div className="img-wrapper">
                 <img src={peopleHoldingTrashIMG} className="people-holding-trash-svg" alt="people holding trash" />
             </div>
-        </div>
-    </section>
-}
-
-function HowItWorks() {
-    return <section id="howItWorks">
-        <div className="row-container">
-            <div className="header1">How It Works</div>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ZZPrnpsHvoo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
 }
