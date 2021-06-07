@@ -16,7 +16,7 @@ function Header() {
       setLocation(location)
       setNav(false)
     }
-  }, [location, prevLocation, useRef])
+  }, [location, prevLocation])
 
   // Nav
   const [navExpanded, setNav] = useState(false)

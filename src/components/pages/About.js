@@ -1,13 +1,12 @@
 import React from 'react'
 import { stayUpToDateCards, stats } from "./About.service.js";
-import { ButtonLink } from "../layout/buttons/ButtonLink.js"
-import Iframe from 'react-iframe'
-import './About.css'
-import homePassingBoxes from "../../assets/home-passing-boxes.png"
-import peopleHoldingTrashIMG from "../../assets/people-holding-trash.png"
-import logoBlack from "../../assets/logo-black.png"
+import { ButtonLink } from "../layout/buttons/ButtonLink.js";
+import './About.css';
+import homePassingBoxes from "../../assets/home-passing-boxes.png";
+import peopleHoldingTrashIMG from "../../assets/people-holding-trash.png";
+import logoBlack from "../../assets/logo-black.png";
 
-import { MUTUAL_AID_NYC_LINK } from "../../config"
+import { MUTUAL_AID_NYC_LINK } from "../../config";
 
 
 /********************************  
@@ -21,7 +20,8 @@ function About() {
         <TheNeighborhood />
         <AboutUs />
         <WhatIsMutualAid />
-        <Since />
+        <HowItWorks />
+        <Stats />
         <StayUpToDate />
         <InstagramUpdates />
     </div>
@@ -91,16 +91,25 @@ function WhatIsMutualAid() {
     </section>
 }
 
-function Since() {
-    return <section className="since">
+function HowItWorks() {
+    return <section id="howItWorks">
+        <div className="row-container">
+            <div className="header1">How It Works</div>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/FY1eF66hoo0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+}
+
+function Stats() {
+    return <section id="stats">
         <div className="row-container">
             <div className="header1">2020 Stats</div>
             <div className="copy">
-                <div className="since-items-wrapper">
+                <div className="stats-items-wrapper">
                     {stats.map(({ stat, text }) => (
-                        <div className="since-item">
-                            <div className="since-item-title">{stat}</div>
-                            <div className="since-item-description">{text}</div>
+                        <div className="stats-item">
+                            <div className="stats-item-title">{stat}</div>
+                            <div className="stats-item-description">{text}</div>
                         </div>
                     ))}
                 </div>
@@ -113,7 +122,7 @@ function Since() {
 }
 
 function StayUpToDate() {
-    return <section className="stay-up-to-date">
+    return <section id="stay-up-to-date">
         <div className="row-container">
             <div className="header1 title">Stay up to date</div>
             <div className="cards-wrapper">
@@ -131,7 +140,7 @@ function StayUpToDate() {
 }
 
 function InstagramUpdates() {
-    return <section className="instagram-updates">
+    return <section id="instagram-updates">
         <div className="row-container">
             {/* <div className="header1 title">We're on Instagram</div>
             <div className="iframe-container">

@@ -6,7 +6,7 @@ import "./Footer.css";
 import iconFacebook from "../../assets/icons/icon-facebook.svg"
 import iconInstagram from "../../assets/icons/icon-instagram.svg"
 
-export default () => (
+const footer = () => (
     <div className="footer">
         <hr />
         <div className="content-wrapper">
@@ -35,3 +35,5 @@ export default () => (
         </div>
     </div>
 )
+
+export default footer;
