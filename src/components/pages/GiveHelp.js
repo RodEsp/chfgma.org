@@ -58,15 +58,18 @@ function Help() {
 
 const Stats = () => {
     const tiles = [{
-        title: "1,325",
+        title: "1,903",
         subtitle: "Slack members",
     }, {
+        // to be updated
         title: "145",
         subtitle: "neighbors making deliveries",
     }, {
+        // to be updated
         title: "52",
         subtitle: "intake and dispatch volunteers",
     }, {
+        // to be updated
         title: "50",
         subtitle: "neighbors supporting the Community Fridge",
     }]
