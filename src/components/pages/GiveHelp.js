@@ -3,7 +3,7 @@ import "./GiveHelp.css";
 import peopleMakingDonationsIMG from "../../assets/people-making-donations.png"
 import newsletterIMG from "../../assets/newsletter.png"
 import pullingBoxesIMG from "../../assets/pulling-boxes.png"
-import { MUTUAL_AID_SLACK_LINK, MUTUAL_AID_INSTAGRAM_FRIDGE_LINK, MUTUAL_AID_WIKIPEDIA, MUTUAL_AID_NOTION_LINK, FLYER_PDF_LINK } from "../../config.js"
+import { MUTUAL_AID_SLACK_LINK, MUTUAL_AID_WIKIPEDIA, MUTUAL_AID_NOTION_LINK, FLYER_PDF_LINK } from "../../config.js"
 
 function GiveHelp() {
     return (
@@ -18,12 +18,10 @@ function GiveHelp() {
 }
 
 function Help() {
-    const communityFridgeLink = <a href="/get-help" alt="community fridge link" className="img">Community Fridge</a>,
-        HowYouCanHelp = () => <div className="section-1 text-group">
+    const HowYouCanHelp = () => <div className="section-1 text-group">
             <div className="header1">How you can help</div>
             <ul>
                 <li>Shop for groceries and essential supplies for people isolating at home</li>
-                <li>Help clean and stock our {communityFridgeLink}</li>
                 <li>Provide transportation for making deliveries of groceries and essential supplies</li>
                 <li>Create connections with neighbors and neighborhood groups</li>
                 <li>Donate gently-used goods like mattresses, electronics, clothing, and other necessities</li>
@@ -68,10 +66,6 @@ const Stats = () => {
         // to be updated
         title: "52",
         subtitle: "intake and dispatch volunteers",
-    }, {
-        // to be updated
-        title: "50",
-        subtitle: "neighbors supporting the Community Fridge",
     }]
     return (
         <section className="stats">
@@ -93,7 +87,6 @@ function FoodSecurityAndWorkingGroups() {
         <div className="title">Addressing food security is a key part of our mutual aid effort. Here’s how you can help:</div>
         <ol>
             <li><b>Grocery shop for a neighbor:</b> Volunteer to take a one-time request, or sign up to be someone’s weekly shopper. You can be reimbursed from our Groceries & Essentials Fund.</li>
-            <li><b>Help stock and/or clean our Community Fridge:</b> Help stock and/or clean our Community Fridge: You can stop by and donate food any time, or sign up to help clean and organize the fridge regularly. Follow <a href={MUTUAL_AID_INSTAGRAM_FRIDGE_LINK} alt="mutual aid fridge instagram link">@fgcommunityfridge</a> to learn more.</li>
             <li><b>Support weekly food pantry distributions:</b> We help with large scale food pantry and meal deliveries in collaboration with community organizations, which benefit 1,000+ families each week.</li>
         </ol>
     </div>
@@ -104,7 +97,6 @@ function FoodSecurityAndWorkingGroups() {
         <ul>
             <li>Advocacy</li>
             <li>Community Building</li>
-            <li>Community Fridge</li>
             <li>Design</li>
             <li>Fundraising</li>
             <li>Intake</li>
