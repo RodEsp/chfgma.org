@@ -1,7 +1,7 @@
 import React from 'react';
 import "./GetHelp.css"
 import { ButtonExternalLink } from "../layout/buttons/ButtonLink.js"
-import { MUTUAL_AID_REQUEST_FORM, MUTUAL_AID_AIRTABLE_LINK, MUTUAL_AID_EMAIL_ADDRESS_HELLO, MUTUAL_AID_PHONE_NUMBER_COUNTRY_CODE, MUTUAL_AID_PHONE_NUMBER, MUTUAL_AID_FRIDGE_LOCATION_LINK, MUTUAL_AID_INSTAGRAM_FRIDGE_LINK, MUTUAL_AID_SLACK_LINK, COVID_TEXTING_HOTLINE, MUTUAL_AID_NYC_LINK, HELP_NOW_NYC_LINK, NYC_WELL_LINK, NOTIFY_NYC_LINK } from "../../config.js"
+import { MUTUAL_AID_REQUEST_FORM, MUTUAL_AID_AIRTABLE_LINK, MUTUAL_AID_EMAIL_ADDRESS_HELLO, MUTUAL_AID_PHONE_NUMBER_COUNTRY_CODE, MUTUAL_AID_PHONE_NUMBER, MUTUAL_AID_INSTAGRAM_FRIDGE_LINK, MUTUAL_AID_SLACK_LINK, COVID_TEXTING_HOTLINE, MUTUAL_AID_NYC_LINK, HELP_NOW_NYC_LINK, NYC_WELL_LINK, NOTIFY_NYC_LINK } from "../../config.js"
 import communityFridgeImg from "../../assets/community-fridge.png"
 
 
@@ -50,8 +50,8 @@ function CommunityFridge() {
                 <div className="split-wrapper">
                     <div className="text-group">
                         <div className="title">Community fridge</div>
-                        <p className="subtitle">Located at <a href={MUTUAL_AID_FRIDGE_LOCATION_LINK} alt="mutual aid fridge location link">357 Myrtle Ave</a>, outside of Farmer in the Deli, our community fridge and pantry provides a regular source of groceries and prepared meals to our community. Everyone is welcome to take what they need, no questions asked. Both fridge and pantry are stocked by neighbors, local businesses, and anyone wishing to donate fresh produce, frozen foods, and pantry items. It is maintained and cleaned by volunteers daily.</p>
-                        <p className="subtitle">Follow <a href={MUTUAL_AID_INSTAGRAM_FRIDGE_LINK} alt="mutual aid fridge instagram link">@fgcommunityfridge</a> for updates throughout the day.</p>
+                        <p className="subtitle">The community fridge is not currently in operation, but we're working on finding a new location!</p>
+                        <p className="subtitle">Follow <a href={MUTUAL_AID_INSTAGRAM_FRIDGE_LINK} alt="mutual aid fridge instagram link">@fgcommunityfridge</a> for updates.</p>
                     </div>
                     <img className="split-col-img" src={communityFridgeImg} alt="community fridge" />
                 </div>
