@@ -27,7 +27,7 @@ export const stats = [
         text: "total contributed to our Groceries & Essentials and Direct Action Funds",
     }, {
         stat: "$562,800",
-        text: "total distributed to neighbers through our funds",
+        text: "total distributed to neighbors through our funds",
     }, {
         stat: "78",
         text: "volunteers matched as regular shoppers for their neighbors",
