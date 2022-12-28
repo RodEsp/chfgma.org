@@ -5,7 +5,7 @@ import { DONORBOX_LINK, IOBY_LINK } from "../../config"
 function Donate() {
     const Left = () => <div>
         <div className="header1">Groceries & Essential Fund</div>
-        <div className="paragraph">This fund covers the costs of essentials like food, medicine, personal hygiene items, baby supplies, cleaning supplies, and PPE for neighbors isolating at home or struggling financially.<br /><br />We have disbursed $420,900 since March 2020 as of February 2022.</div>
+        <div className="paragraph">This fund covers the costs of essentials like food, medicine, personal hygiene items, baby supplies, cleaning supplies, and PPE for neighbors isolating at home or struggling financially.<br /><br />We have distributed $562,800 since March 2020 as of December 2022.</div>
     </div>
 
     const Right = () => {
