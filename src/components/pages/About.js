@@ -23,7 +23,6 @@ function About() {
         <HowItWorks />
         <Stats />
         <StayUpToDate />
-        <InstagramUpdates />
     </div>
 }
 
@@ -135,27 +134,6 @@ function StayUpToDate() {
                     </a>
                 ))}
             </div>
-        </div>
-    </section>
-}
-
-function InstagramUpdates() {
-    return <section id="instagram-updates">
-        <div className="row-container">
-            {/* <div className="header1 title">We're on Instagram</div>
-            <div className="iframe-container">
-                <Iframe url="https://www.powr.io/instagram-feed/u/d93addb1_1586953295?isCookieAllowed=undefined#platform=embed"
-                    powrindex="0"
-                    frameborder="0"
-                    webkitallowfullscreen=""
-                    mozallowfullscreen=""
-                    allowfullscreen=""
-                    width="100%"
-                    height="700vh"
-                    id="instagram-iframe"
-                    display="initial"
-                />
-            </div> */}
         </div>
     </section>
 }
