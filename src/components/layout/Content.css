@@ -143,7 +143,6 @@ Rows
     padding: 1rem 0;
     font-style: normal;
     color: #212121;
-    border-top: 2px solid #DBDBDB;
     display: grid;
     grid-template-columns: 3rem auto;
 }
