@@ -5,22 +5,19 @@ import { DONORBOX_LINK, IOBY_LINK } from "../../config"
 function Donate() {
     const Left = () => <div>
         <div className="header1">Groceries & Essential Fund</div>
-        <div className="paragraph">This fund covers the costs of essentials like food, medicine, personal hygiene items, baby supplies, cleaning supplies, and PPE for neighbors isolating at home or struggling financially.<br /><br />We have distributed $562,800 since March 2020 as of December 2022.</div>
+        <div className="paragraph">This fund helps cover the costs of essentials like food, medicine, body care items, baby supplies, cleaning supplies, and PPE for neighbors who can't afford them at this time.<br /><br />We have distributed $562,800 since March 2020 as of December 2022.</div>
     </div>
 
     const Right = () => {
         const vendors = [{
             name: "ioby campaign",
-            description: <span>Only contributions made through <a href={IOBY_LINK} alt="ioby link">our ioby campaign</a> are tax-deductible.</span>
-        }, {
-            name: "Donorbox",
-            description: <span>Contribute weekly or monthly through <a href={DONORBOX_LINK} alt="donorbox link">Donorbox</a> to keep our fund healthy and sustainable.</span>
+            description: <span>To make a tax-deductible one-time, weekly, or monthly donation, use <a href={IOBY_LINK} alt="ioby link" target="_blank">our ioby campaign</a>.</span>
         }, {
             name: "Venmo",
-            description: <span>@bklynneighbors<br />(if prompted, enter digits 1139)</span>,
+            description: <span><a href="https://account.venmo.com/u/bklynneighbors" alt="venmo" target="_blank">@bklynneighbors</a><br />(if prompted, enter digits 1139)</span>,
         }, {
             name: "CashApp",
-            description: "$bklynneighbors"
+            description: <a href="https://cash.app/$bklynneighbors" alt="cashapp" target="_blank">$bklynneighbors</a>,
         }, {
             name: "PayPal, Google Pay",
             description: <a href="mailto: bklynneighbors@gmail.com" alt="paypal, google pay link">bklynneighbors@gmail.com</a>
