@@ -1,6 +1,6 @@
 import React from 'react';
 import "./GetHelp.css"
-import { MUTUAL_AID_REQUEST_FORM, MUTUAL_AID_AIRTABLE_LINK, MUTUAL_AID_EMAIL_ADDRESS_HELLO, MUTUAL_AID_PHONE_NUMBER_COUNTRY_CODE, MUTUAL_AID_PHONE_NUMBER, MUTUAL_AID_INSTAGRAM_FRIDGE_LINK, MUTUAL_AID_SLACK_LINK, COVID_TEXTING_HOTLINE, MUTUAL_AID_NYC_LINK, HELP_NOW_NYC_LINK, NYC_WELL_LINK, NOTIFY_NYC_LINK } from "../../config.js"
+import { MUTUAL_AID_REQUEST_FORM, MUTUAL_AID_AIRTABLE_LINK, MUTUAL_AID_EMAIL_ADDRESS_HELLO, MUTUAL_AID_PHONE_NUMBER_COUNTRY_CODE, MUTUAL_AID_PHONE_NUMBER, MUTUAL_AID_INSTAGRAM_FRIDGE_LINK, MUTUAL_AID_SLACK_LINK, COVID_TEXTING_HOTLINE, MUTUAL_AID_NYC_LINK, HELP_NOW_NYC_LINK, NYC_WELL_LINK, NOTIFY_NYC_LINK, FOOD_RESOURCES_SPANISH, FOOD_RESOURCES_ENGLISH } from "../../config.js"
 import communityFridgeImg from "../../assets/community-fridge.png"
 
 
@@ -71,6 +71,23 @@ function OtherResources() {
                     <p><b><u><a href={MUTUAL_AID_NYC_LINK} alt="mutual aid nyc link" target="_blank">Mutual Aid NYC</a></u></b> is a citywide network of groups like ours organizing to provide aid and support to New Yorkers in the midst of the COVID-19 pandemic. If you’re outside our neighborhood, we recommend visiting mutualaid.nyc to find a group closer to you.</p>
                     <p><b><u><a href={NYC_WELL_LINK} alt="nyc well link" target="_blank">NYC Well</a></u></b> is New York City's free and confidential 24/7 mental health support service. </p>
                     <p><b><u><a href={NOTIFY_NYC_LINK} alt="notify nyc link" target="_blank">Notify NYC</a></u></b> is the city’s official source of information about emergency alerts and important city services. Text COVID to {covidTextingHotlineLink} to get the latest updates on COVID-19 in NYC.</p>
+                    <p>
+                        <b><a href="https://www.hungerfreeamerica.org/" target="_blank">Hunger Free NYC</a></b>'s neighborhood guide to food and assistance in Brooklyn.
+                        <br />
+                        <div><span>Available in </span>
+                        <b><u>
+                            <a href={FOOD_RESOURCES_ENGLISH} alt="food resources link english" target="_blank">
+                                English
+                            </a>
+                        </u></b>
+                        <span> and </span>
+                        <b><u>
+                            <a href={FOOD_RESOURCES_ENGLISH} alt="food resources link" target="_blank">
+                               Spanish
+                            </a>.
+                        </u></b>
+                        </div>
+                    </p>
 
                     <div className="header2">Local Organizations</div>
                     <p>We’ve created a {databaseLink} of organizations and resources that serve a range of different needs throughout our community. Click on each one to expand it and see more information. This list is always evolving. If you think any of them can help you (or if you can help them!), they are all available for you to contact or pursue directly.</p>

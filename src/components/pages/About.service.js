@@ -39,7 +39,7 @@ export const stats = [
         stat: "8,837",
         text: "responses to calls, texts, and voicemails",
     }, {
-        stat: "1,826",
+        stat: "1,997",
         text: "members of our Slack community",
     }
 ]
