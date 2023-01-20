@@ -226,29 +226,3 @@ section#what-is-mutual-aid .fancy-list-wrapper .fancy-list .fancy-list-container
         grid-template-rows: unset;
     }
 }
-
-/* Instagram Updates */
-
-#instagram-updates {
-    margin: 60px 0 0 0;
-}
-
-#instagram-updates .title {
-    padding-bottom: 50px;
-}
-
-#instagram-updates .text {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-}
-
-.iframe-container {
-    overflow-y: scroll;
-    width: 100%;
-}
-
-#instagram-updates #instagram-iframe {
-    border: none;
-}

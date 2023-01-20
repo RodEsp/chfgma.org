@@ -12,8 +12,8 @@ const footer = () => (
         <div className="content-wrapper">
             <div className="stay-connected">
                 <div className="title capitalize"><b>clinton hill fort greene mutual aid</b></div>
-                <div className="subtitle"><a href={MUTUAL_AID_NEWSLETTER_SUBSCRIBE_LINK} alt={`subscribe to newsletter link: ${MUTUAL_AID_NEWSLETTER_SUBSCRIBE_LINK}`}>Subscribe</a> to our weekly newsletter</div>
-                <div className="subtitle"><a href={MUTUAL_AID_SLACK_LINK} alt={`slack link: ${MUTUAL_AID_SLACK_LINK}`}>Join</a> us on Slack</div>
+                <div className="subtitle"><a href={MUTUAL_AID_NEWSLETTER_SUBSCRIBE_LINK} alt={`subscribe to newsletter link: ${MUTUAL_AID_NEWSLETTER_SUBSCRIBE_LINK}`} target="_blank">Subscribe</a> to our weekly newsletter</div>
+                <div className="subtitle"><a href={MUTUAL_AID_SLACK_LINK} alt={`slack link: ${MUTUAL_AID_SLACK_LINK}`} target="_blank">Join</a> us on Slack</div>
             </div>
             <div className="contact-info">
                 <div className="section">
@@ -27,8 +27,8 @@ const footer = () => (
                 <div className="section">
                     <div className="title">FOLLOW</div>
                     <div className="social-media-icons-wrapper">
-                        <a href={MUTUAL_AID_INSTAGRAM_LINK} alt={`mutual aid instagram link: ${MUTUAL_AID_INSTAGRAM_LINK}`}><img src={iconInstagram} alt="mutual aid instagram" /></a>
-                        <a href={MUTUAL_AID_FACEBOOK_LINK} alt={`mutual aid facebook link: ${MUTUAL_AID_FACEBOOK_LINK}`}><img src={iconFacebook} alt="mutual aid facebook" /></a>
+                        <a href={MUTUAL_AID_INSTAGRAM_LINK} alt={`mutual aid instagram link: ${MUTUAL_AID_INSTAGRAM_LINK}`} target="_blank"><img src={iconInstagram} alt="mutual aid instagram" /></a>
+                        <a href={MUTUAL_AID_FACEBOOK_LINK} alt={`mutual aid facebook link: ${MUTUAL_AID_FACEBOOK_LINK}`} target="_blank"><img src={iconFacebook} alt="mutual aid facebook" /></a>
                     </div>
                 </div>
             </div>

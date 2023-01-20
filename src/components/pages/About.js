@@ -23,7 +23,6 @@ function About() {
         <HowItWorks />
         <Stats />
         <StayUpToDate />
-        <InstagramUpdates />
     </div>
 }
 
@@ -70,19 +69,19 @@ function WhatIsMutualAid() {
                 <div className="subheader standard-text">Mutual aid is a form of community organizing where people, not institutions, take on the responsibility of caring for one another. It has a long history of being practiced around the world, and is rooted in Black, Indigenous, and other marginalized communities. Mutual aid rejects charity and the power of a privileged few for the solidarity of our fellow human beings and community.</div>
                 <div className="fancy-list">
                     <div className="fancy-list-container standard-text">
-                        <span><b>01</b></span>
+                        <span><b>1</b></span>
                         <span>We are accountable to our community, not funders or other third parties.</span>
                     </div>
                     <div className="fancy-list-container standard-text">
-                        <span><b>02</b></span>
+                        <span><b>2</b></span>
                         <span>We believe in sharing labor and resources for mutual benefit, where all give and take depending on their current needs and abilities.</span>
                     </div>
                     <div className="fancy-list-container standard-text">
-                        <span><b>03</b></span>
+                        <span><b>3</b></span>
                         <span>We value transparency and collaborative decision-making. We operate with a flat, non-hierarchical structure.</span>
                     </div>
                     <div className="fancy-list-container standard-text">
-                        <span><b>04</b></span>
+                        <span><b>4</b></span>
                         <span>Our work is inherently political. We mobilize and advocate against injustices that make our work necessary in the first place.</span>
                     </div>
                 </div>
@@ -135,27 +134,6 @@ function StayUpToDate() {
                     </a>
                 ))}
             </div>
-        </div>
-    </section>
-}
-
-function InstagramUpdates() {
-    return <section id="instagram-updates">
-        <div className="row-container">
-            {/* <div className="header1 title">We're on Instagram</div>
-            <div className="iframe-container">
-                <Iframe url="https://www.powr.io/instagram-feed/u/d93addb1_1586953295?isCookieAllowed=undefined#platform=embed"
-                    powrindex="0"
-                    frameborder="0"
-                    webkitallowfullscreen=""
-                    mozallowfullscreen=""
-                    allowfullscreen=""
-                    width="100%"
-                    height="700vh"
-                    id="instagram-iframe"
-                    display="initial"
-                />
-            </div> */}
         </div>
     </section>
 }

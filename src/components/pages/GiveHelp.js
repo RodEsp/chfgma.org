@@ -20,27 +20,27 @@ function GiveHelp() {
 function Help() {
     const HowYouCanHelp = () => <div className="section-1 text-group">
             <div className="header1">How you can help</div>
+            We appreciate any contributions of your time, money, or skills.
             <ul>
-                <li>Shop for groceries and essential supplies for people isolating at home</li>
+                <li>Shop for people who can't shop for themselves - the cost can be covered by our Groceries & Essentials Fund</li>
                 <li>Provide transportation for making deliveries of groceries and essential supplies</li>
                 <li>Create connections with neighbors and neighborhood groups</li>
-                <li>Donate gently-used goods like mattresses, electronics, clothing, and other necessities</li>
             </ul>
         </div>,
         List = () => <div className="fancy-list-wrapper section-2">
             <div className="header1">New to Mutual Aid?</div>
             <div>
                 <div className="fancy-list-container standard-text">
-                    <span><b>01</b></span>
-                    <span>Learn what <a className="text-important" href={MUTUAL_AID_WIKIPEDIA} alt="mutual aid wikipedia link">mutual aid</a> means (we practice solidarity, not charity)</span>
+                    <span><b>1</b></span>
+                    <span>Learn what <a className="text-important" href={MUTUAL_AID_WIKIPEDIA} alt="mutual aid wikipedia link" target="_blank">mutual aid</a> means (we practice solidarity, not charity)</span>
                 </div>
                 <div className="fancy-list-container standard-text">
-                    <span><b>02</b></span>
-                    <span>Take a minute to fill out our <a className="text-important" href={MUTUAL_AID_NOTION_LINK} alt="mutual aid notion link">volunteer intake form</a></span>
+                    <span><b>2</b></span>
+                    <span>Take a minute to fill out our <a className="text-important" href={MUTUAL_AID_NOTION_LINK} alt="mutual aid notion link" target="_blank">volunteer intake form</a></span>
                 </div>
                 <div className="fancy-list-container standard-text">
-                    <span><b>03</b></span>
-                    <span>Join us on <a className="text-important" href={MUTUAL_AID_SLACK_LINK} alt="mutual aid slack link">Slack</a> to organize with other volunteers</span>
+                    <span><b>3</b></span>
+                    <span>Join us on <a className="text-important" href={MUTUAL_AID_SLACK_LINK} alt="mutual aid slack link" target="_blank">Slack</a> to organize with other volunteers</span>
                 </div>
             </div>
         </div>
@@ -85,30 +85,22 @@ function FoodSecurityAndWorkingGroups() {
     const FoodSecurity = () => <div className="food-security section-1">
         <div className="header1">Food security</div>
         <div className="title">Addressing food security is a key part of our mutual aid effort. Here’s how you can help:</div>
-        <ol>
-            <li><b>Grocery shop for a neighbor:</b> Volunteer to take a one-time request, or sign up to be someone’s weekly shopper. You can be reimbursed from our Groceries & Essentials Fund.</li>
-            <li><b>Support weekly food pantry distributions:</b> We help with large scale food pantry and meal deliveries in collaboration with community organizations, which benefit 1,000+ families each week.</li>
-        </ol>
-    </div>
-
-    const WorkingGroups = () => <div className="working-groups section-2">
-        <div className="header1">Working groups</div>
-        <div>Our working groups coordinate on specific focuses within our mutual aid effort. Anyone is welcome to join and contribute in whatever capacity they can. Some of our active working groups include:</div>
-        <ul>
-            <li>Advocacy</li>
-            <li>Community Building</li>
-            <li>Design</li>
-            <li>Fundraising</li>
-            <li>Intake</li>
-            <li>Tech Support</li>
-        </ul>
+        <div className="fancy-list-wrapper section-2">
+            <div className="fancy-list-container standard-text">
+                <span><b>1</b></span>
+                <span><b>Grocery shop for a neighbor.</b> Volunteer to take a one-time request, or sign up to be someone’s monthly shopper. You can be reimbursed from our Groceries & Essentials Fund.</span>
+            </div>
+            <div className="fancy-list-container standard-text">
+                <span><b>2</b></span>
+                <span><b>Support weekly food pantry distributions.</b> We help with large scale food pantry and meal deliveries in collaboration with community organizations, which benefit 1,000+ families each week.</span>
+            </div>
+        </div>
     </div>
 
     return <section className="food-security-and-working-groups">
         <div className="row-container standard-text two-in-one-v2">
             <FoodSecurity />
             <img className="people-making-donations-img" src={peopleMakingDonationsIMG} alt="people making donations" />
-            <WorkingGroups />
         </div>
     </section>
 }
@@ -119,7 +111,7 @@ const HelpUsSpreadTheWord = () => (
             <div>
                 <div className="header1">Help us spread the word</div>
                 <div>
-                    <div>If you have access to a printer, print and share our flyers, or make one of your own. Flyering your building/street/block is key to connecting those in need to our resources.<br /><br />Our flyer is available in English, Spanish, and Chinese. Download all three in one PDF <a href={FLYER_PDF_LINK} alt="flyer pdf link">here</a>.</div>
+                    <div>If you have access to a printer, print and share our flyers, or make one of your own. Flyering your building/street/block is key to connecting those in need to our resources.<br /><br />Our flyer is available in English, Spanish, and Chinese. Download all three in one PDF <a href={FLYER_PDF_LINK} alt="flyer pdf link" target="_blank">here</a>.</div>
                 </div>
             </div>
             <img src={newsletterIMG} alt="newsletter" />
