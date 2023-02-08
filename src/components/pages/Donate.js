@@ -27,7 +27,7 @@ function Donate() {
             <div className="title">HOW TO CONTRIBUTE</div>
             <div className="vendors">
                 {vendors.map(({ name, description }) => {
-                    return <div className="vendor">
+                    return <div className="vendor" key={name}>
                         <div className="name">{name}</div>
                         <div className="description">{description}</div>
                     </div>

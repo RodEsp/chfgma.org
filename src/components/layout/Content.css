@@ -35,7 +35,6 @@ a.inline-link:hover, a:active {
 *********************/
 
 .page {
-    display: grid;
     row-gap: 60px;
 }
 

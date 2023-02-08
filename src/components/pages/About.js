@@ -94,7 +94,7 @@ function HowItWorks() {
     return <section id="howItWorks">
         <div className="row-container">
             <div className="header1">How It Works</div>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/FY1eF66hoo0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/FY1eF66hoo0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
     </section>
 }
@@ -106,7 +106,7 @@ function Stats() {
             <div className="copy">
                 <div className="stats-items-wrapper">
                     {stats.map(({ stat, text }) => (
-                        <div className="stats-item">
+                        <div className="stats-item" key={stat}>
                             <div className="stats-item-title">{stat}</div>
                             <div className="stats-item-description">{text}</div>
                         </div>

@@ -16,7 +16,7 @@ const GetHelp = () => (
 
 function SubmitARequest() {
     const phoneNumberLink = <a href={`tel:${MUTUAL_AID_PHONE_NUMBER_COUNTRY_CODE}${MUTUAL_AID_PHONE_NUMBER}`} alt={`mutual aid phone number: ${MUTUAL_AID_PHONE_NUMBER_COUNTRY_CODE}${MUTUAL_AID_PHONE_NUMBER}`}>(862)-277-0747</a>,
-        bulletList = ["Funds to help cover groceries and essentials", "Connect you with a neighbor who can help with errands", "Help identify other useful resources"].map((item) => <li>{item}</li>)
+        bulletList = ["Funds to help cover groceries and essentials", "Connect you with a neighbor who can help with errands", "Help identify other useful resources"].map((item) => <li key={item}>{item}</li>)
     return (
         <section className="submit-a-request">
             <div className="row-container">
@@ -74,7 +74,7 @@ function OtherResources() {
                     <p>
                         <b><a href="https://www.hungerfreeamerica.org/" target="_blank">Hunger Free NYC</a></b>'s neighborhood guide to food and assistance in Brooklyn.
                         <br />
-                        <div><span>Available in </span>
+                        <span>Available in </span>
                         <b><u>
                             <a href={FOOD_RESOURCES_ENGLISH} alt="food resources link english" target="_blank">
                                 English
@@ -86,7 +86,7 @@ function OtherResources() {
                                Spanish
                             </a>.
                         </u></b>
-                        </div>
+
                     </p>
 
                     <div className="header2">Local Organizations</div>
