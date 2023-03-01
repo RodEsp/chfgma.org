@@ -1,6 +1,6 @@
 import React from 'react';
 import "./GetHelp.css"
-import { MUTUAL_AID_REQUEST_FORM, MUTUAL_AID_AIRTABLE_LINK, MUTUAL_AID_EMAIL_ADDRESS_HELLO, MUTUAL_AID_PHONE_NUMBER_COUNTRY_CODE, MUTUAL_AID_PHONE_NUMBER, MUTUAL_AID_INSTAGRAM_FRIDGE_LINK, MUTUAL_AID_SLACK_LINK, COVID_TEXTING_HOTLINE, MUTUAL_AID_NYC_LINK, HELP_NOW_NYC_LINK, NYC_WELL_LINK, NOTIFY_NYC_LINK, FOOD_RESOURCES_SPANISH, FOOD_RESOURCES_ENGLISH } from "../../config.js"
+import { MUTUAL_AID_REQUEST_FORM, MUTUAL_AID_AIRTABLE_LINK, MUTUAL_AID_EMAIL_ADDRESS_HELLO, MUTUAL_AID_PHONE_NUMBER_COUNTRY_CODE, MUTUAL_AID_PHONE_NUMBER, MUTUAL_AID_INSTAGRAM_FRIDGE_LINK, COVID_TEXTING_HOTLINE, MUTUAL_AID_NYC_LINK, NYC_WELL_LINK, NOTIFY_NYC_LINK, FOOD_RESOURCES_ENGLISH } from "../../config.js"
 import communityFridgeImg from "../../assets/community-fridge.png"
 
 
@@ -24,7 +24,7 @@ function SubmitARequest() {
                     <div className="text-group">
                         <div className="title">Submit a request</div>
                         <p className="subtitle">
-                            You can make a request for assistance by texting or calling our hotline at {phoneNumberLink} or by <a href={MUTUAL_AID_REQUEST_FORM} target="_blank">filling out this form</a>.
+                            You can make a request for assistance by texting or calling our hotline at {phoneNumberLink} or by <a href={MUTUAL_AID_REQUEST_FORM} target="_blank" rel="noreferrer">filling out this form</a>.
                         </p>
                     </div>
                     <div className="text-box">
@@ -48,7 +48,7 @@ function CommunityFridge() {
                     <div className="text-group">
                         <div className="title">Community fridge</div>
                         <p className="subtitle">The community fridge is not currently in operation, but we're working on finding a new location!</p>
-                        <p className="subtitle">Follow <a href={MUTUAL_AID_INSTAGRAM_FRIDGE_LINK} alt="mutual aid fridge instagram link" target="_blank">@fgcommunityfridge</a> for updates.</p>
+                        <p className="subtitle">Follow <a href={MUTUAL_AID_INSTAGRAM_FRIDGE_LINK} alt="mutual aid fridge instagram link" target="_blank" rel="noreferrer">@fgcommunityfridge</a> for updates.</p>
                     </div>
                     <img className="split-col-img" src={communityFridgeImg} alt="community fridge" />
                 </div>
@@ -68,21 +68,21 @@ function OtherResources() {
                 <div className="text-group">
                     <h1 className="title">Other Resources</h1>
                     <div className="header2">NYC Resources</div>
-                    <p><b><u><a href={MUTUAL_AID_NYC_LINK} alt="mutual aid nyc link" target="_blank">Mutual Aid NYC</a></u></b> is a citywide network of groups like ours organizing to provide aid and support to New Yorkers in the midst of the COVID-19 pandemic. If you’re outside our neighborhood, we recommend visiting mutualaid.nyc to find a group closer to you.</p>
-                    <p><b><u><a href={NYC_WELL_LINK} alt="nyc well link" target="_blank">NYC Well</a></u></b> is New York City's free and confidential 24/7 mental health support service. </p>
-                    <p><b><u><a href={NOTIFY_NYC_LINK} alt="notify nyc link" target="_blank">Notify NYC</a></u></b> is the city’s official source of information about emergency alerts and important city services. Text COVID to {covidTextingHotlineLink} to get the latest updates on COVID-19 in NYC.</p>
+                    <p><b><u><a href={MUTUAL_AID_NYC_LINK} alt="mutual aid nyc link" target="_blank" rel="noreferrer">Mutual Aid NYC</a></u></b> is a citywide network of groups like ours organizing to provide aid and support to New Yorkers in the midst of the COVID-19 pandemic. If you’re outside our neighborhood, we recommend visiting mutualaid.nyc to find a group closer to you.</p>
+                    <p><b><u><a href={NYC_WELL_LINK} alt="nyc well link" target="_blank" rel="noreferrer">NYC Well</a></u></b> is New York City's free and confidential 24/7 mental health support service. </p>
+                    <p><b><u><a href={NOTIFY_NYC_LINK} alt="notify nyc link" target="_blank" rel="noreferrer">Notify NYC</a></u></b> is the city’s official source of information about emergency alerts and important city services. Text COVID to {covidTextingHotlineLink} to get the latest updates on COVID-19 in NYC.</p>
                     <p>
-                        <b><a href="https://www.hungerfreeamerica.org/" target="_blank">Hunger Free NYC</a></b>'s neighborhood guide to food and assistance in Brooklyn.
+                        <b><a href="https://www.hungerfreeamerica.org/" target="_blank" rel="noreferrer">Hunger Free NYC</a></b>'s neighborhood guide to food and assistance in Brooklyn.
                         <br />
                         <span>Available in </span>
                         <b><u>
-                            <a href={FOOD_RESOURCES_ENGLISH} alt="food resources link english" target="_blank">
+                            <a href={FOOD_RESOURCES_ENGLISH} alt="food resources link english" target="_blank" rel="noreferrer">
                                 English
                             </a>
                         </u></b>
                         <span> and </span>
                         <b><u>
-                            <a href={FOOD_RESOURCES_ENGLISH} alt="food resources link" target="_blank">
+                            <a href={FOOD_RESOURCES_ENGLISH} alt="food resources link" target="_blank" rel="noreferrer">
                                Spanish
                             </a>.
                         </u></b>
