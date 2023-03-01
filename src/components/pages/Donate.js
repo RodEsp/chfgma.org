@@ -1,6 +1,6 @@
 import React from "react";
 import "./Donate.css"
-import { DONORBOX_LINK, IOBY_LINK } from "../../config"
+import { IOBY_LINK } from "../../config"
 
 function Donate() {
     const Left = () => <div>
@@ -11,13 +11,13 @@ function Donate() {
     const Right = () => {
         const vendors = [{
             name: "ioby campaign",
-            description: <span>To make a tax-deductible one-time, weekly, or monthly donation, use <a href={IOBY_LINK} alt="ioby link" target="_blank">our ioby campaign</a>.</span>
+            description: <span>To make a tax-deductible one-time, weekly, or monthly donation, use <a href={IOBY_LINK} alt="ioby link" target="_blank" rel="noreferrer">our ioby campaign</a>.</span>
         }, {
             name: "Venmo",
-            description: <span><a href="https://account.venmo.com/u/bklynneighbors" alt="venmo" target="_blank">@bklynneighbors</a><br />(if prompted, enter digits 1139)</span>,
+            description: <span><a href="https://account.venmo.com/u/bklynneighbors" alt="venmo" target="_blank" rel="noreferrer">@bklynneighbors</a><br />(if prompted, enter digits 1139)</span>,
         }, {
             name: "CashApp",
-            description: <a href="https://cash.app/$bklynneighbors" alt="cashapp" target="_blank">$bklynneighbors</a>,
+            description: <a href="https://cash.app/$bklynneighbors" alt="cashapp" target="_blank" rel="noreferrer">$bklynneighbors</a>,
         }, {
             name: "PayPal, Google Pay",
             description: <a href="mailto: bklynneighbors@gmail.com" alt="paypal, google pay link">bklynneighbors@gmail.com</a>
