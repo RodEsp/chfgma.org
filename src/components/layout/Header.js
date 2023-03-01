@@ -44,7 +44,7 @@ function Header() {
       <NavLink to="/" exact={true} className="home long-home">Clinton Hill Fort Greene Mutual Aid</NavLink>
       <NavLink to="/" exact={true} className="home short-home">CHFGMA</NavLink>
 
-      <input type="checkbox" id="nav-toggle" className="nav-toggle" checked={navExpanded} onClick={() => setNav(!navExpanded)} />
+      <input type="checkbox" id="nav-toggle" className="nav-toggle" checked={navExpanded} readOnly onClick={() => setNav(!navExpanded)} />
       
       <nav>
         <ul>
