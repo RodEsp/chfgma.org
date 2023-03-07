@@ -88,7 +88,11 @@
     font-weight: bold;
 }
 
-.right>.vendors>.vendor>.description {}
+@media screen and (max-width: 360px) {
+    .right>.vendors>.vendor>.description {
+        width: 230px
+    }
+}
 
 /* 
 .contribute > .title {

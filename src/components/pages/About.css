@@ -115,6 +115,13 @@ section#what-is-mutual-aid .fancy-list-wrapper .fancy-list .fancy-list-container
     }
 }
 
+/* Video */
+
+#howItWorks>.row-container>iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
 /* Stats Component  */
 
 .about #stats .row-container {

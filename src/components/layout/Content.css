@@ -396,6 +396,12 @@ Split
     }
 }
 
+@media screen and (min-width: 360px) {
+    .split-wrapper>div {
+        max-width:300px;
+    }
+}
+
 /***************************** 
 Other
 *****************************/
