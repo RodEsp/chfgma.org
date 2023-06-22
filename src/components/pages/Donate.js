@@ -14,7 +14,7 @@ function Donate() {
             description: <span>To make a tax-deductible one-time, weekly, or monthly donation, use <a href={IOBY_LINK} alt="ioby link" target="_blank" rel="noreferrer">our ioby campaign</a>.</span>
         }, {
             name: "Venmo",
-            description: <span><a href="https://account.venmo.com/u/bklynneighbors" alt="venmo" target="_blank" rel="noreferrer">@bklynneighbors</a><br />(if prompted, enter digits 1139)</span>,
+            description: <span><a href="https://account.venmo.com/u/bklynneighbors" alt="venmo" target="_blank" rel="noreferrer">@bklynneighbors</a><br />(if prompted, enter digits 4944)</span>,
         }, {
             name: "CashApp",
             description: <a href="https://cash.app/$bklynneighbors" alt="cashapp" target="_blank" rel="noreferrer">$bklynneighbors</a>,
