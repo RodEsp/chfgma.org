@@ -80,6 +80,13 @@ section#what-is-mutual-aid .fancy-list-wrapper .fancy-list .fancy-list-container
     }
 }
 
+@media screen and (max-width: 768px) {
+
+    section#what-is-mutual-aid .fancy-list-wrapper {
+        padding-right: 0;
+    }
+}
+
 /* Where We Act */
 
 .about #where-we-act .row-container {

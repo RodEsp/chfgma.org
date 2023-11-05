@@ -60,7 +60,7 @@ Stats
     display: grid;
     row-gap: 40px;
     text-align: center;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .give-help .give-help-stats .tile {
@@ -70,7 +70,7 @@ Stats
 
 @media screen and (min-width: 768px) {
     .give-help .give-help-stats {
-        grid-template-columns: repeat(4, minmax(20%, 218px));
+        /* grid-template-columns: repeat(4, minmax(20%, 218px)); */
         justify-content: space-between;
         padding: 0 25px;
     }
