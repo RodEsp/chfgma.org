@@ -4,12 +4,11 @@ import { MUTUAL_AID_REQUEST_FORM, MUTUAL_AID_AIRTABLE_LINK, MUTUAL_AID_EMAIL_ADD
 import communityFridgeImg from "../../assets/community-fridge.png"
 
 
-
+/** deleted community fridge component for now 11/5/2023 */
 const GetHelp = () => (
     <div className="page get-help">
         <section className="jumbo-title">The neighborhood's got you</section>
         <SubmitARequest />
-        <CommunityFridge />
         <OtherResources />
     </div>
 )
