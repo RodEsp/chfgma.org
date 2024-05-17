@@ -102,7 +102,7 @@ function HowItWorks() {
 function Stats() {
     return <section id="stats">
         <div className="row-container">
-            <div className="header1">2022 Stats</div>
+            <div className="header1">2023 Stats</div>
             <div className="copy">
                 <div className="stats-items-wrapper">
                     {stats.map(({ stat, text }) => (

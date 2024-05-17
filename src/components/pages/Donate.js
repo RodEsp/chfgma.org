@@ -5,7 +5,7 @@ import { IOBY_LINK } from "../../config"
 function Donate() {
     const Left = () => <div>
         <div className="header1">Groceries & Essential Fund</div>
-        <div className="paragraph">This fund helps cover the costs of essentials like food, medicine, body care items, baby supplies, cleaning supplies, and PPE for neighbors who can't afford them at this time.<br /><br />We have distributed $562,800 since March 2020 as of December 2022.</div>
+        <div className="paragraph">This fund helps cover the costs of essentials like food, medicine, body care items, baby supplies, cleaning supplies, and PPE for neighbors who can't afford them at this time.<br /><br />We have distributed $749,975 since March 2020 as of December 2023.</div>
     </div>
 
     const Right = () => {

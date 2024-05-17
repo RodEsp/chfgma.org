@@ -56,7 +56,7 @@ function Help() {
 
 const Stats = () => {
     const tiles = [{
-        title: "1,903",
+        title: "1,922",
         subtitle: "Slack members",
     }, {
         // to be updated
