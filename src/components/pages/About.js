@@ -50,7 +50,7 @@ function AboutUs() {
             <div className="split-wrapper">
                 <div>
                     <div className="header1">About us</div>
-                    <p className="subheader standard-text">We came together in March 2020 when the COVID-19 lockdown began. We created a phone hotline, a website, a Slack workspace, and a weekly newsletter. Since then, we’ve organized a network of thousands of neighbors to share what we have and fulfill what we need. Recognizing that our community has been impacted by gentrification and systemic racism, we seek to repair harm and create equity through redistribution and advocacy.</p>
+                    <p className="subheader standard-text">We came together in March 2020 when the COVID-19 lockdown began. We created a phone hotline, a website, a Slack workspace, and a newsletter. Since then, we’ve organized a network of thousands of neighbors to share what we have and fulfill what we need. Recognizing that our community has been impacted by gentrification and systemic racism, we seek to repair harm and create equity through redistribution and advocacy.</p>
                     <div className="btn-wrapper">
                         <ButtonLink linkTo="/donate" text="Donate" />
                     </div>

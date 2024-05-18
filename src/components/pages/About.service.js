@@ -7,7 +7,7 @@ import { MUTUAL_AID_INSTAGRAM_LINK, MUTUAL_AID_NEWSLETTER_SUBSCRIBE_LINK, MUTUAL
 export const stayUpToDateCards = [{
     image: iconMailboxIMG,
     alt: "newsletter link icon",
-    text: "Subscribe to our weekly newsletter",
+    text: "Subscribe to our newsletter",
     link: MUTUAL_AID_NEWSLETTER_SUBSCRIBE_LINK,
 }, {
     image: iconMessagesIMG,

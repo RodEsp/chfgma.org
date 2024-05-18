@@ -24,7 +24,7 @@
 
 @media screen and (min-width: 768px) {
     .footer .content-wrapper {
-        display: grid;
+        display: flex;
         grid-template-columns: 1fr 1fr;
         padding: 0 20px;
     }
@@ -34,6 +34,9 @@
     }
 }
 
+.footer .content-wrapper .phoneNumber {
+    width: max-content;
+}
 
 /* stay connected */
 
@@ -41,7 +44,12 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 26px;
-    padding: 0 0 8px 0;
+    padding: 0 1em 8px 0;
+}
+
+.footer .stay-connected .title>b {
+    display: block;
+    width: max-content;
 }
 
 .footer .stay-connected .subtitle {
