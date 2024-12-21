@@ -25,7 +25,8 @@ a.inline-link:focus {
     color: inherit;
 }
 
-a.inline-link:hover, a:active {
+a.inline-link:hover,
+a:active {
     text-decoration: none;
     color: inherit;
 }
@@ -345,7 +346,7 @@ Tiles
 
 @media screen and (min-width: 480px) {
     .tiles-container {
-        grid-template-columns: repeat( auto-fit, minmax(10px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
     }
 }
 
@@ -374,7 +375,8 @@ Split
     row-gap: 30px;
 }
 
-.split-wrapper>img, div {
+.split-wrapper>img,
+div {
     width: 100%;
 }
 
@@ -390,15 +392,10 @@ Split
         /* grid-gap: calc(10px + (100 - 10) * ((100vw - 768px) / (1600 - 300))); */
         column-gap: 99px;
     }
+
     .split-wrapper>img.align-right {
         width: 215px;
         margin-left: auto;
-    }
-}
-
-@media screen and (min-width: 360px) {
-    .split-wrapper>div {
-        max-width:300px;
     }
 }
 
