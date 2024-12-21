@@ -1,6 +1,6 @@
 import React from "react";
 import "./Donate.css"
-import { IOBY_LINK } from "../../config"
+import { OPEN_COLLECTIVE_LINK } from "../../config"
 
 function Donate() {
     const Left = () => <div>
