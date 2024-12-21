@@ -22,11 +22,13 @@ export const stayUpToDateCards = [{
 }];
 
 export const stats = [
+    // Dallas 2024-12-21: commented out while I get updated numbers
+    // {
+    //     stat: "$756,394",
+    //     text: "total contributed to our Groceries & Essentials and Direct Action Funds",
+    // },
     {
-        stat: "$756,394",
-        text: "total contributed to our Groceries & Essentials and Direct Action Funds",
-    }, {
-        stat: "$749,975",
+        stat: "$836,263", // updated as of Dec 2024
         text: "total distributed to neighbors through our funds",
     }, {
         stat: "62",

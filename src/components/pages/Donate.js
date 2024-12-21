@@ -5,13 +5,13 @@ import { IOBY_LINK } from "../../config"
 function Donate() {
     const Left = () => <div>
         <div className="header1">Groceries & Essential Fund</div>
-        <div className="paragraph">This fund helps cover the costs of essentials like food, medicine, body care items, baby supplies, cleaning supplies, and PPE for neighbors who can't afford them at this time.<br /><br />We have distributed $749,975 since March 2020 as of December 2023.</div>
+        <div className="paragraph">This fund helps cover the costs of essentials like food, medicine, body care items, baby supplies, cleaning supplies, and PPE for neighbors who can't afford them at this time.<br /><br />We have distributed $836,263 since March 2020 as of December 2024.</div>
     </div>
 
     const Right = () => {
         const vendors = [{
-            name: "ioby campaign",
-            description: <span>To make a tax-deductible one-time, weekly, or monthly donation, use <a href={IOBY_LINK} alt="ioby link" target="_blank" rel="noreferrer">our ioby campaign</a>.</span>
+            name: "open collective campaign",
+            description: <span>To make a tax-deductible one-time, weekly, or monthly donation, use <a href={OPEN_COLLECTIVE_LINK} alt="open collective link" target="_blank" rel="noreferrer">our Open Collective campaign</a>.</span>
         }, {
             name: "Venmo",
             description: <span><a href="https://account.venmo.com/u/bklynneighbors" alt="venmo" target="_blank" rel="noreferrer">@bklynneighbors</a><br />(if prompted, enter digits 4944)</span>,
