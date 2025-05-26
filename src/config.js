@@ -17,7 +17,7 @@ export const COVID_TEXTING_HOTLINE = "692-692",
     MUTUAL_AID_PHONE_NUMBER_COUNTRY_CODE = "+1",
     MUTUAL_AID_REQUEST_FORM = "https://www.notion.so/Request-Form-59ad7cb64f904b1db0a0cad6c0171aac",
     MUTUAL_AID_SLACK_LINK = "https://chfgmutualaid.slack.com/join/shared_invite/zt-dol9r5tu-Af~7Y5IIpCW17oOL~wBa1A#/",
-    MUTUAL_AID_WHATSAPP_GROUP_LINK = "https://chat.whatsapp.com/LMxuYv2ue5qCM5QEcGPOIp",
+    MUTUAL_AID_WHATSAPP_GROUP_LINK = "https://chat.whatsapp.com/IU6TPD3Ja9e3rB1KpBk2cB",
     MUTUAL_AID_WIKIPEDIA = "https://en.wikipedia.org/wiki/Mutual_aid_(organization_theory)#:~:text=In%20organization%20theory%2C%20mutual%20aid,another%20and%20changing%20political%20conditions.",
     NOTIFY_NYC_LINK = "https://a858-nycnotify.nyc.gov/notifynyc",
     NYC_WELL_LINK = "https://nycwell.cityofnewyork.us/en/";
