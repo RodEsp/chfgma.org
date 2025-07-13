@@ -9,6 +9,7 @@
 
 .footer > hr {
     border-top: .5px solid grey;
+    margin: 0 0 24px 0;
 }
 
 .footer .content-wrapper .contact-info {
@@ -60,6 +61,20 @@
 
 .footer .stay-connected .subtitle a {
     font-weight: bold;
+}
+
+/* whatsapp qr code */
+.footer .whatsapp-qr-code {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer .whatsapp-qr-code {
+        justify-content: center;
+        margin-top: 0;
+    }
 }
 
 /* contact info */

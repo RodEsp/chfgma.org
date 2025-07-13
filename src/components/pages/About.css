@@ -66,6 +66,9 @@ Components
 }
 
 /* What is mutual aid */
+section#what-is-mutual-aid {
+    background-color: var(--background-about);
+}
 
 section#what-is-mutual-aid .fancy-list-wrapper .fancy-list .fancy-list-container {
     grid-column-gap: 4em;
@@ -174,6 +177,7 @@ section#what-is-mutual-aid .fancy-list-wrapper .fancy-list .fancy-list-container
     .about #stats .stats-items-wrapper {
         grid-template-columns: auto auto;
         grid-column-gap: 30px;
+        margin-top: 20px;
     }
     .about #stats .people-holding-trash-svg {
         display: none;

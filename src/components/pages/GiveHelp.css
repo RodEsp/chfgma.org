@@ -207,18 +207,22 @@ Stats
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-template-rows: auto;
-        grid-template-areas: "section1 section1 . ." "section1 section1 img img" "section2 section2 img img";
+        grid-template-areas: "section1 section1 img img";
+        align-items: center;
     }
     .food-security-and-working-groups .row-container .people-making-donations-img {
         width: 400px;
     }
-    .food-security-and-working-groups .row-container .food-security {
-        margin-bottom: 180px;
-    }
+}
+
+.food-security-and-working-groups .row-container {
+    display: grid;
+    justify-items: center;
 }
 
 .food-security-and-working-groups .row-container .people-making-donations-img {
     width: 100%;
+    max-width: 330px;
 }
 
 /* Food Security */
@@ -254,8 +258,11 @@ Stats
 /**************************
 * Help Us Spread The Word *
 **************************/
+.help-us-spread-the-word {
+    background-color: var(--background-give-help);
+}
 
-.help-us-spread-the-word img.newsletter {
+.help-us-spread-the-word img {
     max-width: 330px;
 }
 
