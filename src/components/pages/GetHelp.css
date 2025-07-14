@@ -11,8 +11,8 @@
     color: var(--font-color-get-help);
 }
 
-.get-help section.submit-a-request .split-wrapper {
-    margin-bottom: 20px;
+.get-help section.submit-a-request {
+    padding-bottom: 0;
 }
 
 .text-group .title {

@@ -2,7 +2,7 @@
 import iconPicIMG from "../../assets/icons/icon-pic.png";
 import iconMailboxIMG from "../../assets/icons/icon-mailbox.png";
 import iconMessagesIMG from "../../assets/icons/icon-message.png";
-import { MUTUAL_AID_INSTAGRAM_LINK, MUTUAL_AID_NEWSLETTER_SUBSCRIBE_LINK, MUTUAL_AID_SLACK_LINK } from "../../config"
+import { MUTUAL_AID_INSTAGRAM_LINK, MUTUAL_AID_NEWSLETTER_SUBSCRIBE_LINK, MUTUAL_AID_WHATSAPP_GROUP_LINK } from "../../config"
 
 export const stayUpToDateCards = [{
     image: iconMailboxIMG,
@@ -11,9 +11,9 @@ export const stayUpToDateCards = [{
     link: MUTUAL_AID_NEWSLETTER_SUBSCRIBE_LINK,
 }, {
     image: iconMessagesIMG,
-    alt: "slack link icon",
-    text: "Join the conversation on Slack",
-    link: MUTUAL_AID_SLACK_LINK,
+    alt: "whatsapp link icon",
+    text: "Join the conversation on WhatsApp",
+    link: MUTUAL_AID_WHATSAPP_GROUP_LINK,
 }, {
     image: iconPicIMG,
     alt: "instagram link icon",
@@ -22,31 +22,30 @@ export const stayUpToDateCards = [{
 }];
 
 export const stats = [
-    // Dallas 2024-12-21: commented out while I get updated numbers
-    // {
-    //     stat: "$756,394",
-    //     text: "total contributed to our Groceries & Essentials and Direct Action Funds",
-    // },
+    // updated as of July 2025
     {
-        stat: "$836,263", // updated as of Dec 2024
+        stat: "$840,312",
         text: "total distributed to neighbors through our funds",
+    }, {
+        stat: "824",
+        text: "households helped since inception",
     }, {
         stat: "62",
         text: "volunteers matched as regular shoppers for their neighbors",
     }, {
-        stat: "6,852",
-        text: "requests fulfilled for groceries and essential supplies",
+        stat: "1,020",
+        text: "requests fulfilled so far in 2025",
     }, {
-        stat: "10,859",
+        stat: "10,341",
+        text: "total requests fulfilled",
+    }, {
+        stat: "14,348",
         text: "responses to calls, texts, and voicemails",
     }, {
-        stat: "1,922",
-        text: "members of our Slack community",
+        stat: "1,737",
+        text: "newsletter subscribers",
     }, {
-        stat: "1,617",
-        text: "newsletter readers",
-    }, {
-        stat: "3,174",
+        stat: "3,708",
         text: "followers on Instagram"
     }
 ]
