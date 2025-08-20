@@ -262,6 +262,11 @@ Stats
     background-color: var(--background-give-help);
 }
 
+.help-us-spread-the-word .row-container {
+    display: grid;
+    justify-items: center;
+}
+
 .help-us-spread-the-word img {
     max-width: 330px;
 }
