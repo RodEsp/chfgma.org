@@ -1,8 +1,8 @@
-import React from 'react';
 import "./GetHelp.css"
-import { MUTUAL_AID_REQUEST_FORM, MUTUAL_AID_AIRTABLE_LINK, MUTUAL_AID_EMAIL_ADDRESS_HELLO, MUTUAL_AID_PHONE_NUMBER_COUNTRY_CODE, MUTUAL_AID_PHONE_NUMBER, MUTUAL_AID_INSTAGRAM_FRIDGE_LINK, COVID_TEXTING_HOTLINE, MUTUAL_AID_NYC_LINK, NYC_WELL_LINK, NOTIFY_NYC_LINK, FOOD_RESOURCES_ENGLISH } from "../../config.js"
-import communityFridgeImg from "../../assets/community-fridge.png"
 
+import { COVID_TEXTING_HOTLINE, FOOD_RESOURCES_ENGLISH, MUTUAL_AID_AIRTABLE_LINK, MUTUAL_AID_EMAIL_ADDRESS_HELLO, MUTUAL_AID_NYC_LINK, MUTUAL_AID_PHONE_NUMBER, MUTUAL_AID_PHONE_NUMBER_COUNTRY_CODE, MUTUAL_AID_REQUEST_FORM, NOTIFY_NYC_LINK, NYC_WELL_LINK } from "../../config.js"
+
+import React from 'react';
 
 /** deleted community fridge component for now 11/5/2023 */
 const GetHelp = () => (
@@ -33,23 +33,6 @@ function SubmitARequest() {
                         </ul>
                         <p>We’re resourceful and flexible—let us know what you need, and we’ll do our best to help</p>
                     </div>
-                </div>
-            </div>
-        </section>
-    )
-}
-
-function CommunityFridge() {
-    return (
-        <section className="community-fridge">
-            <div className="row-container">
-                <div className="split-wrapper">
-                    <div className="text-group">
-                        <div className="title">Community fridge</div>
-                        <p className="subtitle">The community fridge is not currently in operation, but we're working on finding a new location!</p>
-                        <p className="subtitle">Follow <a href={MUTUAL_AID_INSTAGRAM_FRIDGE_LINK} alt="mutual aid fridge instagram link" target="_blank" rel="noreferrer">@fgcommunityfridge</a> for updates.</p>
-                    </div>
-                    <img className="split-col-img" src={communityFridgeImg} alt="community fridge" />
                 </div>
             </div>
         </section>
