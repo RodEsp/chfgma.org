@@ -29,7 +29,7 @@ const footer = () => (
             </div>
             <div className="contact-info">
                 <div className="section">
-                    <div className="title">CALL OR TEXT</div>
+                    <div className="title">TEXT</div>
                     <div className="phoneNumber">
                         <a href={`tel:${MUTUAL_AID_PHONE_NUMBER_COUNTRY_CODE}${MUTUAL_AID_PHONE_NUMBER}`} alt={`mutual aid phone number: ${MUTUAL_AID_PHONE_NUMBER_COUNTRY_CODE}${MUTUAL_AID_PHONE_NUMBER}`}>{MUTUAL_AID_PHONE_NUMBER}</a>
                     </div>
