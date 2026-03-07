@@ -23,7 +23,7 @@ function SubmitARequest() {
                     <div className="text-group">
                         <div className="title">Submit a request</div>
                         <p className="subtitle">
-                            You can make a request for assistance by texting or calling our hotline at {phoneNumberLink} or by <a href={MUTUAL_AID_REQUEST_FORM} target="_blank" rel="noreferrer">filling out this form</a>.
+                            You can make a request for assistance by texting our hotline at {phoneNumberLink} or by <a href={MUTUAL_AID_REQUEST_FORM} target="_blank" rel="noreferrer">filling out this form</a>.
                         </p>
                     </div>
                     <div className="text-box">
