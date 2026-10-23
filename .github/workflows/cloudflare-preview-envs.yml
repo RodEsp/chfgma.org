@@ -26,7 +26,8 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       - name: Comment Preview URL
-        run: gh pr comment "${{ github.event.pull_request.number }}" --body "Preview: ${{ steps.preview.outputs.preview_url }}"
+        run: |
+          gh pr comment "${{ github.event.pull_request.number }}" --body "Preview: ${{ steps.preview.outputs.preview_url }}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Probe Preview
